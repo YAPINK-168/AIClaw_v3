@@ -1,0 +1,25 @@
+{
+	"schema": "youyou_action_lipsync_tuning_v1",
+	"saved_at_utc": "2026-10-15T00:00:00",
+	"params": {
+		"action_id": "youyou_Hello_Idle01",
+		"audio_id": "招揽1-小惊喜",
+		"audio_path": "res://配音/招揽1-小惊喜.mp3",
+		"pre_idle_duration": 1.667,
+		"main_action_duration": 4.999,
+		"post_idle_duration": 1.667,
+		"clip_total_duration": 8.333,
+		"audio_start_offset": 1.667,
+		"audio_speed": 1.0,
+		"action_speed": 1.0,
+		"emotion_id": "laugh",
+		"emotion_lead_time": 0.35,
+		"emotion_blend_duration": 0.4,
+		"mouth_emotion_weight": 0.35,
+		"viseme_weight": 0.75,
+		"mouth_release_duration": 0.15,
+		"idle_expression_return_duration": 0.5,
+		"manual_acceptance_status": "draft",
+		"notes": "示例：main_action_duration 与 clip_total_duration 在保存时会写入实测值；验收通过后改为 approved。"
+	}
+}

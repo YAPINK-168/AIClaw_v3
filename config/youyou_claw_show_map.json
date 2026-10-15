@@ -1,0 +1,38 @@
+{
+	"schema": "youyou_claw_show_map_v1",
+	"description": "娃娃机业务语义 → 柚柚事件 action_id；binding_status 区分已确认与待人工确认",
+	"mappings": [
+		{
+			"business_action": "opening",
+			"business_speech": "coin_feedback",
+			"event_action_id": "youyou_coin01",
+			"binding_status": "confirmed",
+			"wait_policy": "package",
+			"notes": "投币反馈；供 ClawBusiness coin_accepted → opening+coin_feedback 接线"
+		},
+		{
+			"business_action": "result_fail",
+			"business_speech": "grab_fail",
+			"event_action_id": "youyou_fail01",
+			"binding_status": "preview_ready_pending_business",
+			"wait_policy": "package",
+			"notes": "正式场景可播；业务状态机绑定待人工确认"
+		},
+		{
+			"business_action": "result_success",
+			"business_speech": "grab_success",
+			"event_action_id": "youyou_victory01",
+			"binding_status": "preview_ready_pending_business",
+			"wait_policy": "package",
+			"notes": "正式场景可播；业务状态机绑定待人工确认"
+		},
+		{
+			"business_action": "",
+			"business_speech": "",
+			"event_action_id": "youyou_claw crane01_01",
+			"binding_status": "playback_only",
+			"wait_policy": "package",
+			"notes": "已接入正式场景播放能力；业务语义待人工确认，不得绑定 grab_pressed"
+		}
+	]
+}

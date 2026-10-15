@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: id\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Server"
+
+msgid "tab_tools"
+msgstr "Alat"
+
+msgid "tab_config"
+msgstr "Penyiapan"
+
+msgid "lbl_status"
+msgstr "Status: "
+
+msgid "lbl_port"
+msgstr "Port: "
+
+msgid "port_fallback_notice"
+msgstr "Port %d sedang dipakai — beralih ke %d"
+
+msgid "chk_autostart"
+msgstr "Mulai otomatis"
+
+msgid "btn_start"
+msgstr "Mulai"
+
+msgid "btn_stop"
+msgstr "Hentikan"
+
+msgid "btn_copy"
+msgstr "Salin"
+
+msgid "lbl_connections"
+msgstr "Koneksi: "
+
+msgid "running"
+msgstr "Berjalan"
+
+msgid "stopped"
+msgstr "Berhenti"
+
+msgid "tools_title"
+msgstr "Alat Terdaftar"
+
+msgid "tools_not_running"
+msgstr "Server tidak berjalan — mulai dari tab \"Server\""
+
+msgid "tools_fetch_failed"
+msgstr "Gagal mengambil data (server tidak berjalan?)"
+
+msgid "config_hint"
+msgstr "Tambahkan konfigurasi di bawah ke klien AI Anda (Cursor / Claude / Windsurf, dll.) untuk memakai MCP ini:"
+
+msgid "btn_copy_json"
+msgstr "Salin konfigurasi JSON"
+
+msgid "btn_copy_cli"
+msgstr "Salin perintah Claude CLI"
+
+msgid "config_paths_title"
+msgstr "Lokasi file konfigurasi:"
+
+msgid "copied"
+msgstr "Tersalin ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Berbasis protokol Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "Email"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat Dukungan"
+
+msgid "contact_download"
+msgstr "Unduh"
+
+msgid "btn_open_loc"
+msgstr "Buka lokasi"
+
+msgid "cli_title"
+msgstr "Perintah CLI"
+
+msgid "btn_auto_config"
+msgstr "Konfigurasi otomatis"
+
+msgid "btn_delete"
+msgstr "Hapus"
+
+msgid "status_configured"
+msgstr "Terkonfigurasi"
+
+msgid "status_not_configured"
+msgstr "Belum dikonfigurasi"
+
+msgid "config_failed"
+msgstr "Konfigurasi gagal"
+
+msgid "cat_node"
+msgstr "Node"
+msgid "catdesc_node"
+msgstr "Membuat, mengkueri, mentransformasi, dan menghubungkan node scene"
+
+msgid "cat_scene"
+msgstr "Scene"
+msgid "catdesc_scene"
+msgstr "Membuka, menyimpan, membuat scene dan mengkueri pohon node"
+
+msgid "cat_editor"
+msgstr "Editor"
+msgid "catdesc_editor"
+msgstr "Mengendalikan editor: menjalankan, pratinjau, info versi"
+
+msgid "cat_project"
+msgstr "Proyek"
+msgid "catdesc_project"
+msgstr "Pengaturan proyek, peta input, dan versi"
+
+msgid "cat_filesystem"
+msgstr "Sistem berkas"
+msgid "catdesc_filesystem"
+msgstr "Membaca, menulis, menyalin, dan memindahkan file proyek"
+
+msgid "cat_resource"
+msgstr "Resource"
+msgid "catdesc_resource"
+msgstr "Mengkueri, membuat, dan memeriksa resource"
+
+msgid "cat_animation"
+msgstr "Animasi"
+msgid "catdesc_animation"
+msgstr "Membuat dan mengedit animasi serta AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Builder"
+msgid "catdesc_builder"
+msgstr "Membangun hierarki node dari pohon JSON"
+
+msgid "cat_composite"
+msgstr "Komposit"
+msgid "catdesc_composite"
+msgstr "Operasi komposit dan massal tingkat tinggi"
+
+msgid "cat_debug"
+msgstr "Debug"
+msgid "catdesc_debug"
+msgstr "Mencetak log dan keluaran debug"
+
+msgid "cat_knowledge"
+msgstr "Pengetahuan"
+msgid "catdesc_knowledge"
+msgstr "Mengkueri basis pengetahuan dan panduan bawaan"
+
+msgid "cat_validate"
+msgstr "Validasi"
+msgid "catdesc_validate"
+msgstr "Memvalidasi scene dan memeriksa tata letak"
+
+msgid "cat_script"
+msgstr "Skrip"
+msgid "catdesc_script"
+msgstr "Membuat, mengedit, dan melampirkan skrip"
+
+msgid "tooldetail_builder_tree"
+msgstr "Kirim pohon JSON yang menjelaskan node, properti, theme override, anchor, grup, sinyal, dan skrip.\nSeluruh konstruksi dihitung sebagai satu langkah undo."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Topik: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nFilter:\n- class:  Batasi ke satu nama kelas saja (mis. \"Button\", \"Tree\")\n- search: Filter substring pada nama/kunci\n\nContoh:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Enam kategori pemeriksaan (semua dijalankan secara default):\n- missing_scripts        Node punya referensi skrip tetapi filenya tidak ada\n- broken_node_paths      Properti bertipe NodePath menunjuk ke node yang tidak ada\n- dangling_signals       Koneksi sinyal persisten ke target yang sudah dibebaskan/hilang\n- off_viewport           Node Control yang rect-nya sepenuhnya di luar viewport\n- container_anchor_misuse Anak Container memakai anchor non-default (akan diabaikan)\n- anti_patterns          Kesalahan umum di Godot 4\n\nFilter melalui:\n- root_path:    Subtree yang diperiksa (default: root scene)\n- checks:       Array nama kategori (default: semua)\n- severity_min: Sembunyikan temuan di bawah info|warning|error (default info)"
+
+msgid "config_failed_detail"
+msgstr "Konfigurasi gagal: file konfigurasi tidak ditemukan. {0} mungkin telah mengubah path instalasinya."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "Akun VberAI"
+
+msgid "acct_hint"
+msgstr "Masuk dengan akun VberAI Anda untuk memakai alat MCP"
+
+msgid "acct_email_ph"
+msgstr "Email"
+
+msgid "acct_password_ph"
+msgstr "Kata sandi"
+
+msgid "btn_login"
+msgstr "Masuk"
+
+msgid "btn_login_google"
+msgstr "Masuk dengan Google"
+
+msgid "btn_logout"
+msgstr "Keluar"
+
+msgid "acct_logged_in"
+msgstr "Masuk sebagai: "
+
+msgid "acct_logging_in"
+msgstr "Sedang masuk…"
+
+msgid "acct_google_hint"
+msgstr "Halaman masuk telah dibuka di browser Anda — kembali ke sini setelah selesai"
+
+msgid "acct_need_server"
+msgstr "Gagal memulai server lokal untuk callback masuk dengan Google"
+
+msgid "acct_need_credentials"
+msgstr "Masukkan email dan kata sandi"
+
+msgid "acct_login_failed"
+msgstr "Gagal masuk"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Perlu izin jaringan"
+
+msgid "fw_body_mac"
+msgstr "Port server MCP tidak dapat dijangkau dari luar proses ini — kemungkinan besar diblokir oleh firewall macOS. Koneksi klien AI maupun callback masuk dengan Google sama-sama membutuhkan port ini.\n\nLangkah:\n1. Jika macOS bertanya \"Apakah Anda ingin Godot menerima koneksi jaringan masuk?\", klik Izinkan.\n2. Jika sebelumnya Anda mengklik Tolak: buka Pengaturan Sistem → Jaringan → Firewall → Opsi… lalu atur Godot ke \"Izinkan koneksi masuk\".\n3. Mulai ulang editor Godot dan coba lagi."
+
+msgid "fw_body_win"
+msgstr "Port server MCP tidak dapat dijangkau dari luar proses ini — kemungkinan besar diblokir oleh firewall Windows.\n\nKetika Windows Security menanyakan \"Windows Defender Firewall telah memblokir beberapa fitur aplikasi ini\", centang jaringan Anda lalu klik \"Izinkan akses\"; atau izinkan Godot melalui Control Panel → Windows Defender Firewall → Izinkan aplikasi melewati firewall. Lalu mulai ulang editor."
+
+msgid "fw_open_settings"
+msgstr "Buka Pengaturan Firewall"
+
+msgid "fw_dismiss"
+msgstr "Jangan tampilkan lagi"
+
+msgid "acct_fw_blocked"
+msgstr "Firewall memblokir port lokal — callback masuk dengan Google tidak dapat sampai (lihat dialog untuk langkahnya)"
+
+msgid "acct_register"
+msgstr "Belum punya akun? Daftar"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Paket Anda tidak mencakup Godot MCP. Tingkatkan ke paket gratis atau lebih tinggi untuk memakainya."
+
+msgid "acct_upgrade"
+msgstr "Tingkatkan langganan"
+
+msgid "acct_recheck"
+msgstr "Periksa ulang"
+
+msgid "acct_kicked"
+msgstr "Akun Anda masuk di perangkat lain; perangkat ini telah dikeluarkan."
+
+msgid "acct_relogin"
+msgstr "Masuk lagi (ambil alih kembali)"
+
+msgid "kicked_title"
+msgstr "Masuk di tempat lain"
+
+msgid "lbl_endpoint"
+msgstr "Endpoint: "
+
+msgid "update_available_title"
+msgstr "Pembaruan tersedia"
+
+msgid "update_urgency_critical"
+msgstr "Pembaruan kritis"
+
+msgid "update_urgency_high"
+msgstr "Pembaruan penting"
+
+msgid "update_new_version"
+msgstr "Versi v{0} sudah tersedia!"
+
+msgid "update_current_version"
+msgstr "Versi saat ini: v{0}"
+
+msgid "update_changelog"
+msgstr "Apa yang baru"
+
+msgid "update_now"
+msgstr "Perbarui sekarang"
+
+msgid "update_not_now"
+msgstr "Nanti saja"
+
+msgid "update_skip_version"
+msgstr "Lewati v{0}"
+
+msgid "check_for_updates"
+msgstr "Periksa pembaruan"
+
+msgid "update_no_update"
+msgstr "Anda sudah memakai versi terbaru"
+
+msgid "no_entitlement_title"
+msgstr "Akses tidak termasuk"
+
+msgid "acct_upgrade_to"
+msgstr "Tingkatkan ke {0} untuk memakainya"

@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://jyhecyu0u01d"]
+
+[ext_resource type="Script" uid="uid://bki5qpx5h0n11" path="res://Scripts/youyou_eye_gaze_test.gd" id="1_gaze"]
+[ext_resource type="Script" uid="uid://d0spk7us8tvd7" path="res://Scripts/youyou_observe_camera.gd" id="2_observe"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes_gaze"]
+exposure_multiplier = 0.72
+
+[sub_resource type="Environment" id="Environment_gaze"]
+background_mode = 1
+background_color = Color(0.43, 0.45, 0.47, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.63, 0.65, 1)
+ambient_light_energy = 0.28
+
+[node name="YouyouEyeGazeTest" type="Node3D" unique_id=47079047]
+script = ExtResource("1_gaze")
+
+[node name="ObservePivot" type="Node3D" parent="." unique_id=389408371]
+script = ExtResource("2_observe")
+
+[node name="Camera3D" type="Camera3D" parent="ObservePivot" unique_id=254551321]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1.45, 2.2)
+attributes = SubResource("CameraAttributes_gaze")
+current = true
+fov = 42.0
+
+[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=1602300888]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 1.6, 1.2)
+light_energy = 0.72
+shadow_enabled = true
+
+[node name="FillLight" type="DirectionalLight3D" parent="." unique_id=1133973230]
+transform = Transform3D(0.939693, 0.241845, -0.241845, 0, 0.707107, 0.707107, 0.34202, -0.664463, 0.664463, -1, 1.2, 0.4)
+light_color = Color(0.78, 0.82, 0.9, 1)
+light_energy = 0.16
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1069307295]
+environment = SubResource("Environment_gaze")
+
+[node name="StatusLayer" type="CanvasLayer" parent="." unique_id=1099218859]
+
+[node name="StatusLabel" type="Label" parent="StatusLayer" unique_id=839548428]
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 980.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 14
+autowrap_mode = 3
+text = "视线测试"
+
+[node name="BlinkTestButton" type="Button" parent="StatusLayer"]
+offset_left = 12.0
+offset_top = 128.0
+offset_right = 200.0
+offset_bottom = 162.0
+text = "测试眨眼 (B)"
+
+[node name="ObserveHelp" type="Label" parent="." unique_id=459607772]
+offset_left = 12.0
+offset_top = 640.0
+offset_right = 720.0
+offset_bottom = 720.0
+theme_override_colors/font_color = Color(0.75, 0.77, 0.8, 1)
+text = "鼠标/WASD 控制视线 | B 或「测试眨眼」按钮 | P 模拟招揽表演
+基础待机时：随机眨眼 + 自主转眼 + 头部微跟随
+左键拖动旋转 | 滚轮缩放 | Shift+中键平移 | R 重置镜头"

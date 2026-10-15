@@ -1,0 +1,11 @@
+{
+  "texture_size": [980, 193],
+  "track_texture_size": [918, 121],
+  "fill_texture_size": [990, 128],
+  "min_bar_height": 36,
+  "max_bar_height": 66,
+  "fill_rect": [0.055, 0.275, 0.945, 0.725],
+  "track_inset": [0.055, 0.275, 0.945, 0.725],
+  "anchor_in_content": [0.03, 0.54, 0.97, 0.98],
+  "note": "fill/track inset deeper under gold rim to hide gaps"
+}

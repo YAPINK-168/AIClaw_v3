@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: hi\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "सर्वर"
+
+msgid "tab_tools"
+msgstr "टूल्स"
+
+msgid "tab_config"
+msgstr "सेटअप"
+
+msgid "lbl_status"
+msgstr "स्थिति: "
+
+msgid "lbl_port"
+msgstr "पोर्ट: "
+
+msgid "port_fallback_notice"
+msgstr "पोर्ट %d व्यस्त है — %d पर बदल दिया गया"
+
+msgid "chk_autostart"
+msgstr "स्वतः प्रारंभ"
+
+msgid "btn_start"
+msgstr "प्रारंभ करें"
+
+msgid "btn_stop"
+msgstr "रोकें"
+
+msgid "btn_copy"
+msgstr "कॉपी करें"
+
+msgid "lbl_connections"
+msgstr "कनेक्शन: "
+
+msgid "running"
+msgstr "चल रहा है"
+
+msgid "stopped"
+msgstr "रुका हुआ"
+
+msgid "tools_title"
+msgstr "पंजीकृत टूल्स"
+
+msgid "tools_not_running"
+msgstr "सर्वर नहीं चल रहा — इसे \"सर्वर\" टैब में प्रारंभ करें"
+
+msgid "tools_fetch_failed"
+msgstr "प्राप्त करने में विफल (क्या सर्वर बंद है?)"
+
+msgid "config_hint"
+msgstr "इस MCP का उपयोग करने के लिए नीचे दिया गया कॉन्फ़िग अपने AI क्लाइंट (Cursor / Claude / Windsurf आदि) में जोड़ें:"
+
+msgid "btn_copy_json"
+msgstr "JSON कॉन्फ़िग कॉपी करें"
+
+msgid "btn_copy_cli"
+msgstr "Claude CLI कमांड कॉपी करें"
+
+msgid "config_paths_title"
+msgstr "कॉन्फ़िग फ़ाइल के स्थान:"
+
+msgid "copied"
+msgstr "कॉपी हो गया ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Streamable HTTP प्रोटोकॉल पर आधारित (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "ईमेल"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "सपोर्ट WeChat"
+
+msgid "contact_download"
+msgstr "डाउनलोड"
+
+msgid "btn_open_loc"
+msgstr "स्थान खोलें"
+
+msgid "cli_title"
+msgstr "CLI कमांड"
+
+msgid "btn_auto_config"
+msgstr "स्वतः कॉन्फ़िगर करें"
+
+msgid "btn_delete"
+msgstr "हटाएँ"
+
+msgid "status_configured"
+msgstr "कॉन्फ़िगर किया गया"
+
+msgid "status_not_configured"
+msgstr "कॉन्फ़िगर नहीं है"
+
+msgid "config_failed"
+msgstr "कॉन्फ़िग विफल"
+
+msgid "cat_node"
+msgstr "नोड्स"
+msgid "catdesc_node"
+msgstr "सीन नोड्स बनाएँ, खोजें, रूपांतरित करें और आपस में जोड़ें"
+
+msgid "cat_scene"
+msgstr "सीन"
+msgid "catdesc_scene"
+msgstr "सीन खोलें, सहेजें, बनाएँ और ट्री देखें"
+
+msgid "cat_editor"
+msgstr "एडिटर"
+msgid "catdesc_editor"
+msgstr "एडिटर नियंत्रित करें: रन, प्रीव्यू, संस्करण जानकारी"
+
+msgid "cat_project"
+msgstr "प्रोजेक्ट"
+msgid "catdesc_project"
+msgstr "प्रोजेक्ट सेटिंग्स, इनपुट मैप और संस्करण"
+
+msgid "cat_filesystem"
+msgstr "फ़ाइल सिस्टम"
+msgid "catdesc_filesystem"
+msgstr "प्रोजेक्ट फ़ाइलें पढ़ें, लिखें, कॉपी करें और स्थानांतरित करें"
+
+msgid "cat_resource"
+msgstr "रिसोर्स"
+msgid "catdesc_resource"
+msgstr "रिसोर्स खोजें, बनाएँ और जाँचें"
+
+msgid "cat_animation"
+msgstr "एनिमेशन"
+msgid "catdesc_animation"
+msgstr "एनिमेशन और AnimationPlayer बनाएँ और संपादित करें"
+
+msgid "cat_builder"
+msgstr "बिल्डर"
+msgid "catdesc_builder"
+msgstr "JSON ट्री से नोड पदानुक्रम बनाएँ"
+
+msgid "cat_composite"
+msgstr "कंपोज़िट"
+msgid "catdesc_composite"
+msgstr "उच्च-स्तरीय कंपोज़िट और बैच ऑपरेशन"
+
+msgid "cat_debug"
+msgstr "डीबग"
+msgid "catdesc_debug"
+msgstr "लॉग और डीबग आउटपुट प्रिंट करें"
+
+msgid "cat_knowledge"
+msgstr "नॉलेज"
+msgid "catdesc_knowledge"
+msgstr "अंतर्निहित नॉलेज बेस और गाइड खोजें"
+
+msgid "cat_validate"
+msgstr "सत्यापन"
+msgid "catdesc_validate"
+msgstr "सीन सत्यापित करें और लेआउट जाँचें"
+
+msgid "cat_script"
+msgstr "स्क्रिप्ट"
+msgid "catdesc_script"
+msgstr "स्क्रिप्ट बनाएँ, संपादित करें और अटैच करें"
+
+msgid "tooldetail_builder_tree"
+msgstr "एक JSON ट्री दें जो नोड्स, प्रॉपर्टीज़, थीम ओवरराइड, ऐंकर, ग्रुप, सिग्नल और स्क्रिप्ट का वर्णन करे।\nपूरा निर्माण एक ही undo चरण होता है।"
+
+msgid "tooldetail_knowledge_get"
+msgstr "विषय: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nफ़िल्टर:\n- class:  किसी एक क्लास नाम तक सीमित करें (जैसे \"Button\", \"Tree\")\n- search: नामों/कुंजियों पर सबस्ट्रिंग फ़िल्टर\n\nउदाहरण:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "छह जाँच श्रेणियाँ (डिफ़ॉल्ट रूप से सभी चलती हैं):\n- missing_scripts        नोड में स्क्रिप्ट संदर्भ है पर फ़ाइल मौजूद नहीं\n- broken_node_paths      NodePath प्रकार की प्रॉपर्टी अस्तित्वहीन नोड की ओर इशारा करती है\n- dangling_signals       मुक्त/अनुपस्थित लक्ष्यों से जुड़े स्थायी सिग्नल कनेक्शन\n- off_viewport           वे Control नोड जिनका rect पूरी तरह व्यूपोर्ट के बाहर है\n- container_anchor_misuse Container की संतान में गैर-डिफ़ॉल्ट ऐंकर (अनदेखा किया जाएगा)\n- anti_patterns          Godot 4 की सामान्य गलतियाँ\n\nफ़िल्टर करें:\n- root_path:    जाँचने योग्य सबट्री (डिफ़ॉल्ट: सीन रूट)\n- checks:       श्रेणी नामों की सूची (डिफ़ॉल्ट: सभी)\n- severity_min: info|warning|error से नीचे के परिणाम छिपाएँ (डिफ़ॉल्ट info)"
+
+msgid "config_failed_detail"
+msgstr "कॉन्फ़िगरेशन विफल: कॉन्फ़िग फ़ाइल नहीं मिली। संभव है {0} ने अपना इंस्टॉल पथ बदल दिया हो।"
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI खाता"
+
+msgid "acct_hint"
+msgstr "MCP टूल्स उपयोग करने के लिए अपने VberAI खाते से साइन इन करें"
+
+msgid "acct_email_ph"
+msgstr "ईमेल"
+
+msgid "acct_password_ph"
+msgstr "पासवर्ड"
+
+msgid "btn_login"
+msgstr "साइन इन करें"
+
+msgid "btn_login_google"
+msgstr "Google से साइन इन करें"
+
+msgid "btn_logout"
+msgstr "साइन आउट करें"
+
+msgid "acct_logged_in"
+msgstr "साइन इन: "
+
+msgid "acct_logging_in"
+msgstr "साइन इन हो रहा है…"
+
+msgid "acct_google_hint"
+msgstr "लॉगिन पेज आपके ब्राउज़र में खुल गया है — पूरा होने पर यहाँ लौटें"
+
+msgid "acct_need_server"
+msgstr "Google साइन-इन कॉलबैक के लिए लोकल सर्वर प्रारंभ नहीं हो सका"
+
+msgid "acct_need_credentials"
+msgstr "ईमेल और पासवर्ड दर्ज करें"
+
+msgid "acct_login_failed"
+msgstr "साइन इन विफल"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "नेटवर्क अनुमति आवश्यक"
+
+msgid "fw_body_mac"
+msgstr "MCP सर्वर पोर्ट तक इस प्रोसेस के बाहर से नहीं पहुँचा जा सकता — संभवतः macOS फ़ायरवॉल इसे रोक रहा है। AI क्लाइंट कनेक्शन और Google साइन-इन कॉलबैक दोनों को इस पोर्ट की आवश्यकता है।\n\nचरण:\n1. यदि macOS पूछे \"Do you want Godot to accept incoming network connections?\", तो Allow पर क्लिक करें।\n2. यदि आपने पहले Deny चुना था: System Settings → Network → Firewall → Options… खोलें और Godot को \"Allow incoming connections\" पर सेट करें।\n3. Godot एडिटर पुनः प्रारंभ करें और फिर प्रयास करें।"
+
+msgid "fw_body_win"
+msgstr "MCP सर्वर पोर्ट तक इस प्रोसेस के बाहर से नहीं पहुँचा जा सकता — संभवतः Windows फ़ायरवॉल इसे रोक रहा है।\n\nजब Windows Security \"Windows Defender Firewall has blocked some features of this app\" पूछे, तो अपने नेटवर्क चुनें और \"Allow access\" पर क्लिक करें; या Control Panel → Windows Defender Firewall → Allow an app through firewall में Godot को अनुमति दें। फिर एडिटर पुनः प्रारंभ करें।"
+
+msgid "fw_open_settings"
+msgstr "फ़ायरवॉल सेटिंग्स खोलें"
+
+msgid "fw_dismiss"
+msgstr "दोबारा न दिखाएँ"
+
+msgid "acct_fw_blocked"
+msgstr "फ़ायरवॉल लोकल पोर्ट को रोक रहा है — Google साइन-इन कॉलबैक नहीं पहुँच सकता (चरणों के लिए संवाद देखें)"
+
+msgid "acct_register"
+msgstr "खाता नहीं है? साइन अप करें"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "आपके प्लान में Godot MCP शामिल नहीं है। उपयोग के लिए फ़्री टियर या उससे ऊपर अपग्रेड करें।"
+
+msgid "acct_upgrade"
+msgstr "सब्सक्रिप्शन अपग्रेड करें"
+
+msgid "acct_recheck"
+msgstr "पुनः जाँचें"
+
+msgid "acct_kicked"
+msgstr "आपका खाता किसी अन्य डिवाइस पर साइन इन हुआ; यहाँ से साइन आउट कर दिया गया।"
+
+msgid "acct_relogin"
+msgstr "फिर से साइन इन करें (वापस लें)"
+
+msgid "kicked_title"
+msgstr "अन्यत्र साइन इन"
+
+msgid "lbl_endpoint"
+msgstr "एंडपॉइंट: "
+
+msgid "update_available_title"
+msgstr "अपडेट उपलब्ध"
+
+msgid "update_urgency_critical"
+msgstr "अत्यावश्यक अपडेट"
+
+msgid "update_urgency_high"
+msgstr "महत्वपूर्ण अपडेट"
+
+msgid "update_new_version"
+msgstr "संस्करण v{0} उपलब्ध है!"
+
+msgid "update_current_version"
+msgstr "वर्तमान संस्करण: v{0}"
+
+msgid "update_changelog"
+msgstr "क्या नया है"
+
+msgid "update_now"
+msgstr "अभी अपडेट करें"
+
+msgid "update_not_now"
+msgstr "अभी नहीं"
+
+msgid "update_skip_version"
+msgstr "v{0} छोड़ें"
+
+msgid "check_for_updates"
+msgstr "अपडेट जाँचें"
+
+msgid "update_no_update"
+msgstr "आप नवीनतम संस्करण पर हैं"
+
+msgid "no_entitlement_title"
+msgstr "पहुँच शामिल नहीं"
+
+msgid "acct_upgrade_to"
+msgstr "उपयोग के लिए {0} में अपग्रेड करें"

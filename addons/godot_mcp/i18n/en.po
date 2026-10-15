@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Server"
+
+msgid "tab_tools"
+msgstr "Tools"
+
+msgid "tab_config"
+msgstr "Setup"
+
+msgid "lbl_status"
+msgstr "Status: "
+
+msgid "lbl_port"
+msgstr "Port: "
+
+msgid "port_fallback_notice"
+msgstr "Port %d is in use — switched to %d"
+
+msgid "chk_autostart"
+msgstr "Auto-start"
+
+msgid "btn_start"
+msgstr "Start"
+
+msgid "btn_stop"
+msgstr "Stop"
+
+msgid "btn_copy"
+msgstr "Copy"
+
+msgid "lbl_connections"
+msgstr "Connections: "
+
+msgid "running"
+msgstr "Running"
+
+msgid "stopped"
+msgstr "Stopped"
+
+msgid "tools_title"
+msgstr "Registered Tools"
+
+msgid "tools_not_running"
+msgstr "Server not running — start it in the \"Server\" tab"
+
+msgid "tools_fetch_failed"
+msgstr "Fetch failed (server not running?)"
+
+msgid "config_hint"
+msgstr "Add the config below to your AI client (Cursor / Claude / Windsurf, etc.) to use this MCP:"
+
+msgid "btn_copy_json"
+msgstr "Copy JSON config"
+
+msgid "btn_copy_cli"
+msgstr "Copy Claude CLI command"
+
+msgid "config_paths_title"
+msgstr "Config file locations:"
+
+msgid "copied"
+msgstr "Copied ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Based on the Streamable HTTP protocol (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "Email"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "Support WeChat"
+
+msgid "contact_download"
+msgstr "Download"
+
+msgid "btn_open_loc"
+msgstr "Open location"
+
+msgid "cli_title"
+msgstr "CLI commands"
+
+msgid "btn_auto_config"
+msgstr "Auto-configure"
+
+msgid "btn_delete"
+msgstr "Remove"
+
+msgid "status_configured"
+msgstr "Configured"
+
+msgid "status_not_configured"
+msgstr "Not configured"
+
+msgid "config_failed"
+msgstr "Config failed"
+
+msgid "cat_node"
+msgstr "Nodes"
+msgid "catdesc_node"
+msgstr "Create, query, transform and wire up scene nodes"
+
+msgid "cat_scene"
+msgstr "Scenes"
+msgid "catdesc_scene"
+msgstr "Open, save, create scenes and query the tree"
+
+msgid "cat_editor"
+msgstr "Editor"
+msgid "catdesc_editor"
+msgstr "Control the editor: run, preview, version info"
+
+msgid "cat_project"
+msgstr "Project"
+msgid "catdesc_project"
+msgstr "Project settings, input maps and version"
+
+msgid "cat_filesystem"
+msgstr "Filesystem"
+msgid "catdesc_filesystem"
+msgstr "Read, write, copy and move project files"
+
+msgid "cat_resource"
+msgstr "Resources"
+msgid "catdesc_resource"
+msgstr "Query, create and inspect resources"
+
+msgid "cat_animation"
+msgstr "Animation"
+msgid "catdesc_animation"
+msgstr "Create and edit animations and AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Builder"
+msgid "catdesc_builder"
+msgstr "Build node hierarchies from a JSON tree"
+
+msgid "cat_composite"
+msgstr "Composite"
+msgid "catdesc_composite"
+msgstr "High-level composite and batch operations"
+
+msgid "cat_debug"
+msgstr "Debug"
+msgid "catdesc_debug"
+msgstr "Print logs and debug output"
+
+msgid "cat_knowledge"
+msgstr "Knowledge"
+msgid "catdesc_knowledge"
+msgstr "Query the built-in knowledge base and guides"
+
+msgid "cat_validate"
+msgstr "Validation"
+msgid "catdesc_validate"
+msgstr "Validate scenes and check layout"
+
+msgid "cat_script"
+msgstr "Script"
+msgid "catdesc_script"
+msgstr "Create, edit and attach scripts"
+
+msgid "tooldetail_builder_tree"
+msgstr "Pass a JSON tree describing nodes, properties, theme overrides, anchors, groups, signals, scripts.\nThe whole construction is one undo step."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Topics: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nFilters:\n- class:  Restrict to a single class name (e.g. \"Button\", \"Tree\")\n- search: Substring filter on names/keys\n\nExamples:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Six check categories (run all by default):\n- missing_scripts        Node has script reference but file doesn't exist\n- broken_node_paths      Property of type NodePath points to nonexistent node\n- dangling_signals       Persistent signal connections to freed/missing targets\n- off_viewport           Control nodes whose rect lies fully outside viewport\n- container_anchor_misuse Container child has non-default anchors (will be ignored)\n- anti_patterns          Common Godot 4 mistakes\n\nFilter via:\n- root_path:    Subtree to check (default: scene root)\n- checks:       Array of category names (default: all)\n- severity_min: Suppress findings below info|warning|error (default info)"
+
+msgid "config_failed_detail"
+msgstr "Configuration failed: config file not found. {0} may have changed its install path."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI Account"
+
+msgid "acct_hint"
+msgstr "Sign in with your VberAI account to use MCP tools"
+
+msgid "acct_email_ph"
+msgstr "Email"
+
+msgid "acct_password_ph"
+msgstr "Password"
+
+msgid "btn_login"
+msgstr "Sign in"
+
+msgid "btn_login_google"
+msgstr "Sign in with Google"
+
+msgid "btn_logout"
+msgstr "Sign out"
+
+msgid "acct_logged_in"
+msgstr "Signed in: "
+
+msgid "acct_logging_in"
+msgstr "Signing in…"
+
+msgid "acct_google_hint"
+msgstr "Login page opened in your browser — return here once done"
+
+msgid "acct_need_server"
+msgstr "Failed to start the local server for the Google sign-in callback"
+
+msgid "acct_need_credentials"
+msgstr "Enter email and password"
+
+msgid "acct_login_failed"
+msgstr "Sign-in failed"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Network permission needed"
+
+msgid "fw_body_mac"
+msgstr "The MCP server port cannot be reached from outside this process — most likely blocked by the macOS firewall. AI client connections and the Google sign-in callback both need this port.\n\nSteps:\n1. If macOS asks \"Do you want Godot to accept incoming network connections?\", click Allow.\n2. If you clicked Deny before: open System Settings → Network → Firewall → Options… and set Godot to \"Allow incoming connections\".\n3. Restart the Godot editor and try again."
+
+msgid "fw_body_win"
+msgstr "The MCP server port cannot be reached from outside this process — most likely blocked by the Windows firewall.\n\nWhen Windows Security asks about \"Windows Defender Firewall has blocked some features of this app\", tick your networks and click \"Allow access\"; or allow Godot under Control Panel → Windows Defender Firewall → Allow an app through firewall. Then restart the editor."
+
+msgid "fw_open_settings"
+msgstr "Open Firewall Settings"
+
+msgid "fw_dismiss"
+msgstr "Don't show again"
+
+msgid "acct_fw_blocked"
+msgstr "The firewall is blocking the local port — the Google sign-in callback cannot arrive (see the dialog for steps)"
+
+msgid "acct_register"
+msgstr "No account? Sign up"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Your plan does not include Godot MCP. Upgrade to the free tier or higher to use it."
+
+msgid "acct_upgrade"
+msgstr "Upgrade subscription"
+
+msgid "acct_recheck"
+msgstr "Re-check"
+
+msgid "acct_kicked"
+msgstr "Your account was signed in on another device; this one was signed out."
+
+msgid "acct_relogin"
+msgstr "Sign in again (take it back)"
+
+msgid "kicked_title"
+msgstr "Signed in elsewhere"
+
+msgid "lbl_endpoint"
+msgstr "Endpoint: "
+
+msgid "update_available_title"
+msgstr "Update available"
+
+msgid "update_urgency_critical"
+msgstr "Critical update"
+
+msgid "update_urgency_high"
+msgstr "Important update"
+
+msgid "update_new_version"
+msgstr "Version v{0} is available!"
+
+msgid "update_current_version"
+msgstr "Current version: v{0}"
+
+msgid "update_changelog"
+msgstr "What's new"
+
+msgid "update_now"
+msgstr "Update now"
+
+msgid "update_not_now"
+msgstr "Not now"
+
+msgid "update_skip_version"
+msgstr "Skip v{0}"
+
+msgid "check_for_updates"
+msgstr "Check for updates"
+
+msgid "update_no_update"
+msgstr "You're on the latest version"
+
+msgid "no_entitlement_title"
+msgstr "Access not included"
+
+msgid "acct_upgrade_to"
+msgstr "Upgrade to {0} to use it"

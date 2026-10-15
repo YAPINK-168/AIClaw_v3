@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Serveur"
+
+msgid "tab_tools"
+msgstr "Outils"
+
+msgid "tab_config"
+msgstr "Configuration"
+
+msgid "lbl_status"
+msgstr "Statut : "
+
+msgid "lbl_port"
+msgstr "Port : "
+
+msgid "port_fallback_notice"
+msgstr "Port %d occupé — basculé vers %d"
+
+msgid "chk_autostart"
+msgstr "Démarrage automatique"
+
+msgid "btn_start"
+msgstr "Démarrer"
+
+msgid "btn_stop"
+msgstr "Arrêter"
+
+msgid "btn_copy"
+msgstr "Copier"
+
+msgid "lbl_connections"
+msgstr "Connexions : "
+
+msgid "running"
+msgstr "En cours d'exécution"
+
+msgid "stopped"
+msgstr "Arrêté"
+
+msgid "tools_title"
+msgstr "Outils enregistrés"
+
+msgid "tools_not_running"
+msgstr "Serveur non démarré — démarrez-le dans l'onglet \"Serveur\""
+
+msgid "tools_fetch_failed"
+msgstr "Échec de la récupération (serveur non démarré ?)"
+
+msgid "config_hint"
+msgstr "Ajoutez la configuration ci-dessous à votre client IA (Cursor / Claude / Windsurf, etc.) pour utiliser ce MCP :"
+
+msgid "btn_copy_json"
+msgstr "Copier la configuration JSON"
+
+msgid "btn_copy_cli"
+msgstr "Copier la commande Claude CLI"
+
+msgid "config_paths_title"
+msgstr "Emplacements des fichiers de configuration :"
+
+msgid "copied"
+msgstr "Copié ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Basé sur le protocole Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "E-mail"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat d'assistance"
+
+msgid "contact_download"
+msgstr "Télécharger"
+
+msgid "btn_open_loc"
+msgstr "Ouvrir l'emplacement"
+
+msgid "cli_title"
+msgstr "Commandes CLI"
+
+msgid "btn_auto_config"
+msgstr "Configurer"
+
+msgid "btn_delete"
+msgstr "Supprimer"
+
+msgid "status_configured"
+msgstr "Configuré"
+
+msgid "status_not_configured"
+msgstr "Non configuré"
+
+msgid "config_failed"
+msgstr "Échec de configuration"
+
+msgid "cat_node"
+msgstr "Nœuds"
+
+msgid "catdesc_node"
+msgstr "Créer, interroger, transformer et relier les nœuds de scène"
+
+msgid "cat_scene"
+msgstr "Scènes"
+
+msgid "catdesc_scene"
+msgstr "Ouvrir, enregistrer, créer des scènes et interroger l'arborescence"
+
+msgid "cat_editor"
+msgstr "Éditeur"
+
+msgid "catdesc_editor"
+msgstr "Contrôler l'éditeur : exécution, aperçu, infos de version"
+
+msgid "cat_project"
+msgstr "Projet"
+
+msgid "catdesc_project"
+msgstr "Paramètres du projet, mappages d'entrée et version"
+
+msgid "cat_filesystem"
+msgstr "Système de fichiers"
+
+msgid "catdesc_filesystem"
+msgstr "Lire, écrire, copier et déplacer les fichiers du projet"
+
+msgid "cat_resource"
+msgstr "Ressources"
+
+msgid "catdesc_resource"
+msgstr "Interroger, créer et inspecter les ressources"
+
+msgid "cat_animation"
+msgstr "Animation"
+
+msgid "catdesc_animation"
+msgstr "Créer et modifier des animations et AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Constructeur"
+
+msgid "catdesc_builder"
+msgstr "Construire des hiérarchies de nœuds à partir d'un arbre JSON"
+
+msgid "cat_composite"
+msgstr "Composite"
+
+msgid "catdesc_composite"
+msgstr "Opérations composites et par lots de haut niveau"
+
+msgid "cat_debug"
+msgstr "Débogage"
+
+msgid "catdesc_debug"
+msgstr "Afficher les journaux et la sortie de débogage"
+
+msgid "cat_knowledge"
+msgstr "Connaissances"
+
+msgid "catdesc_knowledge"
+msgstr "Interroger la base de connaissances intégrée et les guides"
+
+msgid "cat_validate"
+msgstr "Validation"
+
+msgid "catdesc_validate"
+msgstr "Valider les scènes et vérifier la disposition"
+
+msgid "cat_script"
+msgstr "Script"
+
+msgid "catdesc_script"
+msgstr "Créer, modifier et attacher des scripts"
+
+msgid "tooldetail_builder_tree"
+msgstr "Passez un arbre JSON décrivant les nœuds, les propriétés, les surcharges de thème, les ancres, les groupes, les signaux et les scripts.\nL'ensemble de la construction constitue une seule étape d'annulation."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Sujets : index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nFiltres :\n- class:  Restreindre à un seul nom de classe (par ex. \"Button\", \"Tree\")\n- search: Filtre par sous-chaîne sur les noms/clés\n\nExemples :\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Six catégories de vérification (toutes exécutées par défaut) :\n- missing_scripts        Le nœud a une référence de script mais le fichier n'existe pas\n- broken_node_paths      Une propriété de type NodePath pointe vers un nœud inexistant\n- dangling_signals       Connexions de signaux persistantes vers des cibles libérées/manquantes\n- off_viewport           Nœuds Control dont le rectangle est entièrement hors de la fenêtre d'affichage\n- container_anchor_misuse Un enfant de Container a des ancres non par défaut (elles seront ignorées)\n- anti_patterns          Erreurs courantes de Godot 4\n\nFiltrer via :\n- root_path:    Sous-arbre à vérifier (par défaut : racine de la scène)\n- checks:       Tableau de noms de catégories (par défaut : all)\n- severity_min: Supprimer les résultats en dessous de info|warning|error (par défaut : info)"
+
+msgid "config_failed_detail"
+msgstr "Échec de la configuration : fichier de configuration introuvable. {0} a peut-être modifié son chemin d'installation."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "Compte VberAI"
+
+msgid "acct_hint"
+msgstr "Connectez-vous avec votre compte VberAI pour utiliser les outils MCP"
+
+msgid "acct_email_ph"
+msgstr "E-mail"
+
+msgid "acct_password_ph"
+msgstr "Mot de passe"
+
+msgid "btn_login"
+msgstr "Se connecter"
+
+msgid "btn_login_google"
+msgstr "Connexion avec Google"
+
+msgid "btn_logout"
+msgstr "Se déconnecter"
+
+msgid "acct_logged_in"
+msgstr "Connecté : "
+
+msgid "acct_logging_in"
+msgstr "Connexion…"
+
+msgid "acct_google_hint"
+msgstr "Page de connexion ouverte dans le navigateur — revenez ici une fois terminé"
+
+msgid "acct_need_server"
+msgstr "Impossible de démarrer le serveur local pour le rappel de connexion Google"
+
+msgid "acct_need_credentials"
+msgstr "Saisissez l'e-mail et le mot de passe"
+
+msgid "acct_login_failed"
+msgstr "Échec de la connexion"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Autorisation réseau requise"
+
+msgid "fw_body_mac"
+msgstr "Le port du serveur MCP est inaccessible de l'extérieur — probablement bloqué par le pare-feu macOS. Les connexions des clients IA et le rappel de connexion Google en ont besoin.\n\nÉtapes :\n1. Si macOS demande « Voulez-vous que Godot accepte les connexions réseau entrantes ? », cliquez sur Autoriser.\n2. Si vous avez refusé auparavant : Réglages Système → Réseau → Coupe-feu → Options… et réglez Godot sur « Autoriser les connexions entrantes ».\n3. Redémarrez l'éditeur Godot et réessayez."
+
+msgid "fw_body_win"
+msgstr "Le port du serveur MCP est inaccessible de l'extérieur — probablement bloqué par le pare-feu Windows.\n\nQuand Windows Security affiche « Le Pare-feu Windows Defender a bloqué certaines fonctionnalités de cette application », cliquez sur « Autoriser l'accès » ; ou autorisez Godot dans Panneau de configuration → Pare-feu Windows Defender → Autoriser une application. Puis redémarrez l'éditeur."
+
+msgid "fw_open_settings"
+msgstr "Ouvrir les réglages du pare-feu"
+
+msgid "fw_dismiss"
+msgstr "Ne plus afficher"
+
+msgid "acct_fw_blocked"
+msgstr "Le pare-feu bloque le port local — le rappel de connexion Google ne peut pas arriver (voir la boîte de dialogue)"
+
+msgid "acct_register"
+msgstr "Pas de compte ? S'inscrire"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Votre offre n'inclut pas Godot MCP. Passez à l'offre gratuite ou supérieure pour l'utiliser."
+
+msgid "acct_upgrade"
+msgstr "Mettre à niveau l'abonnement"
+
+msgid "acct_recheck"
+msgstr "Revérifier"
+
+msgid "acct_kicked"
+msgstr "Votre compte s'est connecté sur un autre appareil ; celui-ci a été déconnecté."
+
+msgid "acct_relogin"
+msgstr "Se reconnecter (récupérer ici)"
+
+msgid "kicked_title"
+msgstr "Connecté ailleurs"
+
+msgid "lbl_endpoint"
+msgstr "Point de terminaison : "
+
+msgid "update_available_title"
+msgstr "Mise à jour disponible"
+
+msgid "update_urgency_critical"
+msgstr "Mise à jour critique"
+
+msgid "update_urgency_high"
+msgstr "Mise à jour importante"
+
+msgid "update_new_version"
+msgstr "La version v{0} est disponible !"
+
+msgid "update_current_version"
+msgstr "Version actuelle : v{0}"
+
+msgid "update_changelog"
+msgstr "Nouveautés"
+
+msgid "update_now"
+msgstr "Mettre à jour"
+
+msgid "update_not_now"
+msgstr "Plus tard"
+
+msgid "update_skip_version"
+msgstr "Ignorer v{0}"
+
+msgid "check_for_updates"
+msgstr "Rechercher des mises à jour"
+
+msgid "update_no_update"
+msgstr "Vous avez la dernière version"
+
+msgid "no_entitlement_title"
+msgstr "Accès non inclus"
+
+msgid "acct_upgrade_to"
+msgstr "Passez à {0} pour l'utiliser"

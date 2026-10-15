@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Server"
+
+msgid "tab_tools"
+msgstr "Werkzeuge"
+
+msgid "tab_config"
+msgstr "Einrichtung"
+
+msgid "lbl_status"
+msgstr "Status: "
+
+msgid "lbl_port"
+msgstr "Port: "
+
+msgid "port_fallback_notice"
+msgstr "Port %d belegt – zu %d gewechselt"
+
+msgid "chk_autostart"
+msgstr "Automatischer Start"
+
+msgid "btn_start"
+msgstr "Starten"
+
+msgid "btn_stop"
+msgstr "Stoppen"
+
+msgid "btn_copy"
+msgstr "Kopieren"
+
+msgid "lbl_connections"
+msgstr "Verbindungen: "
+
+msgid "running"
+msgstr "Läuft"
+
+msgid "stopped"
+msgstr "Gestoppt"
+
+msgid "tools_title"
+msgstr "Registrierte Werkzeuge"
+
+msgid "tools_not_running"
+msgstr "Server läuft nicht — starten Sie ihn im Tab \"Server\""
+
+msgid "tools_fetch_failed"
+msgstr "Abruf fehlgeschlagen (Server läuft nicht?)"
+
+msgid "config_hint"
+msgstr "Fügen Sie die folgende Konfiguration zu Ihrem KI-Client (Cursor / Claude / Windsurf usw.) hinzu, um dieses MCP zu verwenden:"
+
+msgid "btn_copy_json"
+msgstr "JSON-Konfiguration kopieren"
+
+msgid "btn_copy_cli"
+msgstr "Claude-CLI-Befehl kopieren"
+
+msgid "config_paths_title"
+msgstr "Speicherorte der Konfigurationsdateien:"
+
+msgid "copied"
+msgstr "Kopiert ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Basierend auf dem Streamable HTTP-Protokoll (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "E-Mail"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "Support-WeChat"
+
+msgid "contact_download"
+msgstr "Download"
+
+msgid "btn_open_loc"
+msgstr "Speicherort öffnen"
+
+msgid "cli_title"
+msgstr "CLI-Befehle"
+
+msgid "btn_auto_config"
+msgstr "Einrichten"
+
+msgid "btn_delete"
+msgstr "Entfernen"
+
+msgid "status_configured"
+msgstr "Konfiguriert"
+
+msgid "status_not_configured"
+msgstr "Nicht konfiguriert"
+
+msgid "config_failed"
+msgstr "Konfiguration fehlgeschlagen"
+
+msgid "cat_node"
+msgstr "Knoten"
+
+msgid "catdesc_node"
+msgstr "Szenenknoten erstellen, abfragen, transformieren und verbinden"
+
+msgid "cat_scene"
+msgstr "Szenen"
+
+msgid "catdesc_scene"
+msgstr "Szenen öffnen, speichern, erstellen und Baum abfragen"
+
+msgid "cat_editor"
+msgstr "Editor"
+
+msgid "catdesc_editor"
+msgstr "Editor steuern: Ausführen, Vorschau, Versionsinfo"
+
+msgid "cat_project"
+msgstr "Projekt"
+
+msgid "catdesc_project"
+msgstr "Projekteinstellungen, Eingabezuordnungen und Version"
+
+msgid "cat_filesystem"
+msgstr "Dateisystem"
+
+msgid "catdesc_filesystem"
+msgstr "Projektdateien lesen, schreiben, kopieren und verschieben"
+
+msgid "cat_resource"
+msgstr "Ressourcen"
+
+msgid "catdesc_resource"
+msgstr "Ressourcen abfragen, erstellen und untersuchen"
+
+msgid "cat_animation"
+msgstr "Animation"
+
+msgid "catdesc_animation"
+msgstr "Animationen und AnimationPlayer erstellen und bearbeiten"
+
+msgid "cat_builder"
+msgstr "Builder"
+
+msgid "catdesc_builder"
+msgstr "Knotenhierarchien aus einem JSON-Baum erstellen"
+
+msgid "cat_composite"
+msgstr "Verbund"
+
+msgid "catdesc_composite"
+msgstr "Zusammengesetzte Operationen und Stapelverarbeitung auf hoher Ebene"
+
+msgid "cat_debug"
+msgstr "Debug"
+
+msgid "catdesc_debug"
+msgstr "Protokolle und Debug-Ausgabe anzeigen"
+
+msgid "cat_knowledge"
+msgstr "Wissen"
+
+msgid "catdesc_knowledge"
+msgstr "Integrierte Wissensdatenbank und Anleitungen abfragen"
+
+msgid "cat_validate"
+msgstr "Validierung"
+
+msgid "catdesc_validate"
+msgstr "Szenen validieren und Layout prüfen"
+
+msgid "cat_script"
+msgstr "Skript"
+
+msgid "catdesc_script"
+msgstr "Skripte erstellen, bearbeiten und anhängen"
+
+msgid "tooldetail_builder_tree"
+msgstr "Übergeben Sie einen JSON-Baum, der Knoten, Eigenschaften, Theme-Überschreibungen, Anker, Gruppen, Signale und Skripte beschreibt.\nDie gesamte Konstruktion ist ein einziger Rückgängig-Schritt."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Themen: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nFilter:\n- class:  Auf einen einzelnen Klassennamen beschränken (z. B. \"Button\", \"Tree\")\n- search: Teilstring-Filter auf Namen/Schlüssel\n\nBeispiele:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Sechs Prüfungskategorien (standardmäßig werden alle ausgeführt):\n- missing_scripts        Knoten hat eine Skriptreferenz, aber die Datei existiert nicht\n- broken_node_paths      Eigenschaft vom Typ NodePath verweist auf einen nicht vorhandenen Knoten\n- dangling_signals       Dauerhafte Signalverbindungen zu freigegebenen/fehlenden Zielen\n- off_viewport           Control-Knoten, deren Rechteck vollständig außerhalb des Viewports liegt\n- container_anchor_misuse Container-Kind hat nicht standardmäßige Anker (werden ignoriert)\n- anti_patterns          Häufige Godot 4-Fehler\n\nFiltern über:\n- root_path:    Zu prüfender Teilbaum (Standard: Szenenwurzel)\n- checks:       Array von Kategorienamen (Standard: all)\n- severity_min: Ergebnisse unterhalb von info|warning|error unterdrücken (Standard: info)"
+
+msgid "config_failed_detail"
+msgstr "Konfiguration fehlgeschlagen: Konfigurationsdatei nicht gefunden. {0} hat möglicherweise seinen Installationspfad geändert."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI-Konto"
+
+msgid "acct_hint"
+msgstr "Melden Sie sich mit Ihrem VberAI-Konto an, um MCP-Tools zu nutzen"
+
+msgid "acct_email_ph"
+msgstr "E-Mail"
+
+msgid "acct_password_ph"
+msgstr "Passwort"
+
+msgid "btn_login"
+msgstr "Anmelden"
+
+msgid "btn_login_google"
+msgstr "Mit Google anmelden"
+
+msgid "btn_logout"
+msgstr "Abmelden"
+
+msgid "acct_logged_in"
+msgstr "Angemeldet: "
+
+msgid "acct_logging_in"
+msgstr "Anmeldung…"
+
+msgid "acct_google_hint"
+msgstr "Anmeldeseite im Browser geöffnet — kehren Sie danach hierher zurück"
+
+msgid "acct_need_server"
+msgstr "Lokaler Server für den Google-Anmelde-Callback konnte nicht gestartet werden"
+
+msgid "acct_need_credentials"
+msgstr "E-Mail und Passwort eingeben"
+
+msgid "acct_login_failed"
+msgstr "Anmeldung fehlgeschlagen"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Netzwerkfreigabe erforderlich"
+
+msgid "fw_body_mac"
+msgstr "Der MCP-Server-Port ist von außen nicht erreichbar — vermutlich von der macOS-Firewall blockiert. KI-Client-Verbindungen und der Google-Anmelde-Callback benötigen diesen Port.\n\nSchritte:\n1. Wenn macOS fragt „Soll Godot eingehende Netzwerkverbindungen akzeptieren?“, klicken Sie auf Erlauben.\n2. Falls zuvor abgelehnt: Systemeinstellungen → Netzwerk → Firewall → Optionen… und Godot auf „Eingehende Verbindungen erlauben“ setzen.\n3. Godot-Editor neu starten und erneut versuchen."
+
+msgid "fw_body_win"
+msgstr "Der MCP-Server-Port ist von außen nicht erreichbar — vermutlich von der Windows-Firewall blockiert.\n\nWenn Windows-Sicherheit meldet „Die Windows Defender Firewall hat einige Features dieser App blockiert“, klicken Sie auf „Zugriff zulassen“; oder erlauben Sie Godot unter Systemsteuerung → Windows Defender Firewall → App zulassen. Danach den Editor neu starten."
+
+msgid "fw_open_settings"
+msgstr "Firewall-Einstellungen öffnen"
+
+msgid "fw_dismiss"
+msgstr "Nicht mehr anzeigen"
+
+msgid "acct_fw_blocked"
+msgstr "Die Firewall blockiert den lokalen Port — der Google-Anmelde-Callback kommt nicht an (siehe Dialog)"
+
+msgid "acct_register"
+msgstr "Kein Konto? Registrieren"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Ihr Tarif enthält Godot MCP nicht. Wechseln Sie zum kostenlosen oder einem höheren Tarif."
+
+msgid "acct_upgrade"
+msgstr "Abo upgraden"
+
+msgid "acct_recheck"
+msgstr "Erneut prüfen"
+
+msgid "acct_kicked"
+msgstr "Ihr Konto wurde auf einem anderen Gerät angemeldet; dieses wurde abgemeldet."
+
+msgid "acct_relogin"
+msgstr "Erneut anmelden (zurückholen)"
+
+msgid "kicked_title"
+msgstr "Anderswo angemeldet"
+
+msgid "lbl_endpoint"
+msgstr "Endpunkt: "
+
+msgid "update_available_title"
+msgstr "Update verfügbar"
+
+msgid "update_urgency_critical"
+msgstr "Kritisches Update"
+
+msgid "update_urgency_high"
+msgstr "Wichtiges Update"
+
+msgid "update_new_version"
+msgstr "Version v{0} ist verfügbar!"
+
+msgid "update_current_version"
+msgstr "Aktuelle Version: v{0}"
+
+msgid "update_changelog"
+msgstr "Neuerungen"
+
+msgid "update_now"
+msgstr "Jetzt aktualisieren"
+
+msgid "update_not_now"
+msgstr "Später"
+
+msgid "update_skip_version"
+msgstr "v{0} überspringen"
+
+msgid "check_for_updates"
+msgstr "Nach Updates suchen"
+
+msgid "update_no_update"
+msgstr "Sie haben die neueste Version"
+
+msgid "no_entitlement_title"
+msgstr "Kein Zugriff"
+
+msgid "acct_upgrade_to"
+msgstr "Auf {0} upgraden, um es zu nutzen"

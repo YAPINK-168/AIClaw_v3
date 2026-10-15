@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tr\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Sunucu"
+
+msgid "tab_tools"
+msgstr "Araçlar"
+
+msgid "tab_config"
+msgstr "Kurulum"
+
+msgid "lbl_status"
+msgstr "Durum: "
+
+msgid "lbl_port"
+msgstr "Bağlantı noktası: "
+
+msgid "port_fallback_notice"
+msgstr "Port %d kullanımda — %d portuna geçildi"
+
+msgid "chk_autostart"
+msgstr "Otomatik başlat"
+
+msgid "btn_start"
+msgstr "Başlat"
+
+msgid "btn_stop"
+msgstr "Durdur"
+
+msgid "btn_copy"
+msgstr "Kopyala"
+
+msgid "lbl_connections"
+msgstr "Bağlantılar: "
+
+msgid "running"
+msgstr "Çalışıyor"
+
+msgid "stopped"
+msgstr "Durduruldu"
+
+msgid "tools_title"
+msgstr "Kayıtlı Araçlar"
+
+msgid "tools_not_running"
+msgstr "Sunucu çalışmıyor — \"Sunucu\" sekmesinden başlatın"
+
+msgid "tools_fetch_failed"
+msgstr "Alma başarısız (sunucu çalışmıyor mu?)"
+
+msgid "config_hint"
+msgstr "Bu MCP'yi kullanmak için aşağıdaki yapılandırmayı AI istemcinize (Cursor / Claude / Windsurf vb.) ekleyin:"
+
+msgid "btn_copy_json"
+msgstr "JSON yapılandırmasını kopyala"
+
+msgid "btn_copy_cli"
+msgstr "Claude CLI komutunu kopyala"
+
+msgid "config_paths_title"
+msgstr "Yapılandırma dosyası konumları:"
+
+msgid "copied"
+msgstr "Kopyalandı ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Streamable HTTP protokolü temellidir (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "E-posta"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "Destek WeChat"
+
+msgid "contact_download"
+msgstr "İndir"
+
+msgid "btn_open_loc"
+msgstr "Konumu aç"
+
+msgid "cli_title"
+msgstr "CLI komutları"
+
+msgid "btn_auto_config"
+msgstr "Otomatik yapılandır"
+
+msgid "btn_delete"
+msgstr "Kaldır"
+
+msgid "status_configured"
+msgstr "Yapılandırıldı"
+
+msgid "status_not_configured"
+msgstr "Yapılandırılmadı"
+
+msgid "config_failed"
+msgstr "Yapılandırma başarısız"
+
+msgid "cat_node"
+msgstr "Düğümler"
+msgid "catdesc_node"
+msgstr "Sahne düğümlerini oluştur, sorgula, dönüştür ve birbirine bağla"
+
+msgid "cat_scene"
+msgstr "Sahneler"
+msgid "catdesc_scene"
+msgstr "Sahne aç, kaydet, oluştur ve düğüm ağacını sorgula"
+
+msgid "cat_editor"
+msgstr "Editör"
+msgid "catdesc_editor"
+msgstr "Editörü denetle: çalıştırma, önizleme, sürüm bilgisi"
+
+msgid "cat_project"
+msgstr "Proje"
+msgid "catdesc_project"
+msgstr "Proje ayarları, girdi eşlemeleri ve sürüm"
+
+msgid "cat_filesystem"
+msgstr "Dosya sistemi"
+msgid "catdesc_filesystem"
+msgstr "Proje dosyalarını oku, yaz, kopyala ve taşı"
+
+msgid "cat_resource"
+msgstr "Kaynaklar"
+msgid "catdesc_resource"
+msgstr "Kaynakları sorgula, oluştur ve incele"
+
+msgid "cat_animation"
+msgstr "Animasyon"
+msgid "catdesc_animation"
+msgstr "Animasyonları ve AnimationPlayer'ı oluştur ve düzenle"
+
+msgid "cat_builder"
+msgstr "Oluşturucu"
+msgid "catdesc_builder"
+msgstr "JSON ağacından düğüm hiyerarşileri kur"
+
+msgid "cat_composite"
+msgstr "Bileşik"
+msgid "catdesc_composite"
+msgstr "Üst düzey bileşik ve toplu işlemler"
+
+msgid "cat_debug"
+msgstr "Hata ayıklama"
+msgid "catdesc_debug"
+msgstr "Günlük ve hata ayıklama çıktısı yazdır"
+
+msgid "cat_knowledge"
+msgstr "Bilgi tabanı"
+msgid "catdesc_knowledge"
+msgstr "Yerleşik bilgi tabanını ve kılavuzları sorgula"
+
+msgid "cat_validate"
+msgstr "Doğrulama"
+msgid "catdesc_validate"
+msgstr "Sahneleri doğrula ve yerleşimi denetle"
+
+msgid "cat_script"
+msgstr "Betik"
+msgid "catdesc_script"
+msgstr "Betik oluştur, düzenle ve iliştir"
+
+msgid "tooldetail_builder_tree"
+msgstr "Düğümleri, özellikleri, theme override'ları, çapaları, grupları, sinyalleri ve betikleri tanımlayan bir JSON ağacı geçirin.\nTüm kurulum tek bir geri alma adımı sayılır."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Konular: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nFiltreler:\n- class:  Tek bir sınıf adıyla sınırla (ör. \"Button\", \"Tree\")\n- search: Adlar/anahtarlar üzerinde alt dize filtresi\n\nÖrnekler:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Altı denetim kategorisi (varsayılan olarak tümü çalışır):\n- missing_scripts        Düğümün betik başvurusu var ama dosya yok\n- broken_node_paths      NodePath türündeki özellik var olmayan bir düğümü gösteriyor\n- dangling_signals       Serbest bırakılmış/eksik hedeflere kalıcı sinyal bağlantıları\n- off_viewport           Dikdörtgeni tamamen görünüm alanı dışında kalan Control düğümleri\n- container_anchor_misuse Container alt öğesi varsayılan olmayan çapa kullanıyor (yok sayılacak)\n- anti_patterns          Godot 4'te sık yapılan hatalar\n\nŞunlarla filtreleyin:\n- root_path:    Denetlenecek alt ağaç (varsayılan: sahne kökü)\n- checks:       Kategori adları dizisi (varsayılan: tümü)\n- severity_min: info|warning|error altındaki bulguları gizle (varsayılan info)"
+
+msgid "config_failed_detail"
+msgstr "Yapılandırma başarısız: yapılandırma dosyası bulunamadı. {0} kurulum yolunu değiştirmiş olabilir."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI Hesabı"
+
+msgid "acct_hint"
+msgstr "MCP araçlarını kullanmak için VberAI hesabınızla oturum açın"
+
+msgid "acct_email_ph"
+msgstr "E-posta"
+
+msgid "acct_password_ph"
+msgstr "Parola"
+
+msgid "btn_login"
+msgstr "Oturum aç"
+
+msgid "btn_login_google"
+msgstr "Google ile oturum aç"
+
+msgid "btn_logout"
+msgstr "Çıkış yap"
+
+msgid "acct_logged_in"
+msgstr "Oturum açıldı: "
+
+msgid "acct_logging_in"
+msgstr "Oturum açılıyor…"
+
+msgid "acct_google_hint"
+msgstr "Oturum açma sayfası tarayıcınızda açıldı — bitince buraya dönün"
+
+msgid "acct_need_server"
+msgstr "Google oturum açma geri çağrısı için yerel sunucu başlatılamadı"
+
+msgid "acct_need_credentials"
+msgstr "E-posta ve parola girin"
+
+msgid "acct_login_failed"
+msgstr "Oturum açma başarısız"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Ağ izni gerekiyor"
+
+msgid "fw_body_mac"
+msgstr "MCP sunucusunun bağlantı noktasına bu sürecin dışından erişilemiyor — büyük olasılıkla macOS güvenlik duvarı engelliyor. Hem AI istemci bağlantıları hem de Google oturum açma geri çağrısı bu bağlantı noktasına ihtiyaç duyar.\n\nAdımlar:\n1. macOS \"Godot'un gelen ağ bağlantılarını kabul etmesini istiyor musunuz?\" diye sorarsa İzin Ver'e tıklayın.\n2. Daha önce Reddet'e tıkladıysanız: Sistem Ayarları → Ağ → Güvenlik Duvarı → Seçenekler… bölümünü açıp Godot'u \"Gelen bağlantılara izin ver\" olarak ayarlayın.\n3. Godot editörünü yeniden başlatıp tekrar deneyin."
+
+msgid "fw_body_win"
+msgstr "MCP sunucusunun bağlantı noktasına bu sürecin dışından erişilemiyor — büyük olasılıkla Windows güvenlik duvarı engelliyor.\n\nWindows Güvenliği \"Windows Defender Güvenlik Duvarı bu uygulamanın bazı özelliklerini engelledi\" uyarısını gösterdiğinde ağlarınızı işaretleyip \"Erişime izin ver\"e tıklayın; ya da Denetim Masası → Windows Defender Güvenlik Duvarı → Bir uygulamanın güvenlik duvarı üzerinden geçmesine izin ver bölümünden Godot'a izin verin. Ardından editörü yeniden başlatın."
+
+msgid "fw_open_settings"
+msgstr "Güvenlik Duvarı Ayarlarını Aç"
+
+msgid "fw_dismiss"
+msgstr "Bir daha gösterme"
+
+msgid "acct_fw_blocked"
+msgstr "Güvenlik duvarı yerel bağlantı noktasını engelliyor — Google oturum açma geri çağrısı ulaşamıyor (adımlar için iletişim kutusuna bakın)"
+
+msgid "acct_register"
+msgstr "Hesabınız yok mu? Kaydolun"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Planınız Godot MCP'yi içermiyor. Kullanmak için ücretsiz veya daha üst bir plana geçin."
+
+msgid "acct_upgrade"
+msgstr "Aboneliği yükselt"
+
+msgid "acct_recheck"
+msgstr "Yeniden denetle"
+
+msgid "acct_kicked"
+msgstr "Hesabınız başka bir cihazda açıldı; bu cihazın oturumu kapatıldı."
+
+msgid "acct_relogin"
+msgstr "Yeniden oturum aç (geri al)"
+
+msgid "kicked_title"
+msgstr "Başka yerde oturum açıldı"
+
+msgid "lbl_endpoint"
+msgstr "Uç nokta: "
+
+msgid "update_available_title"
+msgstr "Güncelleme mevcut"
+
+msgid "update_urgency_critical"
+msgstr "Kritik güncelleme"
+
+msgid "update_urgency_high"
+msgstr "Önemli güncelleme"
+
+msgid "update_new_version"
+msgstr "v{0} sürümü yayınlandı!"
+
+msgid "update_current_version"
+msgstr "Geçerli sürüm: v{0}"
+
+msgid "update_changelog"
+msgstr "Yenilikler"
+
+msgid "update_now"
+msgstr "Şimdi güncelle"
+
+msgid "update_not_now"
+msgstr "Şimdi değil"
+
+msgid "update_skip_version"
+msgstr "v{0} sürümünü atla"
+
+msgid "check_for_updates"
+msgstr "Güncellemeleri denetle"
+
+msgid "update_no_update"
+msgstr "En son sürümü kullanıyorsunuz"
+
+msgid "no_entitlement_title"
+msgstr "Erişim dahil değil"
+
+msgid "acct_upgrade_to"
+msgstr "Kullanmak için {0} planına geçin"

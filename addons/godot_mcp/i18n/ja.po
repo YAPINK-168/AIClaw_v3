@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ja\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "サーバー"
+
+msgid "tab_tools"
+msgstr "ツール"
+
+msgid "tab_config"
+msgstr "セットアップ"
+
+msgid "lbl_status"
+msgstr "ステータス: "
+
+msgid "lbl_port"
+msgstr "ポート: "
+
+msgid "port_fallback_notice"
+msgstr "ポート %d は使用中のため %d に変更しました"
+
+msgid "chk_autostart"
+msgstr "自動起動"
+
+msgid "btn_start"
+msgstr "開始"
+
+msgid "btn_stop"
+msgstr "停止"
+
+msgid "btn_copy"
+msgstr "コピー"
+
+msgid "lbl_connections"
+msgstr "接続数: "
+
+msgid "running"
+msgstr "実行中"
+
+msgid "stopped"
+msgstr "停止中"
+
+msgid "tools_title"
+msgstr "登録済みツール"
+
+msgid "tools_not_running"
+msgstr "サーバーが実行されていません — \"サーバー\" タブで起動してください"
+
+msgid "tools_fetch_failed"
+msgstr "取得に失敗しました（サーバーが実行されていませんか？）"
+
+msgid "config_hint"
+msgstr "この MCP を使用するには、以下の設定を AI クライアント（Cursor / Claude / Windsurf など）に追加してください:"
+
+msgid "btn_copy_json"
+msgstr "JSON 設定をコピー"
+
+msgid "btn_copy_cli"
+msgstr "Claude CLI コマンドをコピー"
+
+msgid "config_paths_title"
+msgstr "設定ファイルの場所:"
+
+msgid "copied"
+msgstr "コピーしました ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Streamable HTTP プロトコルに基づく (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "メール"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "サポート WeChat"
+
+msgid "contact_download"
+msgstr "ダウンロード"
+
+msgid "btn_open_loc"
+msgstr "場所を開く"
+
+msgid "cli_title"
+msgstr "CLI コマンド"
+
+msgid "btn_auto_config"
+msgstr "自動設定"
+
+msgid "btn_delete"
+msgstr "削除"
+
+msgid "status_configured"
+msgstr "設定済み"
+
+msgid "status_not_configured"
+msgstr "未設定"
+
+msgid "config_failed"
+msgstr "設定失敗"
+
+msgid "cat_node"
+msgstr "ノード"
+
+msgid "catdesc_node"
+msgstr "シーンノードの作成、照会、変換、接続"
+
+msgid "cat_scene"
+msgstr "シーン"
+
+msgid "catdesc_scene"
+msgstr "シーンを開く・保存・作成し、ツリーを照会"
+
+msgid "cat_editor"
+msgstr "エディター"
+
+msgid "catdesc_editor"
+msgstr "エディターの制御：実行、プレビュー、バージョン情報"
+
+msgid "cat_project"
+msgstr "プロジェクト"
+
+msgid "catdesc_project"
+msgstr "プロジェクト設定、入力マップ、バージョン"
+
+msgid "cat_filesystem"
+msgstr "ファイルシステム"
+
+msgid "catdesc_filesystem"
+msgstr "プロジェクトファイルの読み取り、書き込み、コピー、移動"
+
+msgid "cat_resource"
+msgstr "リソース"
+
+msgid "catdesc_resource"
+msgstr "リソースの照会、作成、検査"
+
+msgid "cat_animation"
+msgstr "アニメーション"
+
+msgid "catdesc_animation"
+msgstr "アニメーションと AnimationPlayer の作成・編集"
+
+msgid "cat_builder"
+msgstr "ビルダー"
+
+msgid "catdesc_builder"
+msgstr "JSON ツリーからノード階層を構築"
+
+msgid "cat_composite"
+msgstr "コンポジット"
+
+msgid "catdesc_composite"
+msgstr "高レベルの複合操作とバッチ操作"
+
+msgid "cat_debug"
+msgstr "デバッグ"
+
+msgid "catdesc_debug"
+msgstr "ログとデバッグ出力の表示"
+
+msgid "cat_knowledge"
+msgstr "ナレッジ"
+
+msgid "catdesc_knowledge"
+msgstr "組み込みナレッジベースとガイドを照会"
+
+msgid "cat_validate"
+msgstr "検証"
+
+msgid "catdesc_validate"
+msgstr "シーンの検証とレイアウトの確認"
+
+msgid "cat_script"
+msgstr "スクリプト"
+
+msgid "catdesc_script"
+msgstr "スクリプトの作成、編集、アタッチ"
+
+msgid "tooldetail_builder_tree"
+msgstr "ノード、プロパティ、テーマオーバーライド、アンカー、グループ、シグナル、スクリプトを記述した JSON ツリーを渡します。\n構築全体が 1 回のアンドゥ操作になります。"
+
+msgid "tooldetail_knowledge_get"
+msgstr "トピック: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nフィルター:\n- class:  単一のクラス名に限定します（例: \"Button\"、\"Tree\"）\n- search: 名前／キーに対する部分一致フィルター\n\n例:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "6 種類のチェックカテゴリー（デフォルトではすべて実行）:\n- missing_scripts        ノードにスクリプト参照があるがファイルが存在しない\n- broken_node_paths      NodePath 型のプロパティが存在しないノードを指している\n- dangling_signals       解放済み／存在しないターゲットへの永続的なシグナル接続\n- off_viewport           矩形がビューポートの完全に外側にある Control ノード\n- container_anchor_misuse Container の子がデフォルト以外のアンカーを持つ（無視されます）\n- anti_patterns          よくある Godot 4 の間違い\n\nフィルター指定:\n- root_path:    チェック対象のサブツリー（デフォルト: シーンルート）\n- checks:       カテゴリー名の配列（デフォルト: all）\n- severity_min: info|warning|error 未満の指摘を抑制します（デフォルト: info）"
+
+msgid "config_failed_detail"
+msgstr "設定に失敗しました:設定ファイルが見つかりません。{0} はインストール時にパスが変更された可能性があります。"
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI アカウント"
+
+msgid "acct_hint"
+msgstr "MCP ツールを使うには VberAI アカウントでログインしてください"
+
+msgid "acct_email_ph"
+msgstr "メールアドレス"
+
+msgid "acct_password_ph"
+msgstr "パスワード"
+
+msgid "btn_login"
+msgstr "ログイン"
+
+msgid "btn_login_google"
+msgstr "Google でログイン"
+
+msgid "btn_logout"
+msgstr "ログアウト"
+
+msgid "acct_logged_in"
+msgstr "ログイン済み: "
+
+msgid "acct_logging_in"
+msgstr "ログイン中…"
+
+msgid "acct_google_hint"
+msgstr "ブラウザでログインページを開きました。完了後にエディタへ戻ってください"
+
+msgid "acct_need_server"
+msgstr "ローカルサーバーを起動できず、Google ログインのコールバックを受け取れません"
+
+msgid "acct_need_credentials"
+msgstr "メールアドレスとパスワードを入力してください"
+
+msgid "acct_login_failed"
+msgstr "ログインに失敗しました"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "ネットワーク許可が必要です"
+
+msgid "fw_body_mac"
+msgstr "MCP サーバーポートに外部からアクセスできません。macOS のファイアウォールにブロックされている可能性があります。AI クライアント接続と Google ログインのコールバックにはこのポートが必要です。\n\n手順：\n1.「Godot が着信ネットワーク接続を受け入れるのを許可しますか？」と表示されたら「許可」をクリック。\n2. 以前「拒否」した場合：システム設定 → ネットワーク → ファイアウォール → オプション… で Godot を「着信接続を許可」に設定。\n3. 設定後、Godot エディタを再起動してください。"
+
+msgid "fw_body_win"
+msgstr "MCP サーバーポートに外部からアクセスできません。Windows ファイアウォールにブロックされている可能性があります。\n\nWindows セキュリティの「このアプリの機能の一部が Windows Defender ファイアウォールでブロックされています」で「アクセスを許可する」をクリックするか、コントロールパネル → Windows Defender ファイアウォール → アプリの許可 で Godot を許可し、エディタを再起動してください。"
+
+msgid "fw_open_settings"
+msgstr "ファイアウォール設定を開く"
+
+msgid "fw_dismiss"
+msgstr "今後表示しない"
+
+msgid "acct_fw_blocked"
+msgstr "ファイアウォールがローカルポートをブロックしています。Google ログインのコールバックを受信できません（ダイアログの手順を参照）"
+
+msgid "acct_register"
+msgstr "アカウントがない？登録"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "現在のプランには Godot MCP が含まれていません。無料以上のプランにアップグレードしてください。"
+
+msgid "acct_upgrade"
+msgstr "サブスクをアップグレード"
+
+msgid "acct_recheck"
+msgstr "再確認"
+
+msgid "acct_kicked"
+msgstr "アカウントが別のデバイスでログインされ、この端末はログアウトされました。"
+
+msgid "acct_relogin"
+msgstr "再ログイン（この端末に戻す）"
+
+msgid "kicked_title"
+msgstr "別の端末でログイン中"
+
+msgid "lbl_endpoint"
+msgstr "エンドポイント: "
+
+msgid "update_available_title"
+msgstr "アップデートがあります"
+
+msgid "update_urgency_critical"
+msgstr "緊急アップデート"
+
+msgid "update_urgency_high"
+msgstr "重要なアップデート"
+
+msgid "update_new_version"
+msgstr "新しいバージョン v{0} が利用可能です！"
+
+msgid "update_current_version"
+msgstr "現在のバージョン: v{0}"
+
+msgid "update_changelog"
+msgstr "更新内容"
+
+msgid "update_now"
+msgstr "今すぐ更新"
+
+msgid "update_not_now"
+msgstr "後で"
+
+msgid "update_skip_version"
+msgstr "v{0} をスキップ"
+
+msgid "check_for_updates"
+msgstr "更新を確認"
+
+msgid "update_no_update"
+msgstr "最新バージョンです"
+
+msgid "no_entitlement_title"
+msgstr "アクセス権がありません"
+
+msgid "acct_upgrade_to"
+msgstr "「{0}」にアップグレードすると利用できます"

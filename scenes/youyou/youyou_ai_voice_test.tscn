@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dj8ilvcnijaqm"]
+
+[ext_resource type="Script" uid="uid://b3j24hsntkp2o" path="res://Scripts/youyou_ai_voice_test.gd" id="1_test"]
+
+[node name="YouyouAiVoiceTest" type="Node3D" unique_id=1887544410]
+script = ExtResource("1_test")

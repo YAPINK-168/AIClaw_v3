@@ -1,0 +1,33 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 3050 Laptop GPU
+
+youyou_Hello_Idle02 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Hello_Idle02。
+youyou_Hello_Idle03 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Hello_Idle03。
+youyou_Hello_Idle06 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Hello_Idle06。
+youyou_Hello_Idle07 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Hello_Idle07。
+youyou_Hello_Idle08 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Hello_Idle08。
+youyou_Hello_Idle09 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Hello_Idle09。
+youyou_Basic_Idle01 轨道与当前骨架兼容，展示名已映射，源动画名 youyou_Basic_Idle01_001。
+已按 glTF 导出的 smile 权重 1 设置默认表情，涉及网格 8 个。Godot 导入后的初始值为 0。
+播放待机 Basic_Idle，混合 0.00 秒，循环。
+场景已启动。I 基础待机，H 招揽01，Q/W/E/T/A 为 Basic_Idle01-05，X 为 youyou_Basic_Idle01，S/D/F/G/Z 为 youyou_Basic_Idle02-06。
+4 hello01，5 挥手，6/7 招揽02/03，8/9 招揽06/07，B/N 招揽08/09。M 模拟玩家经过。
+表情 1微笑 2惊讶 3大笑 0默认；C生气 V难过 P咧嘴 J眨眼 K看左 L看右。U/Y 错误测试。R 只重置镜头。
+基础待机，3.27 秒后播放轻待机。
+自动轻待机 Basic_Idle02，混合 0.25 秒，单次。
+播放待机 Basic_Idle，混合 0.30 秒，循环。
+自动表演结束，回到基础待机：Basic_Idle02
+基础待机，3.87 秒后播放轻待机。
+自动轻待机 youyou_Basic_Idle01，混合 0.25 秒，单次。
+播放待机 Basic_Idle，混合 0.30 秒，循环。
+自动表演结束，回到基础待机：youyou_Basic_Idle01
+基础待机，2.32 秒后播放轻待机。
+自动轻待机 Basic_Idle04，混合 0.25 秒，单次。
+播放待机 Basic_Idle，混合 0.30 秒，循环。
+自动表演结束，回到基础待机：Basic_Idle04
+基础待机，2.93 秒后播放轻待机。
+自动轻待机 Basic_Idle05，混合 0.25 秒，单次。
+播放待机 Basic_Idle，混合 0.30 秒，循环。
+自动表演结束，回到基础待机：Basic_Idle05
+基础待机，2.46 秒后播放轻待机。
+自动轻待机 Basic_Idle02，混合 0.25 秒，单次。

@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fil\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Server"
+
+msgid "tab_tools"
+msgstr "Mga Kasangkapan"
+
+msgid "tab_config"
+msgstr "Setup"
+
+msgid "lbl_status"
+msgstr "Katayuan: "
+
+msgid "lbl_port"
+msgstr "Port: "
+
+msgid "port_fallback_notice"
+msgstr "Ginagamit ang port %d — lumipat sa %d"
+
+msgid "chk_autostart"
+msgstr "Awtomatikong simulan"
+
+msgid "btn_start"
+msgstr "Simulan"
+
+msgid "btn_stop"
+msgstr "Ihinto"
+
+msgid "btn_copy"
+msgstr "Kopyahin"
+
+msgid "lbl_connections"
+msgstr "Mga koneksyon: "
+
+msgid "running"
+msgstr "Tumatakbo"
+
+msgid "stopped"
+msgstr "Huminto"
+
+msgid "tools_title"
+msgstr "Mga Nakarehistrong Kasangkapan"
+
+msgid "tools_not_running"
+msgstr "Hindi tumatakbo ang server — simulan ito sa tab na \"Server\""
+
+msgid "tools_fetch_failed"
+msgstr "Nabigo ang pagkuha (hindi tumatakbo ang server?)"
+
+msgid "config_hint"
+msgstr "Idagdag ang configuration sa ibaba sa iyong AI client (Cursor / Claude / Windsurf, atbp.) upang magamit ang MCP na ito:"
+
+msgid "btn_copy_json"
+msgstr "Kopyahin ang JSON config"
+
+msgid "btn_copy_cli"
+msgstr "Kopyahin ang Claude CLI command"
+
+msgid "config_paths_title"
+msgstr "Lokasyon ng mga config file:"
+
+msgid "copied"
+msgstr "Nakopya ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Batay sa Streamable HTTP protocol (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "Email"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "Support WeChat"
+
+msgid "contact_download"
+msgstr "I-download"
+
+msgid "btn_open_loc"
+msgstr "Buksan ang lokasyon"
+
+msgid "cli_title"
+msgstr "Mga CLI command"
+
+msgid "btn_auto_config"
+msgstr "Awtomatikong i-configure"
+
+msgid "btn_delete"
+msgstr "Alisin"
+
+msgid "status_configured"
+msgstr "Naka-configure"
+
+msgid "status_not_configured"
+msgstr "Hindi naka-configure"
+
+msgid "config_failed"
+msgstr "Nabigo ang config"
+
+msgid "cat_node"
+msgstr "Mga Node"
+msgid "catdesc_node"
+msgstr "Gumawa, mag-query, mag-transform at mag-ugnay ng mga scene node"
+
+msgid "cat_scene"
+msgstr "Mga Scene"
+msgid "catdesc_scene"
+msgstr "Buksan, i-save, gumawa ng scene at i-query ang tree"
+
+msgid "cat_editor"
+msgstr "Editor"
+msgid "catdesc_editor"
+msgstr "Kontrolin ang editor: patakbuhin, i-preview, impormasyon ng bersyon"
+
+msgid "cat_project"
+msgstr "Proyekto"
+msgid "catdesc_project"
+msgstr "Mga setting ng proyekto, input map at bersyon"
+
+msgid "cat_filesystem"
+msgstr "Filesystem"
+msgid "catdesc_filesystem"
+msgstr "Basahin, isulat, kopyahin at ilipat ang mga file ng proyekto"
+
+msgid "cat_resource"
+msgstr "Mga Resource"
+msgid "catdesc_resource"
+msgstr "Mag-query, gumawa at suriin ang mga resource"
+
+msgid "cat_animation"
+msgstr "Animation"
+msgid "catdesc_animation"
+msgstr "Gumawa at mag-edit ng animation at AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Builder"
+msgid "catdesc_builder"
+msgstr "Bumuo ng hierarchy ng node mula sa JSON tree"
+
+msgid "cat_composite"
+msgstr "Composite"
+msgid "catdesc_composite"
+msgstr "Mga high-level na composite at batch na operasyon"
+
+msgid "cat_debug"
+msgstr "Debug"
+msgid "catdesc_debug"
+msgstr "Mag-print ng log at debug output"
+
+msgid "cat_knowledge"
+msgstr "Kaalaman"
+msgid "catdesc_knowledge"
+msgstr "I-query ang built-in na knowledge base at mga gabay"
+
+msgid "cat_validate"
+msgstr "Validation"
+msgid "catdesc_validate"
+msgstr "I-validate ang mga scene at suriin ang layout"
+
+msgid "cat_script"
+msgstr "Script"
+msgid "catdesc_script"
+msgstr "Gumawa, mag-edit at mag-attach ng script"
+
+msgid "tooldetail_builder_tree"
+msgstr "Magpasa ng JSON tree na naglalarawan ng mga node, property, theme override, anchor, grupo, signal, at script.\nAng buong pagbuo ay isang undo step lamang."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Mga topic: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nMga filter:\n- class:  Limitahan sa iisang pangalan ng klase (hal. \"Button\", \"Tree\")\n- search: Substring filter sa mga pangalan/key\n\nMga halimbawa:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Anim na kategorya ng pagsusuri (lahat ay tumatakbo bilang default):\n- missing_scripts        May script reference ang node pero wala ang file\n- broken_node_paths      Property na tipong NodePath ay tumuturo sa node na wala\n- dangling_signals       Persistent na signal connection sa target na na-free/nawawala\n- off_viewport           Mga Control node na ang rect ay ganap na nasa labas ng viewport\n- container_anchor_misuse May non-default na anchor ang anak ng Container (babalewalain)\n- anti_patterns          Mga karaniwang pagkakamali sa Godot 4\n\nI-filter sa pamamagitan ng:\n- root_path:    Subtree na susuriin (default: root ng scene)\n- checks:       Array ng mga pangalan ng kategorya (default: lahat)\n- severity_min: Itago ang mga natuklasang mas mababa sa info|warning|error (default info)"
+
+msgid "config_failed_detail"
+msgstr "Nabigo ang configuration: hindi mahanap ang config file. Maaaring binago ng {0} ang install path nito."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI Account"
+
+msgid "acct_hint"
+msgstr "Mag-sign in gamit ang iyong VberAI account upang magamit ang mga MCP tool"
+
+msgid "acct_email_ph"
+msgstr "Email"
+
+msgid "acct_password_ph"
+msgstr "Password"
+
+msgid "btn_login"
+msgstr "Mag-sign in"
+
+msgid "btn_login_google"
+msgstr "Mag-sign in gamit ang Google"
+
+msgid "btn_logout"
+msgstr "Mag-sign out"
+
+msgid "acct_logged_in"
+msgstr "Naka-sign in: "
+
+msgid "acct_logging_in"
+msgstr "Nagsa-sign in…"
+
+msgid "acct_google_hint"
+msgstr "Nabuksan ang login page sa iyong browser — bumalik dito kapag tapos na"
+
+msgid "acct_need_server"
+msgstr "Nabigong simulan ang lokal na server para sa Google sign-in callback"
+
+msgid "acct_need_credentials"
+msgstr "Ilagay ang email at password"
+
+msgid "acct_login_failed"
+msgstr "Nabigo ang pag-sign in"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Kailangan ng pahintulot sa network"
+
+msgid "fw_body_mac"
+msgstr "Hindi maabot ang port ng MCP server mula sa labas ng prosesong ito — malamang na hinarangan ng macOS firewall. Kailangan ng port na ito kapwa ng mga koneksyon ng AI client at ng Google sign-in callback.\n\nMga hakbang:\n1. Kung magtatanong ang macOS ng \"Do you want Godot to accept incoming network connections?\", i-click ang Allow.\n2. Kung na-click mo dati ang Deny: buksan ang System Settings → Network → Firewall → Options… at itakda ang Godot sa \"Allow incoming connections\".\n3. I-restart ang Godot editor at subukan muli."
+
+msgid "fw_body_win"
+msgstr "Hindi maabot ang port ng MCP server mula sa labas ng prosesong ito — malamang na hinarangan ng Windows firewall.\n\nKapag nagtanong ang Windows Security tungkol sa \"Windows Defender Firewall has blocked some features of this app\", lagyan ng tsek ang iyong mga network at i-click ang \"Allow access\"; o payagan ang Godot sa Control Panel → Windows Defender Firewall → Allow an app through firewall. Pagkatapos ay i-restart ang editor."
+
+msgid "fw_open_settings"
+msgstr "Buksan ang Firewall Settings"
+
+msgid "fw_dismiss"
+msgstr "Huwag nang ipakita muli"
+
+msgid "acct_fw_blocked"
+msgstr "Hinaharangan ng firewall ang lokal na port — hindi makakarating ang Google sign-in callback (tingnan ang dialog para sa mga hakbang)"
+
+msgid "acct_register"
+msgstr "Walang account? Mag-sign up"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Hindi kasama ang Godot MCP sa iyong plano. Mag-upgrade sa libreng tier o mas mataas upang magamit ito."
+
+msgid "acct_upgrade"
+msgstr "I-upgrade ang subscription"
+
+msgid "acct_recheck"
+msgstr "Suriing muli"
+
+msgid "acct_kicked"
+msgstr "Naka-sign in ang iyong account sa ibang device; na-sign out ang device na ito."
+
+msgid "acct_relogin"
+msgstr "Mag-sign in muli (bawiin ito)"
+
+msgid "kicked_title"
+msgstr "Naka-sign in sa ibang lugar"
+
+msgid "lbl_endpoint"
+msgstr "Endpoint: "
+
+msgid "update_available_title"
+msgstr "May available na update"
+
+msgid "update_urgency_critical"
+msgstr "Kritikal na update"
+
+msgid "update_urgency_high"
+msgstr "Mahalagang update"
+
+msgid "update_new_version"
+msgstr "Available na ang bersyon v{0}!"
+
+msgid "update_current_version"
+msgstr "Kasalukuyang bersyon: v{0}"
+
+msgid "update_changelog"
+msgstr "Ano ang bago"
+
+msgid "update_now"
+msgstr "I-update ngayon"
+
+msgid "update_not_now"
+msgstr "Hindi ngayon"
+
+msgid "update_skip_version"
+msgstr "Laktawan ang v{0}"
+
+msgid "check_for_updates"
+msgstr "Tingnan ang mga update"
+
+msgid "update_no_update"
+msgstr "Ginagamit mo na ang pinakabagong bersyon"
+
+msgid "no_entitlement_title"
+msgstr "Hindi kasama ang access"
+
+msgid "acct_upgrade_to"
+msgstr "Mag-upgrade sa {0} upang magamit ito"

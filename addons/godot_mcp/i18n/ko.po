@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "서버"
+
+msgid "tab_tools"
+msgstr "도구"
+
+msgid "tab_config"
+msgstr "설정"
+
+msgid "lbl_status"
+msgstr "상태: "
+
+msgid "lbl_port"
+msgstr "포트: "
+
+msgid "port_fallback_notice"
+msgstr "포트 %d이(가) 사용 중이어서 %d(으)로 변경했습니다"
+
+msgid "chk_autostart"
+msgstr "자동 시작"
+
+msgid "btn_start"
+msgstr "시작"
+
+msgid "btn_stop"
+msgstr "중지"
+
+msgid "btn_copy"
+msgstr "복사"
+
+msgid "lbl_connections"
+msgstr "연결 수: "
+
+msgid "running"
+msgstr "실행 중"
+
+msgid "stopped"
+msgstr "중지됨"
+
+msgid "tools_title"
+msgstr "등록된 도구"
+
+msgid "tools_not_running"
+msgstr "서버가 실행되고 있지 않습니다 — \"서버\" 탭에서 시작하세요"
+
+msgid "tools_fetch_failed"
+msgstr "가져오기 실패 (서버가 실행되고 있지 않습니까?)"
+
+msgid "config_hint"
+msgstr "이 MCP를 사용하려면 아래 설정을 AI 클라이언트(Cursor / Claude / Windsurf 등)에 추가하세요:"
+
+msgid "btn_copy_json"
+msgstr "JSON 설정 복사"
+
+msgid "btn_copy_cli"
+msgstr "Claude CLI 명령 복사"
+
+msgid "config_paths_title"
+msgstr "설정 파일 위치:"
+
+msgid "copied"
+msgstr "복사됨 ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Streamable HTTP 프로토콜 기반 (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "이메일"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "지원 WeChat"
+
+msgid "contact_download"
+msgstr "다운로드"
+
+msgid "btn_open_loc"
+msgstr "위치 열기"
+
+msgid "cli_title"
+msgstr "CLI 명령"
+
+msgid "btn_auto_config"
+msgstr "자동 구성"
+
+msgid "btn_delete"
+msgstr "삭제"
+
+msgid "status_configured"
+msgstr "구성됨"
+
+msgid "status_not_configured"
+msgstr "구성 안 됨"
+
+msgid "config_failed"
+msgstr "구성 실패"
+
+msgid "cat_node"
+msgstr "노드"
+
+msgid "catdesc_node"
+msgstr "씬 노드 생성, 조회, 변환 및 연결"
+
+msgid "cat_scene"
+msgstr "씬"
+
+msgid "catdesc_scene"
+msgstr "씬 열기, 저장, 생성 및 트리 조회"
+
+msgid "cat_editor"
+msgstr "에디터"
+
+msgid "catdesc_editor"
+msgstr "에디터 제어: 실행, 미리보기, 버전 정보"
+
+msgid "cat_project"
+msgstr "프로젝트"
+
+msgid "catdesc_project"
+msgstr "프로젝트 설정, 입력 맵 및 버전"
+
+msgid "cat_filesystem"
+msgstr "파일 시스템"
+
+msgid "catdesc_filesystem"
+msgstr "프로젝트 파일 읽기, 쓰기, 복사 및 이동"
+
+msgid "cat_resource"
+msgstr "리소스"
+
+msgid "catdesc_resource"
+msgstr "리소스 조회, 생성 및 검사"
+
+msgid "cat_animation"
+msgstr "애니메이션"
+
+msgid "catdesc_animation"
+msgstr "애니메이션 및 AnimationPlayer 생성 및 편집"
+
+msgid "cat_builder"
+msgstr "빌더"
+
+msgid "catdesc_builder"
+msgstr "JSON 트리에서 노드 계층 구조 빌드"
+
+msgid "cat_composite"
+msgstr "복합"
+
+msgid "catdesc_composite"
+msgstr "고수준 복합 및 일괄 작업"
+
+msgid "cat_debug"
+msgstr "디버그"
+
+msgid "catdesc_debug"
+msgstr "로그 및 디버그 출력 표시"
+
+msgid "cat_knowledge"
+msgstr "지식"
+
+msgid "catdesc_knowledge"
+msgstr "내장 지식 베이스 및 가이드 조회"
+
+msgid "cat_validate"
+msgstr "검증"
+
+msgid "catdesc_validate"
+msgstr "씬 검증 및 레이아웃 확인"
+
+msgid "cat_script"
+msgstr "스크립트"
+
+msgid "catdesc_script"
+msgstr "스크립트 생성, 편집 및 연결"
+
+msgid "tooldetail_builder_tree"
+msgstr "노드, 속성, 테마 오버라이드, 앵커, 그룹, 시그널, 스크립트를 기술한 JSON 트리를 전달합니다.\n전체 구성이 하나의 실행 취소 단계입니다."
+
+msgid "tooldetail_knowledge_get"
+msgstr "토픽: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\n필터:\n- class:  단일 클래스 이름으로 제한합니다 (예: \"Button\", \"Tree\")\n- search: 이름/키에 대한 부분 문자열 필터\n\n예시:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "여섯 가지 검사 범주 (기본적으로 모두 실행):\n- missing_scripts        노드에 스크립트 참조가 있지만 파일이 존재하지 않음\n- broken_node_paths      NodePath 유형의 속성이 존재하지 않는 노드를 가리킴\n- dangling_signals       해제되었거나 없는 대상에 대한 영구 시그널 연결\n- off_viewport           사각형이 뷰포트 완전히 바깥에 있는 Control 노드\n- container_anchor_misuse Container 자식이 기본값이 아닌 앵커를 가짐 (무시됨)\n- anti_patterns          흔한 Godot 4 실수\n\n필터 지정:\n- root_path:    검사할 하위 트리 (기본값: 씬 루트)\n- checks:       범주 이름 배열 (기본값: all)\n- severity_min: info|warning|error 미만의 결과를 숨김 (기본값: info)"
+
+msgid "config_failed_detail"
+msgstr "구성 실패: 구성 파일을 찾을 수 없습니다. {0} 설치 시 경로가 변경되었을 수 있습니다."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI 계정"
+
+msgid "acct_hint"
+msgstr "MCP 도구를 사용하려면 VberAI 계정으로 로그인하세요"
+
+msgid "acct_email_ph"
+msgstr "이메일"
+
+msgid "acct_password_ph"
+msgstr "비밀번호"
+
+msgid "btn_login"
+msgstr "로그인"
+
+msgid "btn_login_google"
+msgstr "Google 로그인"
+
+msgid "btn_logout"
+msgstr "로그아웃"
+
+msgid "acct_logged_in"
+msgstr "로그인됨: "
+
+msgid "acct_logging_in"
+msgstr "로그인 중…"
+
+msgid "acct_google_hint"
+msgstr "브라우저에서 로그인 페이지를 열었습니다. 완료 후 에디터로 돌아오세요"
+
+msgid "acct_need_server"
+msgstr "로컬 서버를 시작하지 못해 Google 로그인 콜백을 받을 수 없습니다"
+
+msgid "acct_need_credentials"
+msgstr "이메일과 비밀번호를 입력하세요"
+
+msgid "acct_login_failed"
+msgstr "로그인 실패"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "네트워크 허용이 필요합니다"
+
+msgid "fw_body_mac"
+msgstr "MCP 서버 포트에 외부에서 접근할 수 없습니다. macOS 방화벽에 차단된 것 같습니다. AI 클라이언트 연결과 Google 로그인 콜백 모두 이 포트가 필요합니다.\n\n단계:\n1. \"Godot이(가) 들어오는 네트워크 연결을 허용하겠습니까?\"가 뜨면 \"허용\"을 클릭하세요.\n2. 이전에 거부했다면: 시스템 설정 → 네트워크 → 방화벽 → 옵션…에서 Godot을 \"들어오는 연결 허용\"으로 설정하세요.\n3. 설정 후 Godot 에디터를 재시작하세요."
+
+msgid "fw_body_win"
+msgstr "MCP 서버 포트에 외부에서 접근할 수 없습니다. Windows 방화벽에 차단된 것 같습니다.\n\nWindows 보안의 \"Windows Defender 방화벽에서 이 앱의 일부 기능을 차단했습니다\"에서 \"액세스 허용\"을 클릭하거나, 제어판 → Windows Defender 방화벽 → 앱 허용에서 Godot을 허용한 뒤 에디터를 재시작하세요."
+
+msgid "fw_open_settings"
+msgstr "방화벽 설정 열기"
+
+msgid "fw_dismiss"
+msgstr "다시 표시 안 함"
+
+msgid "acct_fw_blocked"
+msgstr "방화벽이 로컬 포트를 차단해 Google 로그인 콜백을 받을 수 없습니다 (대화 상자의 안내 참조)"
+
+msgid "acct_register"
+msgstr "계정이 없나요? 가입하기"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "현재 요금제에 Godot MCP가 포함되어 있지 않습니다. 무료 이상 요금제로 업그레이드하세요."
+
+msgid "acct_upgrade"
+msgstr "구독 업그레이드"
+
+msgid "acct_recheck"
+msgstr "다시 확인"
+
+msgid "acct_kicked"
+msgstr "계정이 다른 기기에서 로그인되어 이 기기는 로그아웃되었습니다."
+
+msgid "acct_relogin"
+msgstr "다시 로그인(이 기기로 되찾기)"
+
+msgid "kicked_title"
+msgstr "다른 곳에서 로그인됨"
+
+msgid "lbl_endpoint"
+msgstr "엔드포인트: "
+
+msgid "update_available_title"
+msgstr "업데이트 사용 가능"
+
+msgid "update_urgency_critical"
+msgstr "긴급 업데이트"
+
+msgid "update_urgency_high"
+msgstr "중요 업데이트"
+
+msgid "update_new_version"
+msgstr "새 버전 v{0} 출시!"
+
+msgid "update_current_version"
+msgstr "현재 버전: v{0}"
+
+msgid "update_changelog"
+msgstr "변경 사항"
+
+msgid "update_now"
+msgstr "지금 업데이트"
+
+msgid "update_not_now"
+msgstr "나중에"
+
+msgid "update_skip_version"
+msgstr "v{0} 건너뛰기"
+
+msgid "check_for_updates"
+msgstr "업데이트 확인"
+
+msgid "update_no_update"
+msgstr "최신 버전입니다"
+
+msgid "no_entitlement_title"
+msgstr "이용 권한 없음"
+
+msgid "acct_upgrade_to"
+msgstr "「{0}」(으)로 업그레이드하면 사용할 수 있습니다"

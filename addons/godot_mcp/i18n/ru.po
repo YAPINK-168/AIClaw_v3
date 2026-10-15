@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ru\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Сервер"
+
+msgid "tab_tools"
+msgstr "Инструменты"
+
+msgid "tab_config"
+msgstr "Настройка"
+
+msgid "lbl_status"
+msgstr "Статус: "
+
+msgid "lbl_port"
+msgstr "Порт: "
+
+msgid "port_fallback_notice"
+msgstr "Порт %d занят — выполнен переход на %d"
+
+msgid "chk_autostart"
+msgstr "Автозапуск"
+
+msgid "btn_start"
+msgstr "Запустить"
+
+msgid "btn_stop"
+msgstr "Остановить"
+
+msgid "btn_copy"
+msgstr "Копировать"
+
+msgid "lbl_connections"
+msgstr "Подключения: "
+
+msgid "running"
+msgstr "Запущено"
+
+msgid "stopped"
+msgstr "Остановлено"
+
+msgid "tools_title"
+msgstr "Зарегистрированные инструменты"
+
+msgid "tools_not_running"
+msgstr "Сервер не запущен — запустите его на вкладке \"Сервер\""
+
+msgid "tools_fetch_failed"
+msgstr "Не удалось получить (сервер не запущен?)"
+
+msgid "config_hint"
+msgstr "Добавьте приведённую ниже конфигурацию в ваш ИИ-клиент (Cursor / Claude / Windsurf и т. д.), чтобы использовать этот MCP:"
+
+msgid "btn_copy_json"
+msgstr "Копировать конфигурацию JSON"
+
+msgid "btn_copy_cli"
+msgstr "Копировать команду Claude CLI"
+
+msgid "config_paths_title"
+msgstr "Расположение файлов конфигурации:"
+
+msgid "copied"
+msgstr "Скопировано ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "На основе протокола Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "Электронная почта"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat поддержки"
+
+msgid "contact_download"
+msgstr "Скачать"
+
+msgid "btn_open_loc"
+msgstr "Открыть папку"
+
+msgid "cli_title"
+msgstr "Команды CLI"
+
+msgid "btn_auto_config"
+msgstr "Настроить"
+
+msgid "btn_delete"
+msgstr "Удалить"
+
+msgid "status_configured"
+msgstr "Настроено"
+
+msgid "status_not_configured"
+msgstr "Не настроено"
+
+msgid "config_failed"
+msgstr "Ошибка настройки"
+
+msgid "cat_node"
+msgstr "Узлы"
+
+msgid "catdesc_node"
+msgstr "Создание, запрос, преобразование и связывание узлов сцены"
+
+msgid "cat_scene"
+msgstr "Сцены"
+
+msgid "catdesc_scene"
+msgstr "Открытие, сохранение, создание сцен и запрос дерева"
+
+msgid "cat_editor"
+msgstr "Редактор"
+
+msgid "catdesc_editor"
+msgstr "Управление редактором: запуск, предпросмотр, сведения о версии"
+
+msgid "cat_project"
+msgstr "Проект"
+
+msgid "catdesc_project"
+msgstr "Настройки проекта, карты ввода и версия"
+
+msgid "cat_filesystem"
+msgstr "Файловая система"
+
+msgid "catdesc_filesystem"
+msgstr "Чтение, запись, копирование и перемещение файлов проекта"
+
+msgid "cat_resource"
+msgstr "Ресурсы"
+
+msgid "catdesc_resource"
+msgstr "Запрос, создание и просмотр ресурсов"
+
+msgid "cat_animation"
+msgstr "Анимация"
+
+msgid "catdesc_animation"
+msgstr "Создание и редактирование анимаций и AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Конструктор"
+
+msgid "catdesc_builder"
+msgstr "Построение иерархий узлов из дерева JSON"
+
+msgid "cat_composite"
+msgstr "Композит"
+
+msgid "catdesc_composite"
+msgstr "Высокоуровневые составные и пакетные операции"
+
+msgid "cat_debug"
+msgstr "Отладка"
+
+msgid "catdesc_debug"
+msgstr "Вывод журналов и отладочной информации"
+
+msgid "cat_knowledge"
+msgstr "Знания"
+
+msgid "catdesc_knowledge"
+msgstr "Запрос встроенной базы знаний и руководств"
+
+msgid "cat_validate"
+msgstr "Проверка"
+
+msgid "catdesc_validate"
+msgstr "Проверка сцен и контроль компоновки"
+
+msgid "cat_script"
+msgstr "Скрипт"
+
+msgid "catdesc_script"
+msgstr "Создание, редактирование и прикрепление скриптов"
+
+msgid "tooldetail_builder_tree"
+msgstr "Передайте дерево JSON, описывающее узлы, свойства, переопределения темы, привязки, группы, сигналы и скрипты.\nВсё построение является одним шагом отмены."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Темы: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nФильтры:\n- class:  Ограничить одним именем класса (напр. \"Button\", \"Tree\")\n- search: Фильтр по подстроке в именах/ключах\n\nПримеры:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Шесть категорий проверок (по умолчанию выполняются все):\n- missing_scripts        У узла есть ссылка на скрипт, но файл не существует\n- broken_node_paths      Свойство типа NodePath указывает на несуществующий узел\n- dangling_signals       Постоянные подключения сигналов к освобождённым/отсутствующим целям\n- off_viewport           Узлы Control, прямоугольник которых полностью вне области просмотра\n- container_anchor_misuse Дочерний элемент Container имеет нестандартные привязки (будут проигнорированы)\n- anti_patterns          Распространённые ошибки Godot 4\n\nФильтрация через:\n- root_path:    Поддерево для проверки (по умолчанию: корень сцены)\n- checks:       Массив имён категорий (по умолчанию: all)\n- severity_min: Скрывать результаты ниже info|warning|error (по умолчанию: info)"
+
+msgid "config_failed_detail"
+msgstr "Ошибка настройки: файл конфигурации не найден. Возможно, {0} изменил путь установки."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "Аккаунт VberAI"
+
+msgid "acct_hint"
+msgstr "Войдите в аккаунт VberAI, чтобы использовать инструменты MCP"
+
+msgid "acct_email_ph"
+msgstr "Эл. почта"
+
+msgid "acct_password_ph"
+msgstr "Пароль"
+
+msgid "btn_login"
+msgstr "Войти"
+
+msgid "btn_login_google"
+msgstr "Войти через Google"
+
+msgid "btn_logout"
+msgstr "Выйти"
+
+msgid "acct_logged_in"
+msgstr "Вы вошли: "
+
+msgid "acct_logging_in"
+msgstr "Вход…"
+
+msgid "acct_google_hint"
+msgstr "Страница входа открыта в браузере — вернитесь сюда после завершения"
+
+msgid "acct_need_server"
+msgstr "Не удалось запустить локальный сервер для обратного вызова входа Google"
+
+msgid "acct_need_credentials"
+msgstr "Введите эл. почту и пароль"
+
+msgid "acct_login_failed"
+msgstr "Не удалось войти"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Требуется разрешение сети"
+
+msgid "fw_body_mac"
+msgstr "Порт сервера MCP недоступен извне — вероятно, заблокирован брандмауэром macOS. Подключения ИИ-клиентов и обратный вызов входа Google требуют этот порт.\n\nШаги:\n1. Если macOS спрашивает «Разрешить Godot принимать входящие сетевые подключения?», нажмите «Разрешить».\n2. Если ранее нажали «Отклонить»: откройте Системные настройки → Сеть → Брандмауэр → Параметры… и установите для Godot «Разрешать входящие подключения».\n3. Перезапустите редактор Godot и повторите попытку."
+
+msgid "fw_body_win"
+msgstr "Порт сервера MCP недоступен извне — вероятно, заблокирован брандмауэром Windows.\n\nКогда Безопасность Windows покажет «Брандмауэр Защитника Windows заблокировал некоторые функции этого приложения», нажмите «Разрешить доступ»; или разрешите Godot в Панель управления → Брандмауэр Защитника Windows → Разрешить приложение. Затем перезапустите редактор."
+
+msgid "fw_open_settings"
+msgstr "Открыть настройки брандмауэра"
+
+msgid "fw_dismiss"
+msgstr "Больше не показывать"
+
+msgid "acct_fw_blocked"
+msgstr "Брандмауэр блокирует локальный порт — обратный вызов входа Google не может прийти (см. диалог)"
+
+msgid "acct_register"
+msgstr "Нет аккаунта? Зарегистрироваться"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Ваш план не включает Godot MCP. Перейдите на бесплатный или более высокий план."
+
+msgid "acct_upgrade"
+msgstr "Улучшить подписку"
+
+msgid "acct_recheck"
+msgstr "Проверить снова"
+
+msgid "acct_kicked"
+msgstr "Ваш аккаунт вошёл на другом устройстве; это устройство вышло из системы."
+
+msgid "acct_relogin"
+msgstr "Войти снова (вернуть сюда)"
+
+msgid "kicked_title"
+msgstr "Вход выполнен на другом устройстве"
+
+msgid "lbl_endpoint"
+msgstr "Точка доступа: "
+
+msgid "update_available_title"
+msgstr "Доступно обновление"
+
+msgid "update_urgency_critical"
+msgstr "Критическое обновление"
+
+msgid "update_urgency_high"
+msgstr "Важное обновление"
+
+msgid "update_new_version"
+msgstr "Доступна версия v{0}!"
+
+msgid "update_current_version"
+msgstr "Текущая версия: v{0}"
+
+msgid "update_changelog"
+msgstr "Что нового"
+
+msgid "update_now"
+msgstr "Обновить сейчас"
+
+msgid "update_not_now"
+msgstr "Не сейчас"
+
+msgid "update_skip_version"
+msgstr "Пропустить v{0}"
+
+msgid "check_for_updates"
+msgstr "Проверить обновления"
+
+msgid "update_no_update"
+msgstr "У вас последняя версия"
+
+msgid "no_entitlement_title"
+msgstr "Нет доступа"
+
+msgid "acct_upgrade_to"
+msgstr "Перейдите на {0}, чтобы использовать"

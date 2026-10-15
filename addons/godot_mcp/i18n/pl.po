@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pl\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Serwer"
+
+msgid "tab_tools"
+msgstr "Narzędzia"
+
+msgid "tab_config"
+msgstr "Konfiguracja"
+
+msgid "lbl_status"
+msgstr "Stan: "
+
+msgid "lbl_port"
+msgstr "Port: "
+
+msgid "port_fallback_notice"
+msgstr "Port %d zajęty — przełączono na %d"
+
+msgid "chk_autostart"
+msgstr "Automatyczne uruchamianie"
+
+msgid "btn_start"
+msgstr "Uruchom"
+
+msgid "btn_stop"
+msgstr "Zatrzymaj"
+
+msgid "btn_copy"
+msgstr "Kopiuj"
+
+msgid "lbl_connections"
+msgstr "Połączenia: "
+
+msgid "running"
+msgstr "Działa"
+
+msgid "stopped"
+msgstr "Zatrzymany"
+
+msgid "tools_title"
+msgstr "Zarejestrowane narzędzia"
+
+msgid "tools_not_running"
+msgstr "Serwer nie działa — uruchom go w zakładce \"Serwer\""
+
+msgid "tools_fetch_failed"
+msgstr "Pobieranie nie powiodło się (serwer nie działa?)"
+
+msgid "config_hint"
+msgstr "Dodaj poniższą konfigurację do swojego klienta AI (Cursor / Claude / Windsurf itp.), aby użyć tego MCP:"
+
+msgid "btn_copy_json"
+msgstr "Kopiuj konfigurację JSON"
+
+msgid "btn_copy_cli"
+msgstr "Kopiuj polecenie Claude CLI"
+
+msgid "config_paths_title"
+msgstr "Lokalizacje plików konfiguracyjnych:"
+
+msgid "copied"
+msgstr "Skopiowano ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Oparte na protokole Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "E-mail"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat wsparcia"
+
+msgid "contact_download"
+msgstr "Pobierz"
+
+msgid "btn_open_loc"
+msgstr "Otwórz lokalizację"
+
+msgid "cli_title"
+msgstr "Polecenia CLI"
+
+msgid "btn_auto_config"
+msgstr "Konfiguruj automatycznie"
+
+msgid "btn_delete"
+msgstr "Usuń"
+
+msgid "status_configured"
+msgstr "Skonfigurowano"
+
+msgid "status_not_configured"
+msgstr "Nie skonfigurowano"
+
+msgid "config_failed"
+msgstr "Konfiguracja nie powiodła się"
+
+msgid "cat_node"
+msgstr "Węzły"
+msgid "catdesc_node"
+msgstr "Twórz, odpytuj, przekształcaj i łącz węzły sceny"
+
+msgid "cat_scene"
+msgstr "Sceny"
+msgid "catdesc_scene"
+msgstr "Otwieraj, zapisuj, twórz sceny i odpytuj drzewo węzłów"
+
+msgid "cat_editor"
+msgstr "Edytor"
+msgid "catdesc_editor"
+msgstr "Steruj edytorem: uruchamianie, podgląd, informacje o wersji"
+
+msgid "cat_project"
+msgstr "Projekt"
+msgid "catdesc_project"
+msgstr "Ustawienia projektu, mapy wejścia i wersja"
+
+msgid "cat_filesystem"
+msgstr "System plików"
+msgid "catdesc_filesystem"
+msgstr "Odczytuj, zapisuj, kopiuj i przenoś pliki projektu"
+
+msgid "cat_resource"
+msgstr "Zasoby"
+msgid "catdesc_resource"
+msgstr "Odpytuj, twórz i badaj zasoby"
+
+msgid "cat_animation"
+msgstr "Animacja"
+msgid "catdesc_animation"
+msgstr "Twórz i edytuj animacje oraz AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Builder"
+msgid "catdesc_builder"
+msgstr "Buduj hierarchie węzłów z drzewa JSON"
+
+msgid "cat_composite"
+msgstr "Operacje złożone"
+msgid "catdesc_composite"
+msgstr "Wysokopoziomowe operacje złożone i wsadowe"
+
+msgid "cat_debug"
+msgstr "Debugowanie"
+msgid "catdesc_debug"
+msgstr "Wypisuj logi i dane debugowania"
+
+msgid "cat_knowledge"
+msgstr "Baza wiedzy"
+msgid "catdesc_knowledge"
+msgstr "Odpytuj wbudowaną bazę wiedzy i poradniki"
+
+msgid "cat_validate"
+msgstr "Walidacja"
+msgid "catdesc_validate"
+msgstr "Waliduj sceny i sprawdzaj układ"
+
+msgid "cat_script"
+msgstr "Skrypt"
+msgid "catdesc_script"
+msgstr "Twórz, edytuj i podłączaj skrypty"
+
+msgid "tooldetail_builder_tree"
+msgstr "Przekaż drzewo JSON opisujące węzły, właściwości, theme override, kotwice, grupy, sygnały i skrypty.\nCała konstrukcja liczy się jako jeden krok cofnięcia."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Tematy: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nFiltry:\n- class:  Ogranicz do jednej nazwy klasy (np. \"Button\", \"Tree\")\n- search: Filtr podciągu na nazwach/kluczach\n\nPrzykłady:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Sześć kategorii kontroli (domyślnie uruchamiane są wszystkie):\n- missing_scripts        Węzeł ma odwołanie do skryptu, ale plik nie istnieje\n- broken_node_paths      Właściwość typu NodePath wskazuje na nieistniejący węzeł\n- dangling_signals       Trwałe połączenia sygnałów do zwolnionych/brakujących celów\n- off_viewport           Węzły Control, których prostokąt leży całkowicie poza widokiem\n- container_anchor_misuse Dziecko kontenera ma niedomyślne kotwice (zostaną zignorowane)\n- anti_patterns          Częste błędy w Godot 4\n\nFiltruj przez:\n- root_path:    Poddrzewo do sprawdzenia (domyślnie: korzeń sceny)\n- checks:       Tablica nazw kategorii (domyślnie: wszystkie)\n- severity_min: Ukryj wyniki poniżej info|warning|error (domyślnie info)"
+
+msgid "config_failed_detail"
+msgstr "Konfiguracja nie powiodła się: nie znaleziono pliku konfiguracyjnego. {0} mógł zmienić ścieżkę instalacji."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "Konto VberAI"
+
+msgid "acct_hint"
+msgstr "Zaloguj się swoim kontem VberAI, aby korzystać z narzędzi MCP"
+
+msgid "acct_email_ph"
+msgstr "E-mail"
+
+msgid "acct_password_ph"
+msgstr "Hasło"
+
+msgid "btn_login"
+msgstr "Zaloguj się"
+
+msgid "btn_login_google"
+msgstr "Zaloguj się przez Google"
+
+msgid "btn_logout"
+msgstr "Wyloguj"
+
+msgid "acct_logged_in"
+msgstr "Zalogowano: "
+
+msgid "acct_logging_in"
+msgstr "Logowanie…"
+
+msgid "acct_google_hint"
+msgstr "Strona logowania otwarta w przeglądarce — wróć tutaj po zakończeniu"
+
+msgid "acct_need_server"
+msgstr "Nie udało się uruchomić lokalnego serwera dla wywołania zwrotnego logowania Google"
+
+msgid "acct_need_credentials"
+msgstr "Wprowadź e-mail i hasło"
+
+msgid "acct_login_failed"
+msgstr "Logowanie nie powiodło się"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Wymagane uprawnienie sieciowe"
+
+msgid "fw_body_mac"
+msgstr "Port serwera MCP jest nieosiągalny spoza tego procesu — najprawdopodobniej blokuje go zapora macOS. Zarówno połączenia klientów AI, jak i wywołanie zwrotne logowania Google wymagają tego portu.\n\nKroki:\n1. Jeśli macOS zapyta \"Czy chcesz, aby Godot akceptował przychodzące połączenia sieciowe?\", kliknij Zezwól.\n2. Jeśli wcześniej kliknięto Odmów: otwórz Ustawienia systemowe → Sieć → Zapora → Opcje… i ustaw Godot na \"Zezwalaj na połączenia przychodzące\".\n3. Uruchom ponownie edytor Godot i spróbuj jeszcze raz."
+
+msgid "fw_body_win"
+msgstr "Port serwera MCP jest nieosiągalny spoza tego procesu — najprawdopodobniej blokuje go zapora Windows.\n\nGdy Zabezpieczenia Windows zapytają o \"Zapora Windows Defender zablokowała niektóre funkcje tej aplikacji\", zaznacz swoje sieci i kliknij \"Zezwalaj na dostęp\"; albo zezwól Godotowi w Panel sterowania → Zapora Windows Defender → Zezwalaj aplikacji na dostęp przez zaporę. Następnie uruchom ponownie edytor."
+
+msgid "fw_open_settings"
+msgstr "Otwórz ustawienia zapory"
+
+msgid "fw_dismiss"
+msgstr "Nie pokazuj ponownie"
+
+msgid "acct_fw_blocked"
+msgstr "Zapora blokuje port lokalny — wywołanie zwrotne logowania Google nie może dotrzeć (kroki w oknie dialogowym)"
+
+msgid "acct_register"
+msgstr "Nie masz konta? Zarejestruj się"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Twój plan nie obejmuje Godot MCP. Przejdź na plan bezpłatny lub wyższy, aby z niego korzystać."
+
+msgid "acct_upgrade"
+msgstr "Podnieś abonament"
+
+msgid "acct_recheck"
+msgstr "Sprawdź ponownie"
+
+msgid "acct_kicked"
+msgstr "Twoje konto zalogowano na innym urządzeniu; to urządzenie zostało wylogowane."
+
+msgid "acct_relogin"
+msgstr "Zaloguj się ponownie (odzyskaj dostęp)"
+
+msgid "kicked_title"
+msgstr "Zalogowano gdzie indziej"
+
+msgid "lbl_endpoint"
+msgstr "Punkt końcowy: "
+
+msgid "update_available_title"
+msgstr "Dostępna aktualizacja"
+
+msgid "update_urgency_critical"
+msgstr "Aktualizacja krytyczna"
+
+msgid "update_urgency_high"
+msgstr "Ważna aktualizacja"
+
+msgid "update_new_version"
+msgstr "Wersja v{0} jest dostępna!"
+
+msgid "update_current_version"
+msgstr "Bieżąca wersja: v{0}"
+
+msgid "update_changelog"
+msgstr "Co nowego"
+
+msgid "update_now"
+msgstr "Aktualizuj teraz"
+
+msgid "update_not_now"
+msgstr "Nie teraz"
+
+msgid "update_skip_version"
+msgstr "Pomiń v{0}"
+
+msgid "check_for_updates"
+msgstr "Sprawdź aktualizacje"
+
+msgid "update_no_update"
+msgstr "Używasz najnowszej wersji"
+
+msgid "no_entitlement_title"
+msgstr "Dostęp nieuwzględniony"
+
+msgid "acct_upgrade_to"
+msgstr "Przejdź na {0}, aby z niego korzystać"

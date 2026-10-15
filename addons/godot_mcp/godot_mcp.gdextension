@@ -1,0 +1,14 @@
+[configuration]
+entry_symbol = "godot_mcp_library_init"
+compatibility_minimum = "4.3"
+reloadable = true
+
+[libraries]
+; Phase 0: generic arch tags so the extension loads in both --editor and headless modes
+; (eases CLI testing). Stage 4 will tighten to *.editor.* when EditorPlugin-derived
+; classes are introduced and shouldn't ship to game runtime.
+macos.arm64 = "res://addons/godot_mcp/bin/godot_mcp.macos.arm64.dylib"
+macos.x86_64 = "res://addons/godot_mcp/bin/godot_mcp.macos.x86_64.dylib"
+windows.x86_64 = "res://addons/godot_mcp/bin/godot_mcp.windows.x86_64.dll"
+
+[dependencies]

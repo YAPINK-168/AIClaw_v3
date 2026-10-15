@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: th\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "เซิร์ฟเวอร์"
+
+msgid "tab_tools"
+msgstr "เครื่องมือ"
+
+msgid "tab_config"
+msgstr "ตั้งค่า"
+
+msgid "lbl_status"
+msgstr "สถานะ: "
+
+msgid "lbl_port"
+msgstr "พอร์ต: "
+
+msgid "port_fallback_notice"
+msgstr "พอร์ต %d ถูกใช้งานอยู่ จึงเปลี่ยนเป็น %d"
+
+msgid "chk_autostart"
+msgstr "เริ่มอัตโนมัติ"
+
+msgid "btn_start"
+msgstr "เริ่ม"
+
+msgid "btn_stop"
+msgstr "หยุด"
+
+msgid "btn_copy"
+msgstr "คัดลอก"
+
+msgid "lbl_connections"
+msgstr "การเชื่อมต่อ: "
+
+msgid "running"
+msgstr "กำลังทำงาน"
+
+msgid "stopped"
+msgstr "หยุดแล้ว"
+
+msgid "tools_title"
+msgstr "เครื่องมือที่ลงทะเบียนไว้"
+
+msgid "tools_not_running"
+msgstr "เซิร์ฟเวอร์ไม่ทำงาน — เริ่มได้ที่แท็บ \"เซิร์ฟเวอร์\""
+
+msgid "tools_fetch_failed"
+msgstr "ดึงข้อมูลไม่สำเร็จ (เซิร์ฟเวอร์ไม่ทำงานหรือไม่?)"
+
+msgid "config_hint"
+msgstr "เพิ่มการกำหนดค่าด้านล่างลงในไคลเอนต์ AI ของคุณ (Cursor / Claude / Windsurf ฯลฯ) เพื่อใช้ MCP นี้:"
+
+msgid "btn_copy_json"
+msgstr "คัดลอกการกำหนดค่า JSON"
+
+msgid "btn_copy_cli"
+msgstr "คัดลอกคำสั่ง Claude CLI"
+
+msgid "config_paths_title"
+msgstr "ตำแหน่งไฟล์กำหนดค่า:"
+
+msgid "copied"
+msgstr "คัดลอกแล้ว ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "อิงตามโปรโตคอล Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "อีเมล"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat ฝ่ายสนับสนุน"
+
+msgid "contact_download"
+msgstr "ดาวน์โหลด"
+
+msgid "btn_open_loc"
+msgstr "เปิดตำแหน่งไฟล์"
+
+msgid "cli_title"
+msgstr "คำสั่ง CLI"
+
+msgid "btn_auto_config"
+msgstr "กำหนดค่าอัตโนมัติ"
+
+msgid "btn_delete"
+msgstr "นำออก"
+
+msgid "status_configured"
+msgstr "กำหนดค่าแล้ว"
+
+msgid "status_not_configured"
+msgstr "ยังไม่ได้กำหนดค่า"
+
+msgid "config_failed"
+msgstr "กำหนดค่าไม่สำเร็จ"
+
+msgid "cat_node"
+msgstr "โหนด"
+msgid "catdesc_node"
+msgstr "สร้าง สอบถาม แปลง และเชื่อมโยงโหนดในฉาก"
+
+msgid "cat_scene"
+msgstr "ฉาก"
+msgid "catdesc_scene"
+msgstr "เปิด บันทึก สร้างฉาก และสอบถามโครงสร้างต้นไม้"
+
+msgid "cat_editor"
+msgstr "โปรแกรมแก้ไข"
+msgid "catdesc_editor"
+msgstr "ควบคุมโปรแกรมแก้ไข: รัน แสดงตัวอย่าง ข้อมูลเวอร์ชัน"
+
+msgid "cat_project"
+msgstr "โปรเจกต์"
+msgid "catdesc_project"
+msgstr "การตั้งค่าโปรเจกต์ การแมปอินพุต และเวอร์ชัน"
+
+msgid "cat_filesystem"
+msgstr "ระบบไฟล์"
+msgid "catdesc_filesystem"
+msgstr "อ่าน เขียน คัดลอก และย้ายไฟล์โปรเจกต์"
+
+msgid "cat_resource"
+msgstr "ทรัพยากร"
+msgid "catdesc_resource"
+msgstr "สอบถาม สร้าง และตรวจสอบทรัพยากร"
+
+msgid "cat_animation"
+msgstr "แอนิเมชัน"
+msgid "catdesc_animation"
+msgstr "สร้างและแก้ไขแอนิเมชันและ AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "ตัวสร้าง"
+msgid "catdesc_builder"
+msgstr "สร้างลำดับชั้นโหนดจากโครงสร้าง JSON"
+
+msgid "cat_composite"
+msgstr "คำสั่งรวม"
+msgid "catdesc_composite"
+msgstr "การดำเนินการแบบรวมและแบบกลุ่มระดับสูง"
+
+msgid "cat_debug"
+msgstr "ดีบัก"
+msgid "catdesc_debug"
+msgstr "พิมพ์บันทึกและผลลัพธ์การดีบัก"
+
+msgid "cat_knowledge"
+msgstr "ฐานความรู้"
+msgid "catdesc_knowledge"
+msgstr "สอบถามฐานความรู้และคู่มือในตัว"
+
+msgid "cat_validate"
+msgstr "ตรวจสอบความถูกต้อง"
+msgid "catdesc_validate"
+msgstr "ตรวจสอบฉากและตรวจเลย์เอาต์"
+
+msgid "cat_script"
+msgstr "สคริปต์"
+msgid "catdesc_script"
+msgstr "สร้าง แก้ไข และแนบสคริปต์"
+
+msgid "tooldetail_builder_tree"
+msgstr "ส่งโครงสร้าง JSON ที่อธิบายโหนด คุณสมบัติ theme override จุดยึด กลุ่ม สัญญาณ และสคริปต์\nการสร้างทั้งหมดนับเป็นการเลิกทำเพียงขั้นเดียว"
+
+msgid "tooldetail_knowledge_get"
+msgstr "หัวข้อ: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nตัวกรอง:\n- class:  จำกัดเฉพาะชื่อคลาสเดียว (เช่น \"Button\", \"Tree\")\n- search: กรองด้วยข้อความบางส่วนของชื่อ/คีย์\n\nตัวอย่าง:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "การตรวจสอบหกประเภท (รันทั้งหมดโดยค่าเริ่มต้น):\n- missing_scripts        โหนดอ้างอิงสคริปต์แต่ไม่มีไฟล์อยู่จริง\n- broken_node_paths      คุณสมบัติชนิด NodePath ชี้ไปยังโหนดที่ไม่มีอยู่\n- dangling_signals       การเชื่อมต่อสัญญาณถาวรไปยังเป้าหมายที่ถูกปล่อยหรือหายไป\n- off_viewport           โหนด Control ที่กรอบอยู่นอกวิวพอร์ตทั้งหมด\n- container_anchor_misuse ลูกของ Container ตั้งจุดยึดไม่ใช่ค่าเริ่มต้น (จะถูกเพิกเฉย)\n- anti_patterns          ข้อผิดพลาดที่พบบ่อยใน Godot 4\n\nกรองด้วย:\n- root_path:    ซับทรีที่ต้องการตรวจ (ค่าเริ่มต้น: รากของฉาก)\n- checks:       อาร์เรย์ของชื่อประเภท (ค่าเริ่มต้น: ทั้งหมด)\n- severity_min: ซ่อนผลที่ต่ำกว่า info|warning|error (ค่าเริ่มต้น info)"
+
+msgid "config_failed_detail"
+msgstr "กำหนดค่าไม่สำเร็จ: ไม่พบไฟล์กำหนดค่า {0} อาจเปลี่ยนพาธการติดตั้งไปแล้ว"
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "บัญชี VberAI"
+
+msgid "acct_hint"
+msgstr "เข้าสู่ระบบด้วยบัญชี VberAI ของคุณเพื่อใช้เครื่องมือ MCP"
+
+msgid "acct_email_ph"
+msgstr "อีเมล"
+
+msgid "acct_password_ph"
+msgstr "รหัสผ่าน"
+
+msgid "btn_login"
+msgstr "เข้าสู่ระบบ"
+
+msgid "btn_login_google"
+msgstr "เข้าสู่ระบบด้วย Google"
+
+msgid "btn_logout"
+msgstr "ออกจากระบบ"
+
+msgid "acct_logged_in"
+msgstr "เข้าสู่ระบบแล้ว: "
+
+msgid "acct_logging_in"
+msgstr "กำลังเข้าสู่ระบบ…"
+
+msgid "acct_google_hint"
+msgstr "เปิดหน้าเข้าสู่ระบบในเบราว์เซอร์แล้ว — กลับมาที่นี่เมื่อเสร็จสิ้น"
+
+msgid "acct_need_server"
+msgstr "เริ่มเซิร์ฟเวอร์ในเครื่องสำหรับ callback การเข้าสู่ระบบ Google ไม่สำเร็จ"
+
+msgid "acct_need_credentials"
+msgstr "กรอกอีเมลและรหัสผ่าน"
+
+msgid "acct_login_failed"
+msgstr "เข้าสู่ระบบไม่สำเร็จ"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "ต้องการสิทธิ์เครือข่าย"
+
+msgid "fw_body_mac"
+msgstr "พอร์ตของเซิร์ฟเวอร์ MCP ไม่สามารถเข้าถึงได้จากภายนอกโปรเซสนี้ — เป็นไปได้มากว่าถูกไฟร์วอลล์ของ macOS บล็อก ทั้งการเชื่อมต่อจากไคลเอนต์ AI และ callback การเข้าสู่ระบบ Google ต้องใช้พอร์ตนี้\n\nขั้นตอน:\n1. หาก macOS ถามว่า \"ต้องการให้ Godot รับการเชื่อมต่อเครือข่ายขาเข้าหรือไม่\" ให้คลิก อนุญาต\n2. หากคุณเคยคลิก ปฏิเสธ ไว้: เปิด การตั้งค่าระบบ → เครือข่าย → ไฟร์วอลล์ → ตัวเลือก… แล้วตั้ง Godot เป็น \"อนุญาตการเชื่อมต่อขาเข้า\"\n3. รีสตาร์ตโปรแกรมแก้ไข Godot แล้วลองใหม่อีกครั้ง"
+
+msgid "fw_body_win"
+msgstr "พอร์ตของเซิร์ฟเวอร์ MCP ไม่สามารถเข้าถึงได้จากภายนอกโปรเซสนี้ — เป็นไปได้มากว่าถูกไฟร์วอลล์ของ Windows บล็อก\n\nเมื่อ Windows Security ถามเรื่อง \"Windows Defender Firewall ได้บล็อกคุณลักษณะบางอย่างของแอปนี้\" ให้ติ๊กเครือข่ายของคุณแล้วคลิก \"อนุญาตการเข้าถึง\" หรืออนุญาต Godot ที่ แผงควบคุม → Windows Defender Firewall → อนุญาตแอปผ่านไฟร์วอลล์ จากนั้นรีสตาร์ตโปรแกรมแก้ไข"
+
+msgid "fw_open_settings"
+msgstr "เปิดการตั้งค่าไฟร์วอลล์"
+
+msgid "fw_dismiss"
+msgstr "ไม่ต้องแสดงอีก"
+
+msgid "acct_fw_blocked"
+msgstr "ไฟร์วอลล์กำลังบล็อกพอร์ตในเครื่อง — callback การเข้าสู่ระบบ Google จึงส่งมาไม่ถึง (ดูขั้นตอนในกล่องข้อความ)"
+
+msgid "acct_register"
+msgstr "ยังไม่มีบัญชี? สมัครสมาชิก"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "แผนของคุณไม่รวม Godot MCP โปรดอัปเกรดเป็นแพ็กเกจฟรีขึ้นไปเพื่อใช้งาน"
+
+msgid "acct_upgrade"
+msgstr "อัปเกรดการสมัครสมาชิก"
+
+msgid "acct_recheck"
+msgstr "ตรวจสอบอีกครั้ง"
+
+msgid "acct_kicked"
+msgstr "บัญชีของคุณถูกเข้าสู่ระบบบนอุปกรณ์อื่น อุปกรณ์นี้จึงถูกออกจากระบบ"
+
+msgid "acct_relogin"
+msgstr "เข้าสู่ระบบอีกครั้ง (ดึงกลับมา)"
+
+msgid "kicked_title"
+msgstr "เข้าสู่ระบบที่อื่นแล้ว"
+
+msgid "lbl_endpoint"
+msgstr "ปลายทาง: "
+
+msgid "update_available_title"
+msgstr "มีอัปเดตใหม่"
+
+msgid "update_urgency_critical"
+msgstr "อัปเดตเร่งด่วน"
+
+msgid "update_urgency_high"
+msgstr "อัปเดตสำคัญ"
+
+msgid "update_new_version"
+msgstr "มีเวอร์ชัน v{0} แล้ว!"
+
+msgid "update_current_version"
+msgstr "เวอร์ชันปัจจุบัน: v{0}"
+
+msgid "update_changelog"
+msgstr "มีอะไรใหม่"
+
+msgid "update_now"
+msgstr "อัปเดตตอนนี้"
+
+msgid "update_not_now"
+msgstr "ไว้ทีหลัง"
+
+msgid "update_skip_version"
+msgstr "ข้าม v{0}"
+
+msgid "check_for_updates"
+msgstr "ตรวจหาอัปเดต"
+
+msgid "update_no_update"
+msgstr "คุณใช้เวอร์ชันล่าสุดอยู่แล้ว"
+
+msgid "no_entitlement_title"
+msgstr "ไม่รวมสิทธิ์การเข้าถึง"
+
+msgid "acct_upgrade_to"
+msgstr "อัปเกรดเป็น {0} เพื่อใช้งาน"

@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://o1q0g4w5utlo"]
+
+[ext_resource type="Script" path="res://Scripts/youyou_expression_transition_test.gd" id="1_test"]
+[ext_resource type="Script" path="res://Scripts/youyou_observe_camera.gd" id="2_observe"]
+
+[sub_resource type="Environment" id="Environment_test"]
+background_mode = 1
+background_color = Color(0.43, 0.45, 0.47, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.63, 0.65, 1)
+ambient_light_energy = 0.28
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes_test"]
+auto_exposure_enabled = false
+exposure_multiplier = 0.72
+
+[node name="YouyouExpressionTransitionTest" type="Node3D"]
+script = ExtResource("1_test")
+
+[node name="ObservePivot" type="Node3D" parent="."]
+script = ExtResource("2_observe")
+
+[node name="Camera3D" type="Camera3D" parent="ObservePivot"]
+fov = 42.0
+current = true
+attributes = SubResource("CameraAttributes_test")
+
+[node name="KeyLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 1.6, 1.2)
+light_energy = 0.72
+shadow_enabled = true
+
+[node name="FillLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.939693, 0.241845, -0.241845, 0, 0.707107, 0.707107, 0.34202, -0.664463, 0.664463, -1, 1.2, 0.4)
+light_color = Color(0.78, 0.82, 0.9, 1)
+light_energy = 0.16
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_test")
+
+[node name="StatusLayer" type="CanvasLayer" parent="."]
+
+[node name="StatusLabel" type="Label" parent="StatusLayer"]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 1240.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+mouse_filter = 2
+autowrap_mode = 3
+text = "正在加载表情过渡测试…"
+
+[node name="ObserveHelp" type="Label" parent="StatusLayer"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -48.0
+offset_right = -16.0
+offset_bottom = -16.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+mouse_filter = 2
+text = "中键拖动：旋转    滚轮：缩放    Shift+中键：平移    R：重置镜头"

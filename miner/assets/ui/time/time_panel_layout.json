@@ -1,0 +1,13 @@
+{
+  "texture_size": [1004, 697],
+  "display_width": 152,
+  "margin_right": 8,
+  "margin_top": 4,
+  "clear_of_order_right": 178,
+  "gap_to_order": 14,
+  "digit_rect": [0.50, 0.50, 0.80, 0.76],
+  "digit_offset": [0, -4],
+  "digit_height_scale": 0.80,
+  "digit_align": "center",
+  "digit_gap": -3
+}

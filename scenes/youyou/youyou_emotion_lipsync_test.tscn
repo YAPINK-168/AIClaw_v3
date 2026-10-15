@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://ck5hw2egwdqrw"]
+
+[ext_resource type="Script" uid="uid://brk703icyjphl" path="res://Scripts/youyou_emotion_lipsync_test.gd" id="1_test"]
+[ext_resource type="Script" uid="uid://d0spk7us8tvd7" path="res://Scripts/youyou_observe_camera.gd" id="2_observe"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes_test"]
+exposure_multiplier = 0.72
+
+[sub_resource type="Environment" id="Environment_test"]
+background_mode = 1
+background_color = Color(0.43, 0.45, 0.47, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.63, 0.65, 1)
+ambient_light_energy = 0.28
+
+[node name="YouyouEmotionLipsyncTest" type="Node3D" unique_id=658625124]
+script = ExtResource("1_test")
+
+[node name="ObservePivot" type="Node3D" parent="." unique_id=1862385191]
+script = ExtResource("2_observe")
+
+[node name="Camera3D" type="Camera3D" parent="ObservePivot" unique_id=1126998349]
+attributes = SubResource("CameraAttributes_test")
+current = true
+fov = 42.0
+
+[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=810264592]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 1.6, 1.2)
+light_energy = 0.72
+shadow_enabled = true
+
+[node name="FillLight" type="DirectionalLight3D" parent="." unique_id=1345740165]
+transform = Transform3D(0.939693, 0.241845, -0.241845, 0, 0.707107, 0.707107, 0.34202, -0.664463, 0.664463, -1, 1.2, 0.4)
+light_color = Color(0.78, 0.82, 0.9, 1)
+light_energy = 0.16
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1912419206]
+environment = SubResource("Environment_test")
+
+[node name="ObserveHelp" type="Label" parent="." unique_id=381003911]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -40.0
+offset_right = -16.0
+offset_bottom = -8.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+text = "中键旋转 · 滚轮缩放 · Shift+中键平移 · R 重置镜头"

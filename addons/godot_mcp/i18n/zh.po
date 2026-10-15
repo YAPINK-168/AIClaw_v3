@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "brand_name"
+msgstr "李大仙 MCP 系列"
+
+msgid "tab_server"
+msgstr "服务器"
+
+msgid "tab_tools"
+msgstr "工具管理"
+
+msgid "tab_config"
+msgstr "一键配置"
+
+msgid "lbl_status"
+msgstr "状态: "
+
+msgid "lbl_port"
+msgstr "端口: "
+
+msgid "port_fallback_notice"
+msgstr "端口 %d 被占用，已自动改用 %d"
+
+msgid "chk_autostart"
+msgstr "自动启动"
+
+msgid "btn_start"
+msgstr "启动"
+
+msgid "btn_stop"
+msgstr "停止"
+
+msgid "btn_copy"
+msgstr "复制"
+
+msgid "lbl_connections"
+msgstr "连接数: "
+
+msgid "running"
+msgstr "运行中"
+
+msgid "stopped"
+msgstr "已停止"
+
+msgid "tools_title"
+msgstr "已注册工具"
+
+msgid "tools_not_running"
+msgstr "服务器未运行，请到「服务器」标签启动"
+
+msgid "tools_fetch_failed"
+msgstr "获取失败（服务器未运行？）"
+
+msgid "config_hint"
+msgstr "把下面配置加入你的 AI 客户端（Cursor / Claude / Windsurf 等），即可使用本 MCP："
+
+msgid "btn_copy_json"
+msgstr "复制 JSON 配置"
+
+msgid "btn_copy_cli"
+msgstr "复制 Claude CLI 命令"
+
+msgid "config_paths_title"
+msgstr "配置文件位置："
+
+msgid "copied"
+msgstr "已复制 ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 李大仙 (LiDaxian) - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "基于 Streamable HTTP 协议 (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "邮箱"
+
+msgid "contact_wechat"
+msgstr "微信"
+
+msgid "contact_support"
+msgstr "客服微信"
+
+msgid "contact_download"
+msgstr "下载"
+
+msgid "btn_open_loc"
+msgstr "打开位置"
+
+msgid "cli_title"
+msgstr "CLI 命令"
+
+msgid "btn_auto_config"
+msgstr "一键配置"
+
+msgid "btn_delete"
+msgstr "删除"
+
+msgid "status_configured"
+msgstr "已配置"
+
+msgid "status_not_configured"
+msgstr "未配置"
+
+msgid "config_failed"
+msgstr "配置失败"
+
+msgid "cat_node"
+msgstr "节点"
+msgid "catdesc_node"
+msgstr "增删查改节点、变换、属性、层级、信号、可见性、物理"
+
+msgid "cat_scene"
+msgstr "场景"
+msgid "catdesc_scene"
+msgstr "打开/保存/新建场景、层级查询"
+
+msgid "cat_editor"
+msgstr "编辑器"
+msgid "catdesc_editor"
+msgstr "编辑器控制、运行/预览、版本信息"
+
+msgid "cat_project"
+msgstr "项目"
+msgid "catdesc_project"
+msgstr "项目设置、输入映射、版本信息"
+
+msgid "cat_filesystem"
+msgstr "文件系统"
+msgid "catdesc_filesystem"
+msgstr "读写/复制/移动项目文件"
+
+msgid "cat_resource"
+msgstr "资源"
+msgid "catdesc_resource"
+msgstr "资源查询、创建、依赖分析"
+
+msgid "cat_animation"
+msgstr "动画"
+msgid "catdesc_animation"
+msgstr "动画与 AnimationPlayer 操作"
+
+msgid "cat_builder"
+msgstr "构建"
+msgid "catdesc_builder"
+msgstr "用 JSON 树一次性构建节点层级"
+
+msgid "cat_composite"
+msgstr "组合"
+msgid "catdesc_composite"
+msgstr "高级组合与批量操作"
+
+msgid "cat_debug"
+msgstr "调试"
+msgid "catdesc_debug"
+msgstr "打印日志、调试输出"
+
+msgid "cat_knowledge"
+msgstr "知识库"
+msgid "catdesc_knowledge"
+msgstr "查询内置知识库与工具指南"
+
+msgid "cat_validate"
+msgstr "校验"
+msgid "catdesc_validate"
+msgstr "场景校验、布局检查"
+
+msgid "cat_script"
+msgstr "脚本"
+msgid "catdesc_script"
+msgstr "脚本创建、编辑、附加"
+
+msgid "tooldetail_builder_tree"
+msgstr "传入一个描述节点、属性、主题覆盖、锚点、分组、信号、脚本的 JSON 树。\n整个构建过程是一次撤销(Ctrl+Z)。"
+
+msgid "tooldetail_knowledge_get"
+msgstr "主题(topic):index、control_hierarchy、critical_properties、common_signals、\ntheme_overrides、anchor_presets、size_flags、layout_modes、script_templates\n\n过滤:\n- class:  限定单个类名(如 \"Button\"、\"Tree\")\n- search: 对名称/键做子串过滤\n\n示例:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "六种检查类别(默认全部运行):\n- missing_scripts        节点有脚本引用但文件不存在\n- broken_node_paths      NodePath 类型的属性指向不存在的节点\n- dangling_signals       持久化信号连接指向已释放/缺失的目标\n- off_viewport           矩形完全落在视口外的 Control 节点\n- container_anchor_misuse 容器子节点使用了非默认锚点(会被忽略)\n- anti_patterns          常见的 Godot 4 错误用法\n\n过滤方式:\n- root_path:    要检查的子树(默认:场景根)\n- checks:       类别名数组(默认:全部)\n- severity_min: 抑制低于 info|warning|error 的结果(默认 info)"
+
+msgid "config_failed_detail"
+msgstr "配置失败,找不到配置文件,{0} 安装时可能更改了路径"
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI 账号"
+
+msgid "acct_hint"
+msgstr "需登录 VberAI 账号后才能使用 MCP 工具"
+
+msgid "acct_email_ph"
+msgstr "邮箱"
+
+msgid "acct_password_ph"
+msgstr "密码"
+
+msgid "btn_login"
+msgstr "登录"
+
+msgid "btn_login_google"
+msgstr "Google 登录"
+
+msgid "btn_logout"
+msgstr "退出登录"
+
+msgid "acct_logged_in"
+msgstr "已登录: "
+
+msgid "acct_logging_in"
+msgstr "登录中…"
+
+msgid "acct_google_hint"
+msgstr "已在浏览器打开登录页，完成登录后返回编辑器"
+
+msgid "acct_need_server"
+msgstr "本地服务器启动失败，无法接收 Google 登录回调"
+
+msgid "acct_need_credentials"
+msgstr "请输入邮箱和密码"
+
+msgid "acct_login_failed"
+msgstr "登录失败"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "需要允许网络访问"
+
+msgid "fw_body_mac"
+msgstr "检测到 MCP 服务器端口无法从外部访问，可能被 macOS 防火墙拦截。AI 客户端连接和 Google 登录回调都需要该端口可达。\n\n请按以下步骤操作：\n1. 如果系统弹出「是否允许 Godot 接受传入网络连接」，点击「允许」；\n2. 若之前点过「拒绝」：打开 系统设置 → 网络 → 防火墙 → 选项…，把 Godot 设为「允许传入连接」；\n3. 设置完成后重启 Godot 编辑器再试。"
+
+msgid "fw_body_win"
+msgstr "检测到 MCP 服务器端口无法从外部访问，可能被 Windows 防火墙拦截。\n\n当 Windows 安全中心弹出「Windows Defender 防火墙已阻止此应用的部分功能」时，勾选专用/公用网络并点击「允许访问」；或在 控制面板 → Windows Defender 防火墙 → 允许应用通过防火墙 中允许 Godot。设置后重启编辑器再试。"
+
+msgid "fw_open_settings"
+msgstr "打开防火墙设置"
+
+msgid "fw_dismiss"
+msgstr "不再提示"
+
+msgid "acct_fw_blocked"
+msgstr "防火墙拦截了本机端口访问，Google 登录回调无法送达（见弹窗指引）"
+
+msgid "acct_register"
+msgstr "没有账号？注册"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "当前订阅计划不含 Godot MCP，请升级到免费或更高计划后使用。"
+
+msgid "acct_upgrade"
+msgstr "前往升级订阅"
+
+msgid "acct_recheck"
+msgstr "重新检查"
+
+msgid "acct_kicked"
+msgstr "你的账号已在另一台设备登录，此设备已退出。"
+
+msgid "acct_relogin"
+msgstr "重新登录（挤回本设备）"
+
+msgid "kicked_title"
+msgstr "账号已在别处登录"
+
+msgid "lbl_endpoint"
+msgstr "接入点: "
+
+msgid "update_available_title"
+msgstr "发现新版本"
+
+msgid "update_urgency_critical"
+msgstr "紧急更新"
+
+msgid "update_urgency_high"
+msgstr "重要更新"
+
+msgid "update_new_version"
+msgstr "新版本 v{0} 已发布！"
+
+msgid "update_current_version"
+msgstr "当前版本: v{0}"
+
+msgid "update_changelog"
+msgstr "更新日志"
+
+msgid "update_now"
+msgstr "立即更新"
+
+msgid "update_not_now"
+msgstr "暂不更新"
+
+msgid "update_skip_version"
+msgstr "跳过 v{0}"
+
+msgid "check_for_updates"
+msgstr "检查更新"
+
+msgid "update_no_update"
+msgstr "当前已是最新版本"
+
+msgid "no_entitlement_title"
+msgstr "账号权限不足"
+
+msgid "acct_upgrade_to"
+msgstr "升级到「{0}」即可使用"

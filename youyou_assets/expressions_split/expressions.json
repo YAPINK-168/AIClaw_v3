@@ -1,0 +1,661 @@
+{
+  "engine": "Godot 4",
+  "format": "YOUYBS01 morph deltas only",
+  "file": "youyou_blendshapes.bin",
+  "script": "apply_youyou_blendshapes.gd",
+  "contains": "仅形态键位移，不含骨架、衣服、头发、贴图",
+  "meshes": [
+    "人体.001",
+    "眉毛",
+    "眼睛左",
+    "眼睛右",
+    "睫毛",
+    "上牙",
+    "下牙",
+    "舌头"
+  ],
+  "blendshapes": {
+    "smile": {
+      "eyes": "Eyes_smile",
+      "mouth": "Mouth_smile"
+    },
+    "surprise": {
+      "eyes": "Eyes_surprise",
+      "mouth": "Mouth_surprise"
+    },
+    "laugh": {
+      "eyes": "Eyes_laugh",
+      "mouth": "Mouth_laugh"
+    },
+    "angry": {
+      "eyes": "Eyes_angry",
+      "mouth": "Mouth_angry"
+    },
+    "sad": {
+      "eyes": "Eyes_sad",
+      "mouth": "Mouth_sad"
+    },
+    "grin": {
+      "eyes": "Eyes_grin",
+      "mouth": "Mouth_grin"
+    }
+  },
+  "mesh_details": [
+    {
+      "name": "人体.001",
+      "vertex_count": 4089,
+      "matrix_world": {
+        "x_axis": [
+          -0.004159,
+          -0.999991,
+          -0.0
+        ],
+        "y_axis": [
+          0.999991,
+          -0.004159,
+          1.5e-05
+        ],
+        "z_axis": [
+          -1.5e-05,
+          -0.0,
+          1.0
+        ],
+        "origin": [
+          0.001373,
+          -0.0,
+          0.500787
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.00137,
+          "moved_vertices": 465
+        },
+        "Mouth_smile": {
+          "max_delta": 0.010554,
+          "moved_vertices": 664
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.007608,
+          "moved_vertices": 593
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.01302,
+          "moved_vertices": 676
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.025352,
+          "moved_vertices": 699
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.02075,
+          "moved_vertices": 736
+        },
+        "Eyes_angry": {
+          "max_delta": 0.030836,
+          "moved_vertices": 1139
+        },
+        "Mouth_angry": {
+          "max_delta": 0.012114,
+          "moved_vertices": 1002
+        },
+        "Eyes_sad": {
+          "max_delta": 0.012763,
+          "moved_vertices": 1056
+        },
+        "Mouth_sad": {
+          "max_delta": 0.012092,
+          "moved_vertices": 816
+        },
+        "Eyes_grin": {
+          "max_delta": 0.026843,
+          "moved_vertices": 1131
+        },
+        "Mouth_grin": {
+          "max_delta": 0.009045,
+          "moved_vertices": 992
+        }
+      }
+    },
+    {
+      "name": "眉毛",
+      "vertex_count": 44,
+      "matrix_world": {
+        "x_axis": [
+          -0.004159,
+          -0.999991,
+          -0.0
+        ],
+        "y_axis": [
+          0.999991,
+          -0.004159,
+          -0.0
+        ],
+        "z_axis": [
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "origin": [
+          0.001853,
+          -0.108135,
+          0.837944
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.01433,
+          "moved_vertices": 44
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.016102,
+          "moved_vertices": 44
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_angry": {
+          "max_delta": 0.035705,
+          "moved_vertices": 44
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.014167,
+          "moved_vertices": 44
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.004735,
+          "moved_vertices": 44
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    },
+    {
+      "name": "眼睛左",
+      "vertex_count": 39,
+      "matrix_world": {
+        "x_axis": [
+          0.02845,
+          -0.983651,
+          -0.177822
+        ],
+        "y_axis": [
+          0.99917,
+          0.022794,
+          0.033775
+        ],
+        "z_axis": [
+          -0.029169,
+          -0.178635,
+          0.983483
+        ],
+        "origin": [
+          -0.058766,
+          -0.086603,
+          0.786488
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.008336,
+          "moved_vertices": 39
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.013654,
+          "moved_vertices": 39
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_angry": {
+          "max_delta": 0.000421,
+          "moved_vertices": 39
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.005378,
+          "moved_vertices": 39
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.012969,
+          "moved_vertices": 39
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    },
+    {
+      "name": "眼睛右",
+      "vertex_count": 41,
+      "matrix_world": {
+        "x_axis": [
+          -0.019023,
+          -0.996917,
+          -0.076126
+        ],
+        "y_axis": [
+          0.999775,
+          -0.018248,
+          -0.010862
+        ],
+        "z_axis": [
+          0.00944,
+          -0.076316,
+          0.997039
+        ],
+        "origin": [
+          0.06274,
+          -0.083679,
+          0.786488
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.005,
+          "moved_vertices": 41
+        },
+        "Mouth_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.009028,
+          "moved_vertices": 41
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.017175,
+          "moved_vertices": 41
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_angry": {
+          "max_delta": 0.005093,
+          "moved_vertices": 41
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.006453,
+          "moved_vertices": 41
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.01544,
+          "moved_vertices": 41
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    },
+    {
+      "name": "睫毛",
+      "vertex_count": 111,
+      "matrix_world": {
+        "x_axis": [
+          0.052965,
+          -0.992932,
+          0.106207
+        ],
+        "y_axis": [
+          0.998596,
+          0.052665,
+          -0.005633
+        ],
+        "z_axis": [
+          0.0,
+          0.106356,
+          0.994328
+        ],
+        "origin": [
+          0.073432,
+          -0.089579,
+          0.799696
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.004266,
+          "moved_vertices": 111
+        },
+        "Mouth_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.009996,
+          "moved_vertices": 111
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.014033,
+          "moved_vertices": 111
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_angry": {
+          "max_delta": 0.014175,
+          "moved_vertices": 111
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.01256,
+          "moved_vertices": 111
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.023868,
+          "moved_vertices": 111
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    },
+    {
+      "name": "上牙",
+      "vertex_count": 92,
+      "matrix_world": {
+        "x_axis": [
+          -0.020432,
+          -0.461224,
+          -0.0
+        ],
+        "y_axis": [
+          0.461224,
+          -0.020432,
+          -0.0
+        ],
+        "z_axis": [
+          0.0,
+          -0.0,
+          0.461676
+        ],
+        "origin": [
+          0.00617,
+          0.047139,
+          0.899761
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_smile": {
+          "max_delta": 0.009563,
+          "moved_vertices": 92
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.013555,
+          "moved_vertices": 92
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.029667,
+          "moved_vertices": 92
+        },
+        "Eyes_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    },
+    {
+      "name": "下牙",
+      "vertex_count": 90,
+      "matrix_world": {
+        "x_axis": [
+          -0.020432,
+          -0.461224,
+          -0.0
+        ],
+        "y_axis": [
+          0.461224,
+          -0.020432,
+          -0.0
+        ],
+        "z_axis": [
+          0.0,
+          -0.0,
+          0.461676
+        ],
+        "origin": [
+          0.007343,
+          0.048464,
+          0.899493
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_smile": {
+          "max_delta": 0.00304,
+          "moved_vertices": 90
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.00748,
+          "moved_vertices": 90
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.024636,
+          "moved_vertices": 90
+        },
+        "Eyes_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    },
+    {
+      "name": "舌头",
+      "vertex_count": 39,
+      "matrix_world": {
+        "x_axis": [
+          -0.004159,
+          -0.999991,
+          -0.0
+        ],
+        "y_axis": [
+          0.999991,
+          -0.004159,
+          1.5e-05
+        ],
+        "z_axis": [
+          -1.5e-05,
+          -0.0,
+          1.0
+        ],
+        "origin": [
+          0.001373,
+          -0.005601,
+          0.500156
+        ]
+      },
+      "shapes": {
+        "Eyes_smile": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_smile": {
+          "max_delta": 0.00243,
+          "moved_vertices": 39
+        },
+        "Eyes_surprise": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_surprise": {
+          "max_delta": 0.016343,
+          "moved_vertices": 39
+        },
+        "Eyes_laugh": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_laugh": {
+          "max_delta": 0.009654,
+          "moved_vertices": 39
+        },
+        "Eyes_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_angry": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_sad": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Eyes_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        },
+        "Mouth_grin": {
+          "max_delta": 0.0,
+          "moved_vertices": 0
+        }
+      }
+    }
+  ],
+  "godot_usage": [
+    "把 youyou_blendshapes.bin 和 apply_youyou_blendshapes.gd 复制进 Godot 项目（不要用原来的完整角色 GLB）",
+    "在已有角色根节点上挂 apply_youyou_blendshapes.gd",
+    "指定 blendshape_file 为 youyou_blendshapes.bin，在检查器勾选 apply_now",
+    "脚本会把 Eyes_* / Mouth_* 写入现有网格，骨架和蒙皮保持不动，然后保存场景",
+    "调用：mesh.set(\"blend_shapes/Eyes_smile\", 1.0)",
+    "交叉：Eyes_angry 与 Mouth_smile 可同时使用"
+  ]
+}

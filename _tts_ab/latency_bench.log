@@ -1,0 +1,138 @@
+﻿Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+拆分补丁 7/8（舌头未匹配，面部/口型仍可用）
+配置: 已加载 (youyou_voice_secrets.cfg) | TTS: TTS Key: 已配置（配置文件） | https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliy… | model=qwen-audio-3.0-tts-plus
+麦克风: Default
+按住 空格：录音+全链路 | Esc：取消 | 中键：旋转视角 | R：复位视角
+voice_latency_bench rounds=5 path=text (无 ASR)
+VoiceOutput: 百炼 TTS model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 emotion=happy
+VoiceOutput: 开始 TTS，文本长度=21 stream_first_chunk=true
+VoiceOutput: TTS 分句数=2
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"嗨！欢迎来到抓娃娃机，","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=11
+BailianTtsClient: HTTP status=200 result=0 body_len=550
+BailianTtsClient: 已下载音频 bytes=130604 format=wav
+BailianTtsClient: request_id=b2258f13-5b0f-90c0-8e1d-61aaf8d57bb8
+VoiceOutput: 首句就绪，开始播放 (bytes=130604, 剩余分句=1)
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"今天想抓哪个宝贝呀？","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=10
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=130560
+VoiceOutput: 播放分片 2.72s bytes=130604
+BailianTtsClient: HTTP status=200 result=0 body_len=550
+BailianTtsClient: 已下载音频 bytes=88364 format=wav
+BailianTtsClient: request_id=17f06037-7096-9e78-bb2a-0d5914f3ac1c
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=88320
+VoiceOutput: 播放分片 1.84s bytes=88364
+VoiceOutput: 播放结束 ok=true
+voice_latency_round=1 path=text outcome=completed 
+  release_to_play_ms=6995.1ms | llm_ms=2827.6ms | tts_first_chunk_ms=4160.0ms | tts_http_ms=3242.3ms | tts_download_ms=917.4ms | decode_to_play_ms=0.3ms
+VoiceOutput: 百炼 TTS model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 emotion=happy
+VoiceOutput: 开始 TTS，文本长度=18 stream_first_chunk=true
+VoiceOutput: TTS 分句数=2
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"哈喽！我是柚柚，","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=8
+BailianTtsClient: HTTP status=200 result=0 body_len=552
+BailianTtsClient: 已下载音频 bytes=92204 format=wav
+BailianTtsClient: request_id=4803c218-da1d-960f-ab25-5e5533380998
+VoiceOutput: 首句就绪，开始播放 (bytes=92204, 剩余分句=1)
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"准备好大显身手了吗？","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=10
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=92160
+VoiceOutput: 播放分片 1.92s bytes=92204
+BailianTtsClient: HTTP status=200 result=0 body_len=550
+BailianTtsClient: 已下载音频 bytes=107564 format=wav
+BailianTtsClient: request_id=82a9cb4c-fe82-9e06-bdb3-894549756d4c
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=107520
+VoiceOutput: 播放分片 2.24s bytes=107564
+VoiceOutput: 播放结束 ok=true
+voice_latency_round=2 path=text outcome=completed 
+  release_to_play_ms=6382.3ms | llm_ms=3330.9ms | tts_first_chunk_ms=3045.7ms | tts_http_ms=1824.6ms | tts_download_ms=1220.9ms | decode_to_play_ms=0.6ms
+Godot_v4.7.2-stable_mono_win64_console.exe : ERROR: 请求失败: HTTP状态码：0, URL：https://api.moonshot.cn/v1/chat/completions
+所在位置 C:\Users\29385\AppData\Local\Temp\ps-script-1ecb07ae-343f-4598-9f20-64ffb0e672eb.ps1:96 字符: 1
++ & $G --path $P --headless 'res://scenes/youyou/youyou_ai_voice_test.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: 请求失败: HT...hat/completions:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] chat (res://Scripts/voice/moonshot_llm_client.gd:59)
+ERROR: LLM 无有效回复
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _fail (res://Scripts/voice/voice_interaction_controller.gd:221)
+       [1] _run_dialogue_pipeline (res://Scripts/voice/voice_interaction_controller.gd:191)
+       [2] ask (res://Scripts/voice/youyou_dialogue_client.gd:41)
+       [3] chat (res://Scripts/voice/moonshot_llm_client.gd:60)
+VoiceOutput: 百炼 TTS model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 emotion=happy
+VoiceOutput: 开始 TTS，文本长度=21 stream_first_chunk=true
+VoiceOutput: TTS 分句数=2
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"你好呀！今天运气看起来不错哦，","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=15
+BailianTtsClient: HTTP status=200 result=0 body_len=550
+BailianTtsClient: 已下载音频 bytes=176684 format=wav
+BailianTtsClient: request_id=dc30404f-66fb-9a95-a593-021895e42867
+VoiceOutput: 首句就绪，开始播放 (bytes=176684, 剩余分句=1)
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"要试试看吗？","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=6
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=176640
+VoiceOutput: 播放分片 3.68s bytes=176684
+BailianTtsClient: HTTP status=200 result=0 body_len=552
+ERROR: TTS 音频下载失败 HTTP 0 (bytes=0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _download_url (res://Scripts/voice/bailian_tts_client.gd:211)
+ERROR: TTS 未返回可下载音频（缺少 output.audio.url）
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _synthesize_chunk_bailian (res://Scripts/voice/voice_output.gd:320)
+       [1] synthesize_text (res://Scripts/voice/bailian_tts_client.gd:117)
+       [2] _extract_audio_bytes (res://Scripts/voice/bailian_tts_client.gd:189)
+       [3] _download_url (res://Scripts/voice/bailian_tts_client.gd:212)
+ERROR: VoiceOutput: 某一句 TTS 返回空音频
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] speak (res://Scripts/voice/voice_output.gd:166)
+       [1] _synthesize_chunk_bailian (res://Scripts/voice/voice_output.gd:321)
+       [2] synthesize_text (res://Scripts/voice/bailian_tts_client.gd:117)
+       [3] _extract_audio_bytes (res://Scripts/voice/bailian_tts_client.gd:189)
+       [4] _download_url (res://Scripts/voice/bailian_tts_client.gd:212)
+ERROR: TTS 合成或播放失败
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _fail (res://Scripts/voice/voice_interaction_controller.gd:221)
+       [1] _run_dialogue_pipeline (res://Scripts/voice/voice_interaction_controller.gd:208)
+       [2] speak (res://Scripts/voice/voice_output.gd:174)
+VoiceOutput: 百炼 TTS model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 emotion=happy
+VoiceOutput: 开始 TTS，文本长度=14 stream_first_chunk=true
+VoiceOutput: TTS 分句数=2
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"嗨～柚柚上线啦，","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=8
+BailianTtsClient: HTTP status=200 result=0 body_len=550
+BailianTtsClient: 已下载音频 bytes=119084 format=wav
+BailianTtsClient: request_id=9954f724-0fc6-933c-99df-43afeb901366
+VoiceOutput: 首句就绪，开始播放 (bytes=119084, 剩余分句=1)
+BailianTtsClient: request_json={"input":{"format":"wav","instruction":"情绪：开心","language_hints":["zh"],"sample_rate":24000.0,"text":"爪子已就位！","voice":"qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642"},"model":"qwen-audio-3.0-tts-plus"}
+BailianTtsClient: POST https://ws-oezduzmjp58m7g0f.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer model=qwen-audio-3.0-tts-plus voice=qwen-audio-3.0-tts-plus-vd-bailian-26d6e794c4134aa08f4d6326cc37e642 text_len=6
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=119040
+VoiceOutput: 播放分片 2.48s bytes=119084
+BailianTtsClient: HTTP status=200 result=0 body_len=554
+BailianTtsClient: 已下载音频 bytes=84524 format=wav
+BailianTtsClient: request_id=0dfae812-53c2-930f-bf32-849aebbb8401
+VoiceOutput: 解码 WAV mix_rate=24000 stereo=false pcm_bytes=84480
+VoiceOutput: 播放分片 1.76s bytes=84524
+VoiceOutput: 播放结束 ok=true
+voice_latency_round=3 path=text outcome=completed 
+  release_to_play_ms=7036.6ms | llm_ms=3578.1ms | tts_first_chunk_ms=3449.5ms | tts_http_ms=2689.4ms | tts_download_ms=759.5ms | decode_to_play_ms=4.4ms
+voice_latency_aggregate rounds=3
+  avg_llm_ms=3245.6ms (n=3)
+  avg_tts_first_chunk_ms=3551.7ms (n=3)
+  avg_tts_http_ms=2585.4ms (n=3)
+  avg_tts_download_ms=965.9ms (n=3)
+  avg_decode_to_play_ms=1.8ms (n=3)
+  avg_release_to_play_ms=6804.7ms (n=3)
+  round_1 outcome=completed path=text release_to_play=6995.1ms llm=2827.6ms tts1=4160.0ms
+  round_2 outcome=completed path=text release_to_play=6382.3ms llm=3330.9ms tts1=3045.7ms
+  round_3 outcome=completed path=text release_to_play=7036.6ms llm=3578.1ms tts1=3449.5ms
+voice_latency_bench_ok=true

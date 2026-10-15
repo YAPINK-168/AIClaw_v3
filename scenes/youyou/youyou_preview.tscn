@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cnk7sb0to0gj8"]
+
+[ext_resource type="Script" uid="uid://cbyb44uex8pvp" path="res://Scripts/youyou_preview.gd" id="1_preview"]
+[ext_resource type="Script" uid="uid://d0spk7us8tvd7" path="res://Scripts/youyou_observe_camera.gd" id="2_observe"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes_preview"]
+exposure_multiplier = 0.72
+
+[sub_resource type="Environment" id="Environment_preview"]
+background_mode = 1
+background_color = Color(0.43, 0.45, 0.47, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.63, 0.65, 1)
+ambient_light_energy = 0.28
+
+[node name="YouyouPreview" type="Node3D" unique_id=1972780436]
+script = ExtResource("1_preview")
+
+[node name="ObservePivot" type="Node3D" parent="." unique_id=1121777624]
+script = ExtResource("2_observe")
+
+[node name="Camera3D" type="Camera3D" parent="ObservePivot" unique_id=285077744]
+attributes = SubResource("CameraAttributes_preview")
+current = true
+fov = 42.0
+
+[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=2042893038]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 1.6, 1.2)
+light_energy = 0.72
+shadow_enabled = true
+
+[node name="FillLight" type="DirectionalLight3D" parent="." unique_id=1878611446]
+transform = Transform3D(0.939693, 0.241845, -0.241845, 0, 0.707107, 0.707107, 0.34202, -0.664463, 0.664463, -1, 1.2, 0.4)
+light_color = Color(0.78, 0.82, 0.9, 1)
+light_energy = 0.16
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=570672765]
+environment = SubResource("Environment_preview")
+
+[node name="StatusLayer" type="CanvasLayer" parent="." unique_id=523224703]
+
+[node name="StatusLabel" type="Label" parent="StatusLayer" unique_id=2069264854]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 1240.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+text = "正在加载柚柚"
+autowrap_mode = 3
+
+[node name="ObserveHelp" type="Label" parent="StatusLayer" unique_id=1664929962]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -48.0
+offset_right = -16.0
+offset_bottom = -16.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+text = "中键拖动：旋转    滚轮：缩放    Shift+中键：平移    R：重置镜头"

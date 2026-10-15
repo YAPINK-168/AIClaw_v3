@@ -1,0 +1,426 @@
+extends Node3D
+
+const Mixer := preload("res://Scripts/youyou_emotion_lipsync_mixer.gd")
+const PatchApplier := preload("res://youyou_assets/expressions_split/apply_youyou_blendshapes.gd")
+
+const MODEL_PATH := "res://柚柚.glb"
+const IDLE_SCENE_PATH := "res://待机Animation/Basic_Idle.glb"
+const IDLE_ANIM := "Basic_Idle"
+const PATCH_BIN_PATH := "res://youyou_assets/expressions_split/youyou_blendshapes.bin"
+
+var _model: Node3D
+var _player: AnimationPlayer = null
+var _meshes: Array[MeshInstance3D] = []
+var _default_shapes: Dictionary = {}
+var _mixer: Node
+
+var _patch_loaded := false
+var _patch_apply_result: Dictionary = {}
+var _patch_summary_printed := false
+
+var _ui_layer: CanvasLayer
+var _debug_label: Label
+var _note_label: Label
+var _patch_label: Label
+var _slider_mouth: HSlider
+var _slider_viseme: HSlider
+var _slider_blend: HSlider
+var _slider_hold: HSlider
+
+var _auto_playing := false
+var _auto_token := 0
+
+
+func _ready() -> void:
+	if not _load_model():
+		return
+	_apply_split_patch()
+	_load_idle_clip()
+	_capture_defaults_baseline()
+	_mixer = Mixer.new()
+	_mixer.name = "EmotionLipsyncMixer"
+	add_child(_mixer)
+	_mixer.setup(_meshes, _default_shapes)
+	_mixer.call("configure_patch_readiness", _patch_apply_result.get("diagnostics", []))
+	_mixer.set_coefficients(0.35, 1.0, 0.15)
+	if _mixer.is_emotion_available("smile"):
+		_mixer.set_emotion("smile", 0.0)
+	_build_ui()
+	_update_patch_ui()
+	if _player != null and _player.has_animation(IDLE_ANIM):
+		_player.play(IDLE_ANIM)
+	var args := OS.get_cmdline_user_args()
+	if "--emotion-lipsync-check" in args:
+		await _run_automation_check()
+		get_tree().quit()
+	if "--split-patch-check" in args:
+		await _run_patch_only_check()
+		get_tree().quit()
+
+
+func _process(_delta: float) -> void:
+	if _mixer == null or _debug_label == null:
+		return
+	var lines: PackedStringArray = []
+	if _patch_label != null:
+		lines.append(_patch_label.text)
+	lines.append_array(_mixer.call("sample_debug_lines", 10))
+	_debug_label.text = "\n".join(lines)
+
+
+func _apply_split_patch() -> bool:
+	_patch_loaded = FileAccess.file_exists(PATCH_BIN_PATH)
+	if not _patch_loaded:
+		push_error("拆分补丁二进制不存在：" + PATCH_BIN_PATH)
+		_patch_apply_result = {"ok": false, "summary": "补丁文件缺失", "success_count": 0, "total_count": 8}
+		return false
+
+	var applier: Node = PatchApplier.new()
+	applier.name = "YouyouSplitPatchApplier"
+	_model.add_child(applier)
+	var result: Dictionary = applier.call("apply_blendshapes_with_diagnostics")
+	applier.queue_free()
+
+	_patch_apply_result = result
+	_patch_loaded = true
+	if not _patch_summary_printed:
+		print("[split-patch]\n", String(result.get("summary", "")))
+		for entry in result.get("diagnostics", []):
+			print(_format_diagnostic_line(entry))
+		_patch_summary_printed = true
+	return bool(result.get("ok", false))
+
+
+func _format_diagnostic_line(entry: Variant) -> String:
+	if not (entry is Dictionary):
+		return str(entry)
+	var d: Dictionary = entry
+	return (
+		"  mesh=%s found=%s node=%s method=%s patch_v=%s godot_v=%s unique_v=%s "
+		+ "mode=%s matched=%s/%s ratio=%.1f%% avg_err=%.5f max_err=%.5f added=%s pass=%s | %s"
+	) % [
+		d.get("patch_name", "?"),
+		d.get("found", false),
+		d.get("node_name", ""),
+		d.get("match_method", ""),
+		d.get("patch_vertex_count", 0),
+		d.get("godot_surface_vertex_count", 0),
+		d.get("godot_unique_vertex_count", 0),
+		d.get("space_mode", ""),
+		d.get("matched_vertices", 0),
+		d.get("total_vertices", 0),
+		float(d.get("match_ratio", 0.0)) * 100.0,
+		float(d.get("avg_position_error", -1.0)),
+		float(d.get("max_position_error", -1.0)),
+		d.get("shapes_added", 0),
+		d.get("passed", false),
+		d.get("result_message", d.get("failure_reason", "")),
+	]
+
+
+func _update_patch_ui() -> void:
+	if _patch_label == null:
+		return
+	var ok := bool(_patch_apply_result.get("ok", false))
+	var sc := int(_patch_apply_result.get("success_count", 0))
+	var tc := int(_patch_apply_result.get("total_count", 0))
+	var status := "完整接入" if ok else ("部分成功" if sc > 0 else "失败")
+	_patch_label.text = "补丁: %s | 网格 %d/%d | bin=%s" % [
+		status, sc, tc, "已加载" if _patch_loaded else "缺失"
+	]
+	if _note_label != null:
+		_note_label.text = (
+			"拆分表情 + 口型测试 | Eyes_*/Mouth_* 与 A/E/I/O/U 叠加 | "
+			+ ("补丁就绪" if ok else "补丁未完整就绪，部分情绪不可用")
+		)
+
+
+func _build_ui() -> void:
+	_ui_layer = CanvasLayer.new()
+	_ui_layer.name = "TestUI"
+	add_child(_ui_layer)
+	var margin := MarginContainer.new()
+	margin.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+	margin.add_theme_constant_override("margin_left", 12)
+	margin.add_theme_constant_override("margin_right", 12)
+	margin.add_theme_constant_override("margin_top", 8)
+	_ui_layer.add_child(margin)
+	var root := VBoxContainer.new()
+	root.add_theme_constant_override("separation", 6)
+	margin.add_child(root)
+
+	_note_label = Label.new()
+	_note_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_note_label.text = "情绪+口型组合测试"
+	root.add_child(_note_label)
+
+	_patch_label = Label.new()
+	_patch_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	root.add_child(_patch_label)
+
+	var emo_row := HBoxContainer.new()
+	emo_row.add_theme_constant_override("separation", 4)
+	var emo_title := Label.new()
+	emo_title.text = "情绪"
+	root.add_child(emo_title)
+	root.add_child(emo_row)
+
+	if _mixer != null:
+		for eid in _mixer.get_emotion_ids():
+			var btn := Button.new()
+			var ready_tag := "" if _mixer.is_emotion_available(eid) else " [未就绪]"
+			btn.text = _mixer.get_emotion_label(eid) + ready_tag
+			btn.disabled = not _mixer.is_emotion_available(eid)
+			btn.pressed.connect(_on_emotion_pressed.bind(eid))
+			emo_row.add_child(btn)
+
+	var vis_row := HBoxContainer.new()
+	vis_row.add_theme_constant_override("separation", 4)
+	var vis_label := Label.new()
+	vis_label.text = "口型"
+	root.add_child(vis_label)
+	root.add_child(vis_row)
+	for vid in ["a", "e", "i", "o", "u"]:
+		var btn := Button.new()
+		btn.text = vid.to_upper()
+		btn.pressed.connect(_on_viseme_pressed.bind(vid))
+		vis_row.add_child(btn)
+	var clear_btn := Button.new()
+	clear_btn.text = "清除口型"
+	clear_btn.pressed.connect(_on_clear_viseme)
+	vis_row.add_child(clear_btn)
+
+	var seq_row := HBoxContainer.new()
+	seq_row.add_theme_constant_override("separation", 4)
+	var play_btn := Button.new()
+	play_btn.text = "播放 A→E→I→O→U"
+	play_btn.pressed.connect(_on_play_sequence)
+	seq_row.add_child(play_btn)
+	var stop_btn := Button.new()
+	stop_btn.text = "停止播放"
+	stop_btn.pressed.connect(_on_stop_sequence)
+	seq_row.add_child(stop_btn)
+	var reset_btn := Button.new()
+	reset_btn.text = "重置表情"
+	reset_btn.pressed.connect(_on_reset)
+	seq_row.add_child(reset_btn)
+	root.add_child(seq_row)
+
+	if _mixer != null:
+		_slider_mouth = _add_slider(root, "情绪嘴形系数", 0.0, 1.0, 0.35, _on_coef_changed)
+		_slider_viseme = _add_slider(root, "口型系数", 0.0, 1.0, 1.0, _on_coef_changed)
+		_slider_blend = _add_slider(root, "过渡(秒)", 0.0, 1.0, 0.15, _on_coef_changed)
+	_slider_hold = _add_slider(root, "自动播放保持(秒)", 0.1, 2.0, 0.6, func(_v): pass)
+
+	_debug_label = Label.new()
+	_debug_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	root.add_child(_debug_label)
+
+
+func _add_slider(parent: VBoxContainer, title: String, min_v: float, max_v: float, default_v: float, cb: Callable) -> HSlider:
+	var row := HBoxContainer.new()
+	var label := Label.new()
+	label.text = title
+	label.custom_minimum_size.x = 140
+	row.add_child(label)
+	var slider := HSlider.new()
+	slider.min_value = min_v
+	slider.max_value = max_v
+	slider.step = 0.01
+	slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	slider.value = default_v
+	slider.value_changed.connect(cb)
+	row.add_child(slider)
+	parent.add_child(row)
+	return slider
+
+
+func _sync_coefficients_from_sliders() -> void:
+	if _mixer == null:
+		return
+	_mixer.set_coefficients(_slider_mouth.value, _slider_viseme.value, _slider_blend.value)
+
+
+func _on_coef_changed(_v: float) -> void:
+	if _mixer == null:
+		return
+	_sync_coefficients_from_sliders()
+	if _mixer.get_active_viseme() != "":
+		_mixer.set_viseme(_mixer.get_active_viseme())
+	else:
+		_mixer.set_emotion(_mixer.get_active_emotion())
+
+
+func _on_emotion_pressed(eid: String) -> void:
+	if _mixer == null:
+		return
+	_stop_sequence()
+	_sync_coefficients_from_sliders()
+	_mixer.clear_viseme(0.0)
+	_mixer.set_emotion(eid)
+
+
+func _on_viseme_pressed(vid: String) -> void:
+	if _mixer == null:
+		return
+	_sync_coefficients_from_sliders()
+	_mixer.set_viseme(vid)
+
+
+func _on_clear_viseme() -> void:
+	if _mixer == null:
+		return
+	_sync_coefficients_from_sliders()
+	_mixer.clear_viseme()
+
+
+func _on_reset() -> void:
+	if _mixer == null:
+		return
+	_stop_sequence()
+	_sync_coefficients_from_sliders()
+	_mixer.reset_all()
+
+
+func _on_play_sequence() -> void:
+	if _mixer == null:
+		return
+	_sync_coefficients_from_sliders()
+	_auto_token += 1
+	var token := _auto_token
+	_auto_playing = true
+	_run_sequence(token)
+
+
+func _on_stop_sequence() -> void:
+	_auto_playing = false
+	_auto_token += 1
+
+
+func _stop_sequence() -> void:
+	_auto_playing = false
+	_auto_token += 1
+
+
+func _run_sequence(token: int) -> void:
+	await _sequence_worker(token)
+
+
+func _sequence_worker(token: int) -> void:
+	for vid in ["a", "e", "i", "o", "u"]:
+		if token != _auto_token or not _auto_playing:
+			return
+		_mixer.set_viseme(vid)
+		await get_tree().create_timer(_slider_hold.value).timeout
+	if token != _auto_token:
+		return
+	_mixer.clear_viseme()
+	_auto_playing = false
+
+
+func _load_model() -> bool:
+	var packed := load(MODEL_PATH) as PackedScene
+	if packed == null:
+		push_error("模型加载失败")
+		return false
+	var instance := packed.instantiate() as Node3D
+	_model = instance
+	_model.name = "YouyouModel"
+	add_child(_model)
+	_collect_meshes(_model)
+	if _meshes.is_empty():
+		return false
+	for mesh in _meshes:
+		if mesh.name == "耳机":
+			mesh.visible = false
+	return true
+
+
+func _load_idle_clip() -> void:
+	var packed := load(IDLE_SCENE_PATH) as PackedScene
+	if packed == null:
+		return
+	var instance := packed.instantiate()
+	var source := instance.find_child("AnimationPlayer", true, false) as AnimationPlayer
+	if source == null or not source.has_animation(IDLE_ANIM):
+		instance.free()
+		return
+	var clip := (source.get_animation(IDLE_ANIM) as Animation).duplicate(true) as Animation
+	clip.loop_mode = Animation.LOOP_LINEAR
+	instance.free()
+	_player = AnimationPlayer.new()
+	_model.add_child(_player)
+	var lib := AnimationLibrary.new()
+	lib.add_animation(IDLE_ANIM, clip)
+	_player.add_animation_library(&"", lib)
+
+
+func _collect_meshes(node: Node) -> void:
+	if node is MeshInstance3D and (node as MeshInstance3D).mesh != null:
+		_meshes.append(node as MeshInstance3D)
+	for child in node.get_children():
+		_collect_meshes(child)
+
+
+func _capture_defaults_baseline() -> void:
+	for mesh in _meshes:
+		var values := {}
+		for i in mesh.mesh.get_blend_shape_count():
+			var n := String(mesh.mesh.get_blend_shape_name(i))
+			values[n] = 0.0
+		_default_shapes[mesh] = values
+
+
+func _run_patch_only_check() -> void:
+	for _i in 3:
+		await get_tree().process_frame
+	var lines: PackedStringArray = []
+	lines.append("patch_ok=%s" % str(_patch_apply_result.get("ok", false)))
+	lines.append("patch_meshes=%d/%d" % [
+		int(_patch_apply_result.get("success_count", 0)),
+		int(_patch_apply_result.get("total_count", 0)),
+	])
+	for entry in _patch_apply_result.get("diagnostics", []):
+		lines.append(_format_diagnostic_line(entry))
+	lines.append("=== split_patch_check_pass=%s ===" % str(_patch_apply_result.get("ok", false)))
+	print("\n".join(lines))
+
+
+func _run_automation_check() -> void:
+	for _i in 3:
+		await get_tree().process_frame
+	var lines: PackedStringArray = []
+	var patch_ok := bool(_patch_apply_result.get("ok", false))
+	lines.append("patch_ok=%s meshes=%d/%d" % [
+		patch_ok,
+		int(_patch_apply_result.get("success_count", 0)),
+		int(_patch_apply_result.get("total_count", 0)),
+	])
+
+	_mixer.set_emotion("smile")
+	await get_tree().create_timer(0.25).timeout
+	var eyes_smile: float = _mixer.call("read_shape_on_body", "Eyes_smile")
+	var mouth_smile: float = _mixer.call("read_shape_on_body", "Mouth_smile")
+	var legacy_smile: float = _mixer.call("read_shape_on_body", "smile")
+
+	_mixer.call("set_viseme", "a")
+	await get_tree().create_timer(0.25).timeout
+	var a_w: float = _mixer.call("read_shape_on_body", "A")
+	var eyes_during: float = _mixer.call("read_shape_on_body", "Eyes_smile")
+	var mouth_during: float = _mixer.call("read_shape_on_body", "Mouth_smile")
+
+	_mixer.call("clear_viseme")
+	await get_tree().create_timer(0.25).timeout
+	var mouth_after: float = _mixer.call("read_shape_on_body", "Mouth_smile")
+	var a_after: float = _mixer.call("read_shape_on_body", "A")
+
+	lines.append("smile split eyes=%.3f mouth=%.3f legacy=%.3f" % [eyes_smile, mouth_smile, legacy_smile])
+	lines.append("viseme_a=%.3f eyes_during=%.3f mouth_during=%.3f" % [a_w, eyes_during, mouth_during])
+	lines.append("after_clear mouth=%.3f a=%.3f" % [mouth_after, a_after])
+
+	var ok := eyes_smile > 0.85 and mouth_smile > 0.85 and legacy_smile < 0.05
+	ok = ok and a_w > 0.85 and eyes_during > 0.85 and mouth_during < mouth_smile
+	ok = ok and mouth_after > 0.85 and a_after < 0.05
+	lines.append("patch_full_8of8=%s" % str(patch_ok))
+	lines.append("=== emotion_lipsync_check_pass=%s ===" % str(ok))
+	print("\n".join(lines))

@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: vi\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "Máy chủ"
+
+msgid "tab_tools"
+msgstr "Công cụ"
+
+msgid "tab_config"
+msgstr "Cài đặt"
+
+msgid "lbl_status"
+msgstr "Trạng thái: "
+
+msgid "lbl_port"
+msgstr "Cổng: "
+
+msgid "port_fallback_notice"
+msgstr "Cổng %d đang bận — đã chuyển sang %d"
+
+msgid "chk_autostart"
+msgstr "Tự động khởi động"
+
+msgid "btn_start"
+msgstr "Khởi động"
+
+msgid "btn_stop"
+msgstr "Dừng"
+
+msgid "btn_copy"
+msgstr "Sao chép"
+
+msgid "lbl_connections"
+msgstr "Kết nối: "
+
+msgid "running"
+msgstr "Đang chạy"
+
+msgid "stopped"
+msgstr "Đã dừng"
+
+msgid "tools_title"
+msgstr "Công cụ đã đăng ký"
+
+msgid "tools_not_running"
+msgstr "Máy chủ chưa chạy — hãy khởi động ở tab \"Máy chủ\""
+
+msgid "tools_fetch_failed"
+msgstr "Lấy dữ liệu thất bại (máy chủ chưa chạy?)"
+
+msgid "config_hint"
+msgstr "Thêm cấu hình bên dưới vào trình khách AI của bạn (Cursor / Claude / Windsurf, v.v.) để sử dụng MCP này:"
+
+msgid "btn_copy_json"
+msgstr "Sao chép cấu hình JSON"
+
+msgid "btn_copy_cli"
+msgstr "Sao chép lệnh Claude CLI"
+
+msgid "config_paths_title"
+msgstr "Vị trí tệp cấu hình:"
+
+msgid "copied"
+msgstr "Đã sao chép ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "Dựa trên giao thức Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "Email"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat hỗ trợ"
+
+msgid "contact_download"
+msgstr "Tải xuống"
+
+msgid "btn_open_loc"
+msgstr "Mở vị trí"
+
+msgid "cli_title"
+msgstr "Lệnh CLI"
+
+msgid "btn_auto_config"
+msgstr "Tự động cấu hình"
+
+msgid "btn_delete"
+msgstr "Xóa"
+
+msgid "status_configured"
+msgstr "Đã cấu hình"
+
+msgid "status_not_configured"
+msgstr "Chưa cấu hình"
+
+msgid "config_failed"
+msgstr "Cấu hình thất bại"
+
+msgid "cat_node"
+msgstr "Nút"
+msgid "catdesc_node"
+msgstr "Tạo, truy vấn, biến đổi và kết nối các nút cảnh"
+
+msgid "cat_scene"
+msgstr "Cảnh"
+msgid "catdesc_scene"
+msgstr "Mở, lưu, tạo cảnh và truy vấn cây"
+
+msgid "cat_editor"
+msgstr "Trình chỉnh sửa"
+msgid "catdesc_editor"
+msgstr "Điều khiển trình chỉnh sửa: chạy, xem trước, thông tin phiên bản"
+
+msgid "cat_project"
+msgstr "Dự án"
+msgid "catdesc_project"
+msgstr "Cài đặt dự án, ánh xạ đầu vào và phiên bản"
+
+msgid "cat_filesystem"
+msgstr "Hệ thống tệp"
+msgid "catdesc_filesystem"
+msgstr "Đọc, ghi, sao chép và di chuyển tệp dự án"
+
+msgid "cat_resource"
+msgstr "Tài nguyên"
+msgid "catdesc_resource"
+msgstr "Truy vấn, tạo và kiểm tra tài nguyên"
+
+msgid "cat_animation"
+msgstr "Hoạt ảnh"
+msgid "catdesc_animation"
+msgstr "Tạo và chỉnh sửa hoạt ảnh và AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "Trình dựng"
+msgid "catdesc_builder"
+msgstr "Dựng cây phân cấp nút từ một cây JSON"
+
+msgid "cat_composite"
+msgstr "Tổng hợp"
+msgid "catdesc_composite"
+msgstr "Thao tác tổng hợp và hàng loạt ở cấp cao"
+
+msgid "cat_debug"
+msgstr "Gỡ lỗi"
+msgid "catdesc_debug"
+msgstr "In nhật ký và kết quả gỡ lỗi"
+
+msgid "cat_knowledge"
+msgstr "Kiến thức"
+msgid "catdesc_knowledge"
+msgstr "Truy vấn cơ sở kiến thức tích hợp và hướng dẫn"
+
+msgid "cat_validate"
+msgstr "Kiểm tra hợp lệ"
+msgid "catdesc_validate"
+msgstr "Kiểm tra hợp lệ cảnh và kiểm tra bố cục"
+
+msgid "cat_script"
+msgstr "Tập lệnh"
+msgid "catdesc_script"
+msgstr "Tạo, chỉnh sửa và đính kèm tập lệnh"
+
+msgid "tooldetail_builder_tree"
+msgstr "Truyền vào một cây JSON mô tả các nút, thuộc tính, ghi đè chủ đề, neo, nhóm, tín hiệu, tập lệnh.\nToàn bộ quá trình dựng là một bước hoàn tác."
+
+msgid "tooldetail_knowledge_get"
+msgstr "Chủ đề: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nBộ lọc:\n- class:  Giới hạn về một tên lớp duy nhất (ví dụ \"Button\", \"Tree\")\n- search: Lọc chuỗi con trên tên/khóa\n\nVí dụ:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "Sáu loại kiểm tra (mặc định chạy tất cả):\n- missing_scripts        Nút có tham chiếu tập lệnh nhưng tệp không tồn tại\n- broken_node_paths      Thuộc tính kiểu NodePath trỏ đến nút không tồn tại\n- dangling_signals       Kết nối tín hiệu bền vững đến mục tiêu đã giải phóng/thiếu\n- off_viewport           Nút Control có hình chữ nhật nằm hoàn toàn ngoài khung nhìn\n- container_anchor_misuse Nút con của container dùng neo không mặc định (sẽ bị bỏ qua)\n- anti_patterns          Các lỗi thường gặp của Godot 4\n\nLọc qua:\n- root_path:    Cây con cần kiểm tra (mặc định: gốc cảnh)\n- checks:       Mảng tên loại (mặc định: tất cả)\n- severity_min: Ẩn kết quả dưới info|warning|error (mặc định info)"
+
+msgid "config_failed_detail"
+msgstr "Cấu hình thất bại: không tìm thấy tệp cấu hình. {0} có thể đã thay đổi đường dẫn cài đặt."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "Tài khoản VberAI"
+
+msgid "acct_hint"
+msgstr "Đăng nhập tài khoản VberAI để sử dụng công cụ MCP"
+
+msgid "acct_email_ph"
+msgstr "Email"
+
+msgid "acct_password_ph"
+msgstr "Mật khẩu"
+
+msgid "btn_login"
+msgstr "Đăng nhập"
+
+msgid "btn_login_google"
+msgstr "Đăng nhập bằng Google"
+
+msgid "btn_logout"
+msgstr "Đăng xuất"
+
+msgid "acct_logged_in"
+msgstr "Đã đăng nhập: "
+
+msgid "acct_logging_in"
+msgstr "Đang đăng nhập…"
+
+msgid "acct_google_hint"
+msgstr "Đã mở trang đăng nhập trong trình duyệt — quay lại đây sau khi hoàn tất"
+
+msgid "acct_need_server"
+msgstr "Không thể khởi động máy chủ cục bộ để nhận phản hồi đăng nhập Google"
+
+msgid "acct_need_credentials"
+msgstr "Nhập email và mật khẩu"
+
+msgid "acct_login_failed"
+msgstr "Đăng nhập thất bại"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "Cần cấp quyền mạng"
+
+msgid "fw_body_mac"
+msgstr "Không thể truy cập cổng máy chủ MCP từ bên ngoài — nhiều khả năng bị tường lửa macOS chặn. Kết nối của AI client và phản hồi đăng nhập Google đều cần cổng này.\n\nCác bước:\n1. Nếu macOS hỏi \"Bạn có muốn Godot chấp nhận kết nối mạng đến?\", nhấn Cho phép.\n2. Nếu trước đó đã Từ chối: mở Cài đặt Hệ thống → Mạng → Tường lửa → Tùy chọn… và đặt Godot thành \"Cho phép kết nối đến\".\n3. Khởi động lại Godot editor và thử lại."
+
+msgid "fw_body_win"
+msgstr "Không thể truy cập cổng máy chủ MCP từ bên ngoài — nhiều khả năng bị tường lửa Windows chặn.\n\nKhi Windows Security hiện \"Windows Defender Firewall đã chặn một số tính năng của ứng dụng này\", nhấn \"Cho phép truy cập\"; hoặc cho phép Godot trong Control Panel → Windows Defender Firewall → Cho phép ứng dụng. Sau đó khởi động lại editor."
+
+msgid "fw_open_settings"
+msgstr "Mở cài đặt tường lửa"
+
+msgid "fw_dismiss"
+msgstr "Không hiển thị lại"
+
+msgid "acct_fw_blocked"
+msgstr "Tường lửa đang chặn cổng cục bộ — phản hồi đăng nhập Google không thể đến (xem hộp thoại hướng dẫn)"
+
+msgid "acct_register"
+msgstr "Chưa có tài khoản? Đăng ký"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "Gói của bạn không bao gồm Godot MCP. Hãy nâng cấp lên gói miễn phí trở lên để dùng."
+
+msgid "acct_upgrade"
+msgstr "Nâng cấp gói"
+
+msgid "acct_recheck"
+msgstr "Kiểm tra lại"
+
+msgid "acct_kicked"
+msgstr "Tài khoản của bạn đã đăng nhập trên thiết bị khác; thiết bị này đã đăng xuất."
+
+msgid "acct_relogin"
+msgstr "Đăng nhập lại (lấy lại về đây)"
+
+msgid "kicked_title"
+msgstr "Đã đăng nhập nơi khác"
+
+msgid "lbl_endpoint"
+msgstr "Điểm cuối: "
+
+msgid "update_available_title"
+msgstr "Đã có bản cập nhật"
+
+msgid "update_urgency_critical"
+msgstr "Cập nhật khẩn cấp"
+
+msgid "update_urgency_high"
+msgstr "Cập nhật quan trọng"
+
+msgid "update_new_version"
+msgstr "Đã có phiên bản v{0}!"
+
+msgid "update_current_version"
+msgstr "Phiên bản hiện tại: v{0}"
+
+msgid "update_changelog"
+msgstr "Có gì mới"
+
+msgid "update_now"
+msgstr "Cập nhật ngay"
+
+msgid "update_not_now"
+msgstr "Để sau"
+
+msgid "update_skip_version"
+msgstr "Bỏ qua v{0}"
+
+msgid "check_for_updates"
+msgstr "Kiểm tra cập nhật"
+
+msgid "update_no_update"
+msgstr "Bạn đang dùng phiên bản mới nhất"
+
+msgid "no_entitlement_title"
+msgstr "Không có quyền truy cập"
+
+msgid "acct_upgrade_to"
+msgstr "Nâng cấp lên {0} để sử dụng"

@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+
+msgid "brand_name"
+msgstr "LiDaxian MCP Series"
+
+msgid "tab_server"
+msgstr "الخادم"
+
+msgid "tab_tools"
+msgstr "الأدوات"
+
+msgid "tab_config"
+msgstr "الإعداد"
+
+msgid "lbl_status"
+msgstr "الحالة: "
+
+msgid "lbl_port"
+msgstr "المنفذ: "
+
+msgid "port_fallback_notice"
+msgstr "المنفذ %d مشغول — تم التبديل إلى %d"
+
+msgid "chk_autostart"
+msgstr "البدء التلقائي"
+
+msgid "btn_start"
+msgstr "بدء"
+
+msgid "btn_stop"
+msgstr "إيقاف"
+
+msgid "btn_copy"
+msgstr "نسخ"
+
+msgid "lbl_connections"
+msgstr "الاتصالات: "
+
+msgid "running"
+msgstr "قيد التشغيل"
+
+msgid "stopped"
+msgstr "متوقف"
+
+msgid "tools_title"
+msgstr "الأدوات المسجّلة"
+
+msgid "tools_not_running"
+msgstr "الخادم غير قيد التشغيل — ابدأه من علامة التبويب \"الخادم\""
+
+msgid "tools_fetch_failed"
+msgstr "فشل الجلب (هل الخادم غير قيد التشغيل؟)"
+
+msgid "config_hint"
+msgstr "أضف الإعداد أدناه إلى عميل الذكاء الاصطناعي الخاص بك (Cursor / Claude / Windsurf، إلخ) لاستخدام هذا MCP:"
+
+msgid "btn_copy_json"
+msgstr "نسخ إعداد JSON"
+
+msgid "btn_copy_cli"
+msgstr "نسخ أمر Claude CLI"
+
+msgid "config_paths_title"
+msgstr "مواقع ملفات الإعداد:"
+
+msgid "copied"
+msgstr "تم النسخ ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 LiDaxian - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "استنادًا إلى بروتوكول Streamable HTTP (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "البريد الإلكتروني"
+
+msgid "contact_wechat"
+msgstr "WeChat"
+
+msgid "contact_support"
+msgstr "WeChat للدعم"
+
+msgid "contact_download"
+msgstr "تنزيل"
+
+msgid "btn_open_loc"
+msgstr "فتح الموقع"
+
+msgid "cli_title"
+msgstr "أوامر CLI"
+
+msgid "btn_auto_config"
+msgstr "تكوين تلقائي"
+
+msgid "btn_delete"
+msgstr "إزالة"
+
+msgid "status_configured"
+msgstr "تم التكوين"
+
+msgid "status_not_configured"
+msgstr "غير مكوَّن"
+
+msgid "config_failed"
+msgstr "فشل التكوين"
+
+msgid "cat_node"
+msgstr "العُقَد"
+
+msgid "catdesc_node"
+msgstr "إنشاء عُقَد المشهد والاستعلام عنها وتحويلها وربطها"
+
+msgid "cat_scene"
+msgstr "المشاهد"
+
+msgid "catdesc_scene"
+msgstr "فتح المشاهد وحفظها وإنشاؤها والاستعلام عن الشجرة"
+
+msgid "cat_editor"
+msgstr "المحرر"
+
+msgid "catdesc_editor"
+msgstr "التحكم في المحرر: التشغيل والمعاينة ومعلومات الإصدار"
+
+msgid "cat_project"
+msgstr "المشروع"
+
+msgid "catdesc_project"
+msgstr "إعدادات المشروع وخرائط الإدخال والإصدار"
+
+msgid "cat_filesystem"
+msgstr "نظام الملفات"
+
+msgid "catdesc_filesystem"
+msgstr "قراءة ملفات المشروع وكتابتها ونسخها ونقلها"
+
+msgid "cat_resource"
+msgstr "الموارد"
+
+msgid "catdesc_resource"
+msgstr "الاستعلام عن الموارد وإنشاؤها وفحصها"
+
+msgid "cat_animation"
+msgstr "الرسوم المتحركة"
+
+msgid "catdesc_animation"
+msgstr "إنشاء الرسوم المتحركة وتحريرها و AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "المُنشئ"
+
+msgid "catdesc_builder"
+msgstr "بناء تسلسلات هرمية للعُقَد من شجرة JSON"
+
+msgid "cat_composite"
+msgstr "المركّب"
+
+msgid "catdesc_composite"
+msgstr "عمليات مركّبة ودُفعية عالية المستوى"
+
+msgid "cat_debug"
+msgstr "التصحيح"
+
+msgid "catdesc_debug"
+msgstr "طباعة السجلات ومخرجات التصحيح"
+
+msgid "cat_knowledge"
+msgstr "المعرفة"
+
+msgid "catdesc_knowledge"
+msgstr "الاستعلام عن قاعدة المعرفة والأدلة المدمجة"
+
+msgid "cat_validate"
+msgstr "التحقق"
+
+msgid "catdesc_validate"
+msgstr "التحقق من المشاهد وفحص التخطيط"
+
+msgid "cat_script"
+msgstr "البرنامج النصي"
+
+msgid "catdesc_script"
+msgstr "إنشاء البرامج النصية وتحريرها وإرفاقها"
+
+msgid "tooldetail_builder_tree"
+msgstr "مرّر شجرة JSON تصف العُقَد والخصائص وتجاوزات السمة والمرتكزات والمجموعات والإشارات والبرامج النصية.\nعملية البناء بأكملها تُعد خطوة تراجع واحدة."
+
+msgid "tooldetail_knowledge_get"
+msgstr "المواضيع: index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\nعوامل التصفية:\n- class:  التقييد باسم فئة واحدة (مثل \"Button\"، \"Tree\")\n- search: تصفية بسلسلة فرعية على الأسماء/المفاتيح\n\nأمثلة:\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "ست فئات للفحص (تُشغَّل جميعها افتراضيًا):\n- missing_scripts        العقدة تحتوي على مرجع لبرنامج نصي لكن الملف غير موجود\n- broken_node_paths      خاصية من النوع NodePath تشير إلى عقدة غير موجودة\n- dangling_signals       اتصالات إشارات دائمة بأهداف مُحرَّرة/مفقودة\n- off_viewport           عُقَد Control يقع مستطيلها بالكامل خارج منفذ العرض\n- container_anchor_misuse عنصر فرعي لـ Container له مرتكزات غير افتراضية (سيتم تجاهلها)\n- anti_patterns          أخطاء شائعة في Godot 4\n\nالتصفية عبر:\n- root_path:    الشجرة الفرعية المراد فحصها (افتراضيًا: جذر المشهد)\n- checks:       مصفوفة بأسماء الفئات (افتراضيًا: all)\n- severity_min: إخفاء النتائج الأقل من info|warning|error (افتراضيًا: info)"
+
+msgid "config_failed_detail"
+msgstr "فشل التكوين: تعذّر العثور على ملف الإعداد. ربما غيّر {0} مسار التثبيت."
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "حساب VberAI"
+
+msgid "acct_hint"
+msgstr "سجّل الدخول بحساب VberAI لاستخدام أدوات MCP"
+
+msgid "acct_email_ph"
+msgstr "البريد الإلكتروني"
+
+msgid "acct_password_ph"
+msgstr "كلمة المرور"
+
+msgid "btn_login"
+msgstr "تسجيل الدخول"
+
+msgid "btn_login_google"
+msgstr "الدخول عبر Google"
+
+msgid "btn_logout"
+msgstr "تسجيل الخروج"
+
+msgid "acct_logged_in"
+msgstr "تم تسجيل الدخول: "
+
+msgid "acct_logging_in"
+msgstr "جارٍ تسجيل الدخول…"
+
+msgid "acct_google_hint"
+msgstr "تم فتح صفحة تسجيل الدخول في المتصفح — عُد إلى هنا بعد الانتهاء"
+
+msgid "acct_need_server"
+msgstr "تعذّر تشغيل الخادم المحلي لاستقبال استدعاء تسجيل الدخول عبر Google"
+
+msgid "acct_need_credentials"
+msgstr "أدخل البريد الإلكتروني وكلمة المرور"
+
+msgid "acct_login_failed"
+msgstr "فشل تسجيل الدخول"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "مطلوب إذن الشبكة"
+
+msgid "fw_body_mac"
+msgstr "تعذّر الوصول إلى منفذ خادم MCP من الخارج — على الأرجح محجوب بجدار حماية macOS. تحتاج اتصالات عملاء الذكاء الاصطناعي واستدعاء تسجيل الدخول عبر Google إلى هذا المنفذ.\n\nالخطوات:\n1. إذا سأل النظام «هل تريد السماح لـ Godot بقبول اتصالات الشبكة الواردة؟» فانقر «سماح».\n2. إذا رفضت سابقًا: افتح إعدادات النظام → الشبكة → جدار الحماية → خيارات… واضبط Godot على «السماح بالاتصالات الواردة».\n3. أعد تشغيل محرر Godot وحاول مجددًا."
+
+msgid "fw_body_win"
+msgstr "تعذّر الوصول إلى منفذ خادم MCP من الخارج — على الأرجح محجوب بجدار حماية Windows.\n\nعندما يظهر «حظر جدار حماية Windows Defender بعض ميزات هذا التطبيق» انقر «السماح بالوصول»؛ أو اسمح لـ Godot من لوحة التحكم → جدار حماية Windows Defender → السماح لتطبيق. ثم أعد تشغيل المحرر."
+
+msgid "fw_open_settings"
+msgstr "فتح إعدادات جدار الحماية"
+
+msgid "fw_dismiss"
+msgstr "عدم الإظهار مجددًا"
+
+msgid "acct_fw_blocked"
+msgstr "جدار الحماية يحجب المنفذ المحلي — لا يمكن وصول استدعاء تسجيل الدخول عبر Google (انظر مربع الحوار)"
+
+msgid "acct_register"
+msgstr "لا تملك حسابًا؟ سجّل الآن"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "خطتك الحالية لا تتضمن Godot MCP. رقِّ إلى الخطة المجانية أو أعلى لاستخدامه."
+
+msgid "acct_upgrade"
+msgstr "ترقية الاشتراك"
+
+msgid "acct_recheck"
+msgstr "إعادة الفحص"
+
+msgid "acct_kicked"
+msgstr "تم تسجيل دخول حسابك على جهاز آخر، وتم تسجيل خروج هذا الجهاز."
+
+msgid "acct_relogin"
+msgstr "تسجيل الدخول مجددًا (استعادته هنا)"
+
+msgid "kicked_title"
+msgstr "تم تسجيل الدخول في مكان آخر"
+
+msgid "lbl_endpoint"
+msgstr "نقطة النهاية: "
+
+msgid "update_available_title"
+msgstr "يتوفر تحديث"
+
+msgid "update_urgency_critical"
+msgstr "تحديث حرج"
+
+msgid "update_urgency_high"
+msgstr "تحديث مهم"
+
+msgid "update_new_version"
+msgstr "الإصدار v{0} متوفر الآن!"
+
+msgid "update_current_version"
+msgstr "الإصدار الحالي: v{0}"
+
+msgid "update_changelog"
+msgstr "ما الجديد"
+
+msgid "update_now"
+msgstr "تحديث الآن"
+
+msgid "update_not_now"
+msgstr "ليس الآن"
+
+msgid "update_skip_version"
+msgstr "تخطّي v{0}"
+
+msgid "check_for_updates"
+msgstr "التحقق من التحديثات"
+
+msgid "update_no_update"
+msgstr "أنت تستخدم أحدث إصدار"
+
+msgid "no_entitlement_title"
+msgstr "لا يشمل الوصول"
+
+msgid "acct_upgrade_to"
+msgstr "الترقية إلى {0} لاستخدامه"

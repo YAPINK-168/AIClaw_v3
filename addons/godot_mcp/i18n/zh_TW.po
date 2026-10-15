@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_TW\n"
+
+msgid "brand_name"
+msgstr "李大仙 MCP 系列"
+
+msgid "tab_server"
+msgstr "伺服器"
+
+msgid "tab_tools"
+msgstr "工具"
+
+msgid "tab_config"
+msgstr "設定"
+
+msgid "lbl_status"
+msgstr "狀態："
+
+msgid "lbl_port"
+msgstr "連接埠："
+
+msgid "port_fallback_notice"
+msgstr "連接埠 %d 被佔用，已自動改用 %d"
+
+msgid "chk_autostart"
+msgstr "自動啟動"
+
+msgid "btn_start"
+msgstr "啟動"
+
+msgid "btn_stop"
+msgstr "停止"
+
+msgid "btn_copy"
+msgstr "複製"
+
+msgid "lbl_connections"
+msgstr "連線數："
+
+msgid "running"
+msgstr "執行中"
+
+msgid "stopped"
+msgstr "已停止"
+
+msgid "tools_title"
+msgstr "已註冊的工具"
+
+msgid "tools_not_running"
+msgstr "伺服器未執行 — 請到「伺服器」分頁啟動"
+
+msgid "tools_fetch_failed"
+msgstr "取得失敗（伺服器未執行？）"
+
+msgid "config_hint"
+msgstr "把下面的設定加到你的 AI 用戶端（Cursor / Claude / Windsurf 等）即可使用本 MCP："
+
+msgid "btn_copy_json"
+msgstr "複製 JSON 設定"
+
+msgid "btn_copy_cli"
+msgstr "複製 Claude CLI 指令"
+
+msgid "config_paths_title"
+msgstr "設定檔位置："
+
+msgid "copied"
+msgstr "已複製 ✓"
+
+msgid "copyright_line"
+msgstr "© 2025 李大仙 (LiDaxian) - Godot MCP Server v{0}"
+
+msgid "protocol_line"
+msgstr "基於 Streamable HTTP 協定 (MCP 2025-03-26)"
+
+msgid "contact_email"
+msgstr "電子郵件"
+
+msgid "contact_wechat"
+msgstr "微信"
+
+msgid "contact_support"
+msgstr "客服微信"
+
+msgid "contact_download"
+msgstr "下載"
+
+msgid "btn_open_loc"
+msgstr "開啟檔案位置"
+
+msgid "cli_title"
+msgstr "CLI 指令"
+
+msgid "btn_auto_config"
+msgstr "自動設定"
+
+msgid "btn_delete"
+msgstr "移除"
+
+msgid "status_configured"
+msgstr "已設定"
+
+msgid "status_not_configured"
+msgstr "未設定"
+
+msgid "config_failed"
+msgstr "設定失敗"
+
+msgid "cat_node"
+msgstr "節點"
+msgid "catdesc_node"
+msgstr "建立、查詢、變換場景節點並連接訊號"
+
+msgid "cat_scene"
+msgstr "場景"
+msgid "catdesc_scene"
+msgstr "開啟、儲存、建立場景並查詢節點樹"
+
+msgid "cat_editor"
+msgstr "編輯器"
+msgid "catdesc_editor"
+msgstr "控制編輯器：執行、預覽、版本資訊"
+
+msgid "cat_project"
+msgstr "專案"
+msgid "catdesc_project"
+msgstr "專案設定、輸入對應與版本"
+
+msgid "cat_filesystem"
+msgstr "檔案系統"
+msgid "catdesc_filesystem"
+msgstr "讀取、寫入、複製與搬移專案檔案"
+
+msgid "cat_resource"
+msgstr "資源"
+msgid "catdesc_resource"
+msgstr "查詢、建立與檢視資源"
+
+msgid "cat_animation"
+msgstr "動畫"
+msgid "catdesc_animation"
+msgstr "建立與編輯動畫和 AnimationPlayer"
+
+msgid "cat_builder"
+msgstr "建構器"
+msgid "catdesc_builder"
+msgstr "由 JSON 樹狀結構建立節點階層"
+
+msgid "cat_composite"
+msgstr "組合操作"
+msgid "catdesc_composite"
+msgstr "高階組合與批次操作"
+
+msgid "cat_debug"
+msgstr "除錯"
+msgid "catdesc_debug"
+msgstr "輸出日誌與除錯訊息"
+
+msgid "cat_knowledge"
+msgstr "知識庫"
+msgid "catdesc_knowledge"
+msgstr "查詢內建知識庫與指南"
+
+msgid "cat_validate"
+msgstr "驗證"
+msgid "catdesc_validate"
+msgstr "驗證場景並檢查版面配置"
+
+msgid "cat_script"
+msgstr "腳本"
+msgid "catdesc_script"
+msgstr "建立、編輯與掛載腳本"
+
+msgid "tooldetail_builder_tree"
+msgstr "傳入一個描述節點、屬性、theme override、錨點、群組、訊號與腳本的 JSON 樹。\n整個建構過程只算一次復原步驟。"
+
+msgid "tooldetail_knowledge_get"
+msgstr "主題：index, control_hierarchy, critical_properties, common_signals,\ntheme_overrides, anchor_presets, size_flags, layout_modes, script_templates\n\n篩選：\n- class:  限定單一類別名稱（例如 \"Button\"、\"Tree\"）\n- search: 對名稱／鍵做子字串篩選\n\n範例：\n- {\"topic\":\"index\"}\n- {\"topic\":\"critical_properties\", \"class\":\"Tree\"}"
+
+msgid "tooldetail_validate_scene"
+msgstr "六類檢查（預設全部執行）：\n- missing_scripts        節點有腳本參照但檔案不存在\n- broken_node_paths      NodePath 型別的屬性指向不存在的節點\n- dangling_signals       持久化的訊號連線指向已釋放／不存在的目標\n- off_viewport           矩形完全落在視口之外的 Control 節點\n- container_anchor_misuse Container 的子節點設了非預設錨點（會被忽略）\n- anti_patterns          Godot 4 常見的錯誤寫法\n\n可用下列參數篩選：\n- root_path:    要檢查的子樹（預設：場景根節點）\n- checks:       類別名稱陣列（預設：全部）\n- severity_min: 隱藏低於 info|warning|error 的結果（預設 info）"
+
+msgid "config_failed_detail"
+msgstr "設定失敗：找不到設定檔，{0} 安裝時可能變更了路徑。"
+
+# ── VberAI account (login gate) ──
+msgid "acct_title"
+msgstr "VberAI 帳號"
+
+msgid "acct_hint"
+msgstr "使用你的 VberAI 帳號登入即可使用 MCP 工具"
+
+msgid "acct_email_ph"
+msgstr "電子郵件"
+
+msgid "acct_password_ph"
+msgstr "密碼"
+
+msgid "btn_login"
+msgstr "登入"
+
+msgid "btn_login_google"
+msgstr "使用 Google 登入"
+
+msgid "btn_logout"
+msgstr "登出"
+
+msgid "acct_logged_in"
+msgstr "已登入："
+
+msgid "acct_logging_in"
+msgstr "登入中…"
+
+msgid "acct_google_hint"
+msgstr "已在瀏覽器開啟登入頁 — 完成後請回到這裡"
+
+msgid "acct_need_server"
+msgstr "無法啟動供 Google 登入回呼使用的本機伺服器"
+
+msgid "acct_need_credentials"
+msgstr "請輸入電子郵件與密碼"
+
+msgid "acct_login_failed"
+msgstr "登入失敗"
+
+# ── firewall reachability hint ──
+msgid "fw_title"
+msgstr "需要網路權限"
+
+msgid "fw_body_mac"
+msgstr "MCP 伺服器的連接埠無法從本行程之外連到 — 多半是被 macOS 防火牆擋住了。AI 用戶端連線和 Google 登入回呼都需要這個連接埠。\n\n步驟：\n1. 如果 macOS 詢問「是否要允許 Godot 接受連入的網路連線？」，請按「允許」。\n2. 如果先前按過「拒絕」：開啟 系統設定 → 網路 → 防火牆 → 選項…，把 Godot 設為「允許連入連線」。\n3. 重新啟動 Godot 編輯器後再試一次。"
+
+msgid "fw_body_win"
+msgstr "MCP 伺服器的連接埠無法從本行程之外連到 — 多半是被 Windows 防火牆擋住了。\n\n當 Windows 安全性詢問「Windows Defender 防火牆已封鎖此應用程式的部分功能」時，請勾選你的網路並按「允許存取」；或到 控制台 → Windows Defender 防火牆 → 允許應用程式通過防火牆 中放行 Godot，然後重新啟動編輯器。"
+
+msgid "fw_open_settings"
+msgstr "開啟防火牆設定"
+
+msgid "fw_dismiss"
+msgstr "不再顯示"
+
+msgid "acct_fw_blocked"
+msgstr "防火牆正擋住本機連接埠 — Google 登入回呼無法送達（處理步驟見對話框）"
+
+msgid "acct_register"
+msgstr "還沒有帳號？註冊"
+
+# ── entitlement gate + multi-device kick ──
+msgid "acct_no_entitlement"
+msgstr "你的方案不包含 Godot MCP，請升級到免費方案或以上才能使用。"
+
+msgid "acct_upgrade"
+msgstr "升級訂閱"
+
+msgid "acct_recheck"
+msgstr "重新檢查"
+
+msgid "acct_kicked"
+msgstr "你的帳號已在另一台裝置登入，本裝置已登出。"
+
+msgid "acct_relogin"
+msgstr "重新登入（把使用權搶回來）"
+
+msgid "kicked_title"
+msgstr "已在他處登入"
+
+msgid "lbl_endpoint"
+msgstr "端點："
+
+msgid "update_available_title"
+msgstr "有可用更新"
+
+msgid "update_urgency_critical"
+msgstr "緊急更新"
+
+msgid "update_urgency_high"
+msgstr "重要更新"
+
+msgid "update_new_version"
+msgstr "v{0} 版已發布！"
+
+msgid "update_current_version"
+msgstr "目前版本：v{0}"
+
+msgid "update_changelog"
+msgstr "更新內容"
+
+msgid "update_now"
+msgstr "立即更新"
+
+msgid "update_not_now"
+msgstr "暫不更新"
+
+msgid "update_skip_version"
+msgstr "略過 v{0}"
+
+msgid "check_for_updates"
+msgstr "檢查更新"
+
+msgid "update_no_update"
+msgstr "目前已是最新版本"
+
+msgid "no_entitlement_title"
+msgstr "方案未包含"
+
+msgid "acct_upgrade_to"
+msgstr "升級到「{0}」即可使用"
